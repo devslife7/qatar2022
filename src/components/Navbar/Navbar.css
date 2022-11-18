@@ -81,10 +81,10 @@
   transition: all 0.2s ease;
 }
 
-.nav__link:hover {
-  /* color: var(--color-primary); */
+/* .nav__link:hover {
+  color: var(--color-primary);
 }
 .nav__link.active {
-  /* border-bottom: 5px solid var(--color-primary);
-  color: var(--color-primary); */
-}
+  border-bottom: 5px solid var(--color-primary);
+  color: var(--color-primary);
+} */

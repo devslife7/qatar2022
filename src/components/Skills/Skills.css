@@ -1,0 +1,114 @@
+.skills {
+  transition: all 0.5s ease;
+
+  background: url('../../img/qatarstatic.png') no-repeat center;
+  /* covers the whole screen */
+  background-size: cover;
+
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+.skills::before {
+  content: '';
+  width: 100%;
+  height: 200px;
+  background: #000;
+  opacity: 0.5;
+  position: absolute;
+}
+
+.skills__content {
+  z-index: 10;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  max-width: 1000px;
+  color: #fff;
+}
+
+.skills__title {
+  z-index: inherit;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0px auto 60px auto;
+}
+
+.skills__header {
+  z-index: inherit;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.skills__section {
+  z-index: inherit;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* --- Skill Card Styles --- */
+
+.skill__card {
+  margin: 10px 40px 10px 0px;
+  padding: 4px;
+  width: 100px;
+  height: 120px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.skill__card:hover {
+  transform: scale(1.05);
+  transition: 0.2s all ease;
+}
+
+.skill__img {
+  width: 3.5rem;
+  border-radius: 4px;
+}
+
+.skill__title {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .skill__card {
+    padding: 3px;
+    height: 130px;
+    width: 100px;
+  }
+
+  .skill__img {
+    width: 3rem;
+  }
+
+  .skill__title {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill__card {
+    height: 110px;
+    width: 80px;
+  }
+
+  .skills__section {
+    justify-content: space-evenly;
+  }
+
+  .skills__content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
