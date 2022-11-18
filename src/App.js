@@ -1,7 +1,7 @@
 import './App.css'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
-import Skills from './components/Skills'
+import Predictions from './components/Predictions'
 import Footer from './components/Footer'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div>
       <Navbar />
       <Home />
-      <Skills />
+      <Predictions />
       <Footer />
     </div>
   )
