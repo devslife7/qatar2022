@@ -27,7 +27,7 @@ export default function Navbar({ toggle }) {
       <div className={`nav ${scrollNav && 'nav--background'}`}>
         <div className='nav__content container'>
           <div className='nav__logo' onClick={toggleHome}>
-            Portfo<span className='theme__span'>lio</span>
+            <img src='https://media.api-sports.io/football/leagues/1.png' alt='qatar2022 world cup logo' />
           </div>
           <ul className='nav__menu'>
             <li className='nav__item'>
@@ -40,7 +40,7 @@ export default function Navbar({ toggle }) {
                 exact='true'
                 offset={-80}
               >
-                Home
+                Predictions
               </Link>
             </li>
             <li className='nav__item'>
@@ -53,7 +53,7 @@ export default function Navbar({ toggle }) {
                 exact='true'
                 offset={-80}
               >
-                Projects
+                Matches
               </Link>
             </li>
           </ul>
