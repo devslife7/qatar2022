@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Fixtures.css'
 import Divider from '@mui/material/Divider'
 import Grid from '@mui/material/Grid'
 import FixtureCard from './FixtureCard'
 
+const serverURL = process.env.REACT_APP_SERVER_URL
+
 const fixtures = [
-  ({
+  {
     fixture: {
       id: 607304,
       referee: null,
@@ -480,22 +482,31 @@ const fixtures = [
         away: null,
       },
     },
-  }),
+  },
 ]
 
-const renderFixtures = () => {
-  return fixtures.map((fixture, idx) => (
-    <Grid key={idx} item>
-      <FixtureCard fixture={fixture} />
-      <Divider />
-    </Grid>
-  ))
-}
 export default function Fixtures() {
+  useEffect(() => {
+    fetch(serverURL + '/fixtures')
+      .then(resp => resp.json())
+      .then(data => console.log('Fixtures fetch: ', data))
+      .catch(err => console.log(err))
+  }, [])
+
+  const renderFixtures = () => {
+    return fixtures.map((fixture, idx) => (
+      <Grid key={idx} item>
+        <FixtureCard fixture={fixture} />
+        <Divider />
+      </Grid>
+    ))
+  }
+
   return (
     <div className='fixtures_home'>
-      <div> Matches</div>
-      <div>{renderFixtures()}</div>
+      <div className='container fixtures_container' style={{ padding: '60px 10px 60px 10px' }}>
+        <div>{renderFixtures()}</div>
+      </div>
     </div>
   )
 }

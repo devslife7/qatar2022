@@ -110,7 +110,6 @@ export default function Predictions() {
   }, [])
 
   const userPredictions = () => {
-    console.log('UserData', userData)
     const usersWithCalculatedRightMatches = userData.map(user => {
       let rightMatches = findMatches(finalResutArray, user.predictionsGS)
       return { ...user, rightMatches: rightMatches }
@@ -118,7 +117,7 @@ export default function Predictions() {
 
     const sortedUsers = usersWithCalculatedRightMatches.sort((a, b) => b.rightMatches - a.rightMatches)
     return sortedUsers.map((user, idx) => (
-      <Grid container style={{ margin: '12px 0 12px 0' }}>
+      <Grid container key={idx} style={{ margin: '12px 0 12px 0' }}>
         <PredictionsCard key={idx} user={user} />
         {/* <Divider style={{ width: '100%', margin: '15px 0 15px 0' }} /> */}
       </Grid>
