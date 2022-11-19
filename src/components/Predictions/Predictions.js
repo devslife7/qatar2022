@@ -7,6 +7,47 @@ import PredictionsCard from './PredictionsCard'
 // const serverURL = process.env.REACT_APP_SERVER_URL
 const serverURL = 'http://localhost:3000'
 
+const countryCodes = {
+  A1: 'Qatar',
+  A2: 'Ecuador',
+  A3: 'Senegal',
+  A4: 'Netherlands',
+
+  B1: 'England',
+  B2: 'Iran',
+  B3: 'USA',
+  B4: 'Wales',
+
+  C1: 'Argentina',
+  C2: 'Saudi Arabia',
+  C3: 'Mexico',
+  C4: 'Poland',
+
+  D1: 'France',
+  D2: 'Australia',
+  D3: 'Denmark',
+  D4: 'Tunisia',
+
+  E1: 'Spain',
+  E2: 'Costa Rica',
+  E3: 'Germany',
+  E4: 'Japan',
+
+  F1: 'Belgium',
+  F2: 'Canada',
+  F3: 'Morocco',
+  F4: 'Croatia',
+
+  G1: 'Brazil',
+  G2: 'Serbia',
+  G3: 'Switzerland',
+  G4: 'Cameroon',
+
+  H1: 'Portugal',
+  H2: 'Ghana',
+  H3: 'Uruguay',
+  H4: 'South Korea',
+}
 const fixtures = [
   ({
     fixture: {
@@ -485,6 +526,56 @@ const fixtures = [
     },
   }),
 ]
+const finalResutArray = [
+  'F4',
+  'E3',
+  'B2',
+  'H4',
+  'F4',
+  'D2',
+  'C1',
+  'E1',
+  'C4',
+  'D2',
+  'F3',
+  'E1',
+  'H1',
+  'G4',
+  'C1',
+  'G1',
+  'C4',
+  'A2',
+  'C4',
+  'A3',
+  'A3',
+  'B4',
+  'A1',
+  'A1',
+  'B4',
+  'H3',
+  'B2',
+  'E4',
+  'C1',
+  'C3',
+  'G4',
+  'E3',
+  'D2',
+  'C2',
+  'F1',
+  'G3',
+  'A2',
+  'G2',
+  'D1',
+  'G1',
+  'F3',
+  'D2',
+  'C1',
+  'H3',
+  'F3',
+  'A1',
+  'D4',
+  'F3',
+]
 
 export default function Predictions() {
   const [userData, setUserData] = useState([])
@@ -504,48 +595,6 @@ export default function Predictions() {
 
   // Logic here
 
-  const countryCodes = {
-    A1: 'Qatar',
-    A2: 'Ecuador',
-    A3: 'Senegal',
-    A4: 'Netherlands',
-
-    B1: 'England',
-    B2: 'Iran',
-    B3: 'USA',
-    B4: 'Wales',
-
-    C1: 'Argentina',
-    C2: 'Saudi Arabia',
-    C3: 'Mexico',
-    C4: 'Poland',
-
-    D1: 'Francia',
-    D2: 'Australia',
-    D3: 'Denmark',
-    D4: 'Tunisia',
-
-    E1: 'Spain',
-    E2: 'Costa Rica',
-    E3: 'Germany',
-    E4: 'Japan',
-
-    F1: 'Belgium',
-    F2: 'Canada',
-    F3: 'Morocco',
-    F4: 'Croatia',
-
-    G1: 'Brazil',
-    G2: 'Serbia',
-    G3: 'Switzerland',
-    G4: 'Cameroon',
-
-    H1: 'Portugal',
-    H2: 'Ghana',
-    H3: 'Uruguay',
-    H4: 'South Korea',
-  }
-
   return (
     <div className='predictions'>
       <div className='predictions__content container'>
@@ -560,3 +609,56 @@ export default function Predictions() {
     </div>
   )
 }
+
+// const userPicks = [
+//   'F4',
+//   'E3',
+//   'B2',
+//   'H4',
+//   'E1',
+//   'B4',
+//   'G1',
+//   'D2',
+//   'H3',
+//   'G2',
+//   'C4',
+//   'G4',
+//   'E4',
+//   'F4',
+//   'E1',
+//   'B4',
+//   'A1',
+//   'H4',
+//   'B4',
+//   'H1',
+//   'E4',
+//   'E4',
+//   'E3',
+//   'F1',
+//   'H2',
+//   'G1',
+//   'D4',
+//   'F2',
+//   'C4',
+//   'B2',
+//   'A1',
+//   'G1',
+//   'G4',
+//   'D3',
+//   'C1',
+//   'H3',
+//   'A2',
+//   'G1',
+//   'E3',
+//   'E1',
+//   'A2',
+//   'G4',
+//   'A4',
+//   'F1',
+//   'D1',
+//   'B4',
+//   'C1',
+//   'B4',
+// ]
+
+// user.update(:name, :username, :avatar)
