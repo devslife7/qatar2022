@@ -608,17 +608,69 @@ export default function Predictions() {
     return counter
   }
 
-  // Logic here
+  const pricePool = 1250
 
   return (
     <div className='predictions'>
       <div className='predictions__content container'>
-        <h2 className='predictions__title'>Predictions</h2>
+        {/* <h2 className='predictions__title'>Predictions</h2> */}
 
-        <Paper>
+        <Paper style={{ marginTop: '2.5rem' }}>
           <Grid container spacing={2} className='predictions_containerGrid' style={{ padding: 20 }}>
             {userPredictions()}
           </Grid>
+        </Paper>
+
+        <Paper>
+          <p
+            style={{
+              fontSize: '2.3rem',
+              fontWeight: 900,
+              color: '#AB0E3C',
+              textAlign: 'center',
+              marginBottom: '1rem',
+              paddingTop: '1rem',
+            }}
+          >
+            Price Pool {`  $${pricePool}`}
+          </p>
+          <p
+            style={{
+              fontSize: '2rem',
+              fontWeight: 800,
+              color: '#AB0E3C',
+              textAlign: 'center',
+              marginTop: '1rem',
+              marginBottom: '1rem',
+            }}
+          >
+            1st {` $${pricePool * 0.6}`}
+          </p>
+          <p
+            style={{
+              fontSize: '1.7rem',
+              fontWeight: 700,
+              color: '#AB0E3C',
+              textAlign: 'center',
+              marginTop: 0,
+              marginBottom: '1rem',
+            }}
+          >
+            2nd {` $${pricePool * 0.3}`}
+          </p>
+          <p
+            style={{
+              fontSize: '1.6rem',
+              fontWeight: 600,
+              marginBottom: '4rem',
+              color: '#AB0E3C',
+              textAlign: 'center',
+              marginTop: '1rem',
+              paddingBottom: '1.5rem',
+            }}
+          >
+            3rd {`$${pricePool * 0.1}`}
+          </p>
         </Paper>
       </div>
     </div>

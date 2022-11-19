@@ -20,15 +20,15 @@
 
 .predictions__content {
   z-index: 10;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
   color: #fff;
 }
 
 .predictions__title {
   z-index: inherit;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 500;
   margin: 0px auto 60px auto;
 }

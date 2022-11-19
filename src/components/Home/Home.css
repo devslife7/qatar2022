@@ -16,6 +16,10 @@
   /* opacity: 0.1; */
   position: absolute;
 }
+.home__text-1 {
+  font-size: 80px;
+  color: white;
+}
 
 @media (max-width: 768px) {
   .home__text-1 {
