@@ -5,8 +5,7 @@ import Grid from '@mui/material/Grid'
 import Divider from '@mui/material/Divider'
 import PredictionsCard from './PredictionsCard'
 
-// const serverURL = process.env.REACT_APP_SERVER_URL
-const serverURL = 'http://localhost:3000'
+const serverURL = process.env.REACT_APP_SERVER_URL
 
 const countryCodes = {
   A1: 'Qatar',
