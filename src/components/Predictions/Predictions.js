@@ -595,8 +595,8 @@ export default function Predictions() {
       return { ...user, rightMatches: rightMatches }
     })
 
-    //sort it first
-    return usersWithCalculatedRightMatches.map((user, idx) => {
+    const sortedUsers = usersWithCalculatedRightMatches.sort((a, b) => b.rightMatches - a.rightMatches)
+    return sortedUsers.map((user, idx) => {
       return <PredictionsCard key={idx} user={user} />
     })
   }
