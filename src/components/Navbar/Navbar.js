@@ -33,7 +33,7 @@ export default function Navbar({ toggle }) {
             <li className='nav__item'>
               <Link
                 className='nav__link'
-                to='home'
+                to='predictions'
                 smooth='true'
                 duration={500}
                 spy={true}

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Predictions.css'
 import Paper from '@mui/material/Paper'
 import Grid from '@mui/material/Grid'
+import Divider from '@mui/material/Divider'
 import PredictionsCard from './PredictionsCard'
 
 // const serverURL = process.env.REACT_APP_SERVER_URL
@@ -526,6 +527,56 @@ const fixtures = [
     },
   }),
 ]
+const finalResutArray = [
+  'F4',
+  'E3',
+  'B2',
+  'H4',
+  'F4',
+  'D2',
+  'C1',
+  'E1',
+  'C4',
+  'D2',
+  'F3',
+  'E1',
+  'H1',
+  'G4',
+  'C1',
+  'G1',
+  'C4',
+  'A2',
+  'C4',
+  'A3',
+  'A3',
+  'B4',
+  'A1',
+  'A1',
+  'B4',
+  'H3',
+  'B2',
+  'E4',
+  'C1',
+  'C3',
+  'G4',
+  'E3',
+  'D2',
+  'C2',
+  'F1',
+  'G3',
+  'A2',
+  'G2',
+  'D1',
+  'G1',
+  'F3',
+  'D2',
+  'C1',
+  'H3',
+  'F3',
+  'A1',
+  'D4',
+  'F3',
+]
 
 export default function Predictions() {
   const [userData, setUserData] = useState([])
@@ -539,9 +590,23 @@ export default function Predictions() {
 
   const userPredictions = () => {
     console.log('UserData', userData)
-    return userData.map((user, idx) => {
+    const usersWithCalculatedRightMatches = userData.map(user => {
+      let rightMatches = findMatches(finalResutArray, user.predictionsGS)
+      return { ...user, rightMatches: rightMatches }
+    })
+
+    //sort it first
+    return usersWithCalculatedRightMatches.map((user, idx) => {
       return <PredictionsCard key={idx} user={user} />
     })
+  }
+
+  const findMatches = (officialResult = [], predictions = []) => {
+    let counter = 0
+    for (let i = 0; i < officialResult.length; i++) {
+      officialResult[i] === predictions[i] && counter++
+    }
+    return counter
   }
 
   // Logic here
@@ -552,7 +617,7 @@ export default function Predictions() {
         <h2 className='predictions__title'>Predictions</h2>
 
         <Paper>
-          <Grid container spacing={2} className='predictions_containerGrid' style={{ padding: 10 }}>
+          <Grid container spacing={2} className='predictions_containerGrid' style={{ padding: 20 }}>
             {userPredictions()}
           </Grid>
         </Paper>
@@ -560,56 +625,3 @@ export default function Predictions() {
     </div>
   )
 }
-
-// const userPicks = [
-//   'F4',
-//   'E3',
-//   'B2',
-//   'H4',
-//   'E1',
-//   'B4',
-//   'G1',
-//   'D2',
-//   'H3',
-//   'G2',
-//   'C4',
-//   'G4',
-//   'E4',
-//   'F4',
-//   'E1',
-//   'B4',
-//   'A1',
-//   'H4',
-//   'B4',
-//   'H1',
-//   'E4',
-//   'E4',
-//   'E3',
-//   'F1',
-//   'H2',
-//   'G1',
-//   'D4',
-//   'F2',
-//   'C4',
-//   'B2',
-//   'A1',
-//   'G1',
-//   'G4',
-//   'D3',
-//   'C1',
-//   'H3',
-//   'A2',
-//   'G1',
-//   'E3',
-//   'E1',
-//   'A2',
-//   'G4',
-//   'A4',
-//   'F1',
-//   'D1',
-//   'B4',
-//   'C1',
-//   'B4',
-// ]
-
-// user.update(:name, :username, :avatar)
