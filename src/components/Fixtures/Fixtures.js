@@ -3307,8 +3307,8 @@ export default function Fixtures() {
   }
 
   return (
-    <div className='fixtures_home'>
-      <div className='container fixtures_container' style={{ padding: '60px 10px 60px 10px' }}>
+    <div className='fixtures'>
+      <div className='container fixtures_container' style={{ padding: '40px 10px 40px 10px' }}>
         <div>{renderFixtures()}</div>
       </div>
     </div>
