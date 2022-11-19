@@ -595,9 +595,12 @@ export default function Predictions() {
     })
 
     const sortedUsers = usersWithCalculatedRightMatches.sort((a, b) => b.rightMatches - a.rightMatches)
-    return sortedUsers.map((user, idx) => {
-      return <PredictionsCard key={idx} user={user} />
-    })
+    return sortedUsers.map((user, idx) => (
+      <Grid container style={{ margin: '12px 0 12px 0' }}>
+        <PredictionsCard key={idx} user={user} />
+        {/* <Divider style={{ width: '100%', margin: '15px 0 15px 0' }} /> */}
+      </Grid>
+    ))
   }
 
   const findMatches = (officialResult = [], predictions = []) => {
@@ -616,7 +619,12 @@ export default function Predictions() {
         {/* <h2 className='predictions__title'>Predictions</h2> */}
 
         <Paper style={{ marginTop: '2.5rem' }}>
-          <Grid container spacing={2} className='predictions_containerGrid' style={{ padding: 20 }}>
+          <Grid
+            container
+            spacing={2}
+            className='predictions_containerGrid'
+            style={{ padding: '5px 17px 5px 17px' }}
+          >
             {userPredictions()}
           </Grid>
         </Paper>
