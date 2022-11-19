@@ -526,56 +526,6 @@ const fixtures = [
     },
   }),
 ]
-const finalResutArray = [
-  'F4',
-  'E3',
-  'B2',
-  'H4',
-  'F4',
-  'D2',
-  'C1',
-  'E1',
-  'C4',
-  'D2',
-  'F3',
-  'E1',
-  'H1',
-  'G4',
-  'C1',
-  'G1',
-  'C4',
-  'A2',
-  'C4',
-  'A3',
-  'A3',
-  'B4',
-  'A1',
-  'A1',
-  'B4',
-  'H3',
-  'B2',
-  'E4',
-  'C1',
-  'C3',
-  'G4',
-  'E3',
-  'D2',
-  'C2',
-  'F1',
-  'G3',
-  'A2',
-  'G2',
-  'D1',
-  'G1',
-  'F3',
-  'D2',
-  'C1',
-  'H3',
-  'F3',
-  'A1',
-  'D4',
-  'F3',
-]
 
 export default function Predictions() {
   const [userData, setUserData] = useState([])
@@ -588,6 +538,7 @@ export default function Predictions() {
   }, [])
 
   const userPredictions = () => {
+    console.log('UserData', userData)
     return userData.map((user, idx) => {
       return <PredictionsCard key={idx} user={user} />
     })
