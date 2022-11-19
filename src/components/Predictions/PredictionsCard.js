@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Grid from '@mui/material/Grid'
-import Divider from '@mui/material/Divider'
+// import Divider from '@mui/material/Divider'
 
 export default function PredictionsCard({ user }) {
   return (

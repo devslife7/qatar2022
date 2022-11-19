@@ -3,6 +3,7 @@ import Home from './components/Home'
 import Navbar from './components/Navbar'
 import Predictions from './components/Predictions'
 import Footer from './components/Footer'
+import Fixtures from './components/Fixtures'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Home />
       <Predictions />
+      <Fixtures />
       <Footer />
     </div>
   )
