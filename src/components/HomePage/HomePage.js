@@ -156,7 +156,7 @@ export default function HomePage() {
         <input onKeyDown={checkKey} />
         <div style={{ margin: '2rem 0 2rem 0' }}>Predictions Array:</div>
 
-        <div style={{ margin: '0 0 2rem 0' }}>{`['${predictions.join("', '")}']`}</div>
+        <div style={{ margin: '0 20rem 2rem 20rem' }}>{`['${predictions.join("', '")}']`}</div>
         <div
           style={{
             margin: '0 0 12rem 0',
