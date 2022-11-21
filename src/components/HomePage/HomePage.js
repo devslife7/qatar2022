@@ -44,6 +44,9 @@ const countryCodes = {
   TIE: 'TIE',
 }
 
+// console.log('temp)
+// console.log('temp)
+
 const fixturesArray = [
   ['A1', 'A2'],
   ['B1', 'B2'],
@@ -77,20 +80,20 @@ const fixturesArray = [
   ['H4', 'H2'],
   ['G1', 'G3'],
   ['H1', 'H3'],
-  ['A4', 'A1'],
   ['A2', 'A3'],
-  ['B2', 'B3'],
+  ['A4', 'A1'],
   ['B4', 'B1'],
-  ['D4', 'D1'],
+  ['B2', 'B3'],
   ['D2', 'D3'],
+  ['D4', 'D1'],
   ['C4', 'C1'],
   ['C2', 'C3'],
-  ['F4', 'F1'],
   ['F2', 'F3'],
-  ['E4', 'E1'],
+  ['F4', 'F1'],
   ['E2', 'E3'],
-  ['H4', 'H1'],
+  ['E4', 'E1'],
   ['H2', 'H3'],
+  ['H4', 'H1'],
   ['G4', 'G1'],
   ['G2', 'G3'],
 ]
@@ -113,18 +116,16 @@ export default function HomePage() {
     // left
     if (keyDown === 37) {
       setPredictions([...predictions, fixturesArray[counter][1]])
+      console.log(fixturesArray[counter][1])
       // right
     } else if (keyDown === 39) {
       setPredictions([...predictions, fixturesArray[counter][0]])
       // up/down
     } else if (keyDown === 38 || keyDown === 40) {
       setPredictions([...predictions, 'TIE'])
-    } else {
-      return
     }
 
     setCounter(counter + 1)
-    console.log('Counter: ', counter)
   }
 
   const convertCodetoCountry = () => {
@@ -140,6 +141,13 @@ export default function HomePage() {
     return arr
   }
 
+  const renderCountriesPredictions = () => {
+    // return ()`${convertCodetoCountry().join('\n')}\n`}
+    const countriesArray = convertCodetoCountry()
+
+    return countriesArray.map((country, idx) => <div key={idx}>{`${idx + 1}. ${country}`}</div>)
+  }
+
   const resetTool = () => {
     setPredictions([])
     setCounter(0)
@@ -153,7 +161,16 @@ export default function HomePage() {
         <div style={{ margin: '4rem 0 4rem 0' }}>Predictions Array:</div>
 
         <div style={{ margin: '0 0 12rem 0' }}>{`[${predictions.join(', ')}]`}</div>
-        <div style={{ margin: '0 0 12rem 0' }}>{`[${convertCodetoCountry().join(', ')}]`}</div>
+        <div
+          style={{
+            margin: '0 0 12rem 0',
+            minHeight: '20rem',
+            textAlign: 'left',
+            paddingLeft: '50vw',
+          }}
+        >
+          {renderCountriesPredictions()}
+        </div>
         <button onClick={resetTool}>Reset Tool</button>
         <div>Counter: {counter}</div>
       </div>
