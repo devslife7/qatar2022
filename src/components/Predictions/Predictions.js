@@ -57,7 +57,7 @@ const serverURL = process.env.REACT_APP_SERVER_URL
 //   'G1',
 //   'G3',
 // ]
-const officialFixtureResult = ['A2', 'B1']
+const officialFixtureResult = ['A2', 'B1', 'A4', 'TIE']
 
 export default function Predictions() {
   const [userData, setUserData] = useState([])
@@ -116,7 +116,7 @@ export default function Predictions() {
           </Grid>
         </Paper>
 
-        <Paper>
+        {/* <Paper>
           <p
             style={{
               fontSize: '2.3rem',
@@ -166,7 +166,7 @@ export default function Predictions() {
           >
             3rd {`$${pricePool * 0.1}`}
           </p>
-        </Paper>
+        </Paper> */}
       </div>
     </div>
   )
