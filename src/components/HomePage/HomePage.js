@@ -44,9 +44,6 @@ const countryCodes = {
   TIE: 'TIE',
 }
 
-// console.log('temp)
-// console.log('temp)
-
 const fixturesArray = [
   ['A1', 'A2'],
   ['B1', 'B2'],
@@ -142,7 +139,6 @@ export default function HomePage() {
   }
 
   const renderCountriesPredictions = () => {
-    // return ()`${convertCodetoCountry().join('\n')}\n`}
     const countriesArray = convertCodetoCountry()
 
     return countriesArray.map((country, idx) => <div key={idx}>{`${idx + 1}. ${country}`}</div>)
@@ -155,18 +151,18 @@ export default function HomePage() {
 
   return (
     <>
-      <div style={{ margin: '4rem 0 4rem 0', textAlign: 'center' }}>
-        <div style={{ margin: '4rem 0 4rem 0' }}>Predictions calculator tool</div>
+      <div style={{ margin: '2rem 0 2rem 0', textAlign: 'center' }}>
+        <div style={{ margin: '2rem 0 2rem 0' }}>Predictions calculator tool</div>
         <input onKeyDown={checkKey} />
-        <div style={{ margin: '4rem 0 4rem 0' }}>Predictions Array:</div>
+        <div style={{ margin: '2rem 0 2rem 0' }}>Predictions Array:</div>
 
-        <div style={{ margin: '0 0 12rem 0' }}>{`[${predictions.join(', ')}]`}</div>
+        <div style={{ margin: '0 0 2rem 0' }}>{`['${predictions.join("', '")}']`}</div>
         <div
           style={{
             margin: '0 0 12rem 0',
             minHeight: '20rem',
             textAlign: 'left',
-            paddingLeft: '50vw',
+            paddingLeft: '45vw',
           }}
         >
           {renderCountriesPredictions()}
