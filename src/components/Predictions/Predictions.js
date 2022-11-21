@@ -57,7 +57,7 @@ const serverURL = process.env.REACT_APP_SERVER_URL
 //   'G1',
 //   'G3',
 // ]
-const officialFixtureResult = ['A2']
+const officialFixtureResult = ['A2', 'B1']
 
 export default function Predictions() {
   const [userData, setUserData] = useState([])
@@ -78,7 +78,7 @@ export default function Predictions() {
     const sortedUsers = usersWithCalculatedRightMatches.sort((a, b) => b.rightMatches - a.rightMatches)
     return sortedUsers.map((user, idx) => (
       <Grid container key={idx} style={{ margin: '12px 0 12px 0' }}>
-        <PredictionsCard key={idx} user={user} />
+        <PredictionsCard key={idx} user={user} idx={idx} />
         {/* <Divider style={{ width: '100%', margin: '15px 0 15px 0' }} /> */}
       </Grid>
     ))
@@ -92,7 +92,8 @@ export default function Predictions() {
     return counter
   }
 
-  const pricePool = 1950
+  // const pricePool = 1950
+  const pricePool = userData.length * 50
 
   return (
     <div className='predictions'>
