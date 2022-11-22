@@ -57,7 +57,7 @@ const serverURL = process.env.REACT_APP_SERVER_URL
 //   'G1',
 //   'G3',
 // ]
-const officialFixtureResult = ['A2', 'B1', 'A4', 'TIE', 'C2', 'TIE']
+const officialFixtureResult = ['A2', 'B1', 'A4', 'TIE', 'C2', 'TIE', 'TIE', 'D1']
 
 export default function Predictions() {
   const [userData, setUserData] = useState([])
@@ -75,14 +75,26 @@ export default function Predictions() {
       return { ...user, rightMatches: rightMatches }
     })
 
-    // users.sort((a, b) => a.firstname.localeCompare(b.firstname))
     // sorted alphabetically by first name
-    const sortedUsersWithCalculatedRightMatches = usersWithCalculatedRightMatches.sort((a, b) =>
-      a.first_name.localeCompare(b.first_name)
-    )
+    usersWithCalculatedRightMatches.sort((a, b) => a.first_name.localeCompare(b.first_name))
 
     const sortedUsers = usersWithCalculatedRightMatches.sort((a, b) => b.rightMatches - a.rightMatches)
-    return sortedUsers.map((user, idx) => (
+
+    // const sortedUsersWithRanking = sortedUsers.map((user, idx) => {
+    //   (idx != 0 && user.)
+    // })
+
+    let userRanking = 1
+    let userArr = []
+    for (let i = 0; i < sortedUsers.length; i++) {
+      if (i != 0) {
+        sortedUsers[i].rightMatches != sortedUsers[i - 1].rightMatches && userRanking++
+      }
+      userArr = [...userArr, { ...sortedUsers[i], userRanking: userRanking }]
+    }
+
+    console.log('userArr: ', userArr)
+    return userArr.map((user, idx) => (
       <Grid container key={idx} style={{ margin: '12px 0 12px 0' }}>
         <PredictionsCard idx={idx} user={user} officialFixtureResult={officialFixtureResult} />
       </Grid>
@@ -116,7 +128,7 @@ export default function Predictions() {
           </Grid>
         </Paper>
 
-        {/* <Paper>
+        <Paper>
           <p
             style={{
               fontSize: '2.3rem',
@@ -166,7 +178,7 @@ export default function Predictions() {
           >
             3rd {`$${pricePool * 0.1}`}
           </p>
-        </Paper> */}
+        </Paper>
       </div>
     </div>
   )
