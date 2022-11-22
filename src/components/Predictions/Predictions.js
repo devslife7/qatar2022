@@ -57,7 +57,7 @@ const serverURL = process.env.REACT_APP_SERVER_URL
 //   'G1',
 //   'G3',
 // ]
-const officialFixtureResult = ['A2', 'B1', 'A4', 'TIE', 'C2']
+const officialFixtureResult = ['A2', 'B1', 'A4', 'TIE', 'C2', 'TIE']
 
 export default function Predictions() {
   const [userData, setUserData] = useState([])
