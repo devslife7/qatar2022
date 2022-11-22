@@ -57,7 +57,7 @@ const serverURL = process.env.REACT_APP_SERVER_URL
 //   'G1',
 //   'G3',
 // ]
-const officialFixtureResult = ['A2', 'B1', 'A4', 'TIE']
+const officialFixtureResult = ['A2', 'B1', 'A4', 'TIE', 'C2']
 
 export default function Predictions() {
   const [userData, setUserData] = useState([])
@@ -84,7 +84,7 @@ export default function Predictions() {
     const sortedUsers = usersWithCalculatedRightMatches.sort((a, b) => b.rightMatches - a.rightMatches)
     return sortedUsers.map((user, idx) => (
       <Grid container key={idx} style={{ margin: '12px 0 12px 0' }}>
-        <PredictionsCard idx={idx} user={user} />
+        <PredictionsCard idx={idx} user={user} officialFixtureResult={officialFixtureResult} />
       </Grid>
     ))
   }
