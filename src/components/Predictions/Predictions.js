@@ -80,10 +80,6 @@ export default function Predictions() {
 
     const sortedUsers = usersWithCalculatedRightMatches.sort((a, b) => b.rightMatches - a.rightMatches)
 
-    // const sortedUsersWithRanking = sortedUsers.map((user, idx) => {
-    //   (idx != 0 && user.)
-    // })
-
     let userRanking = 1
     let userArr = []
     for (let i = 0; i < sortedUsers.length; i++) {
@@ -93,7 +89,6 @@ export default function Predictions() {
       userArr = [...userArr, { ...sortedUsers[i], userRanking: userRanking }]
     }
 
-    console.log('userArr: ', userArr)
     return userArr.map((user, idx) => (
       <Grid container key={idx} style={{ margin: '12px 0 12px 0' }}>
         <PredictionsCard idx={idx} user={user} officialFixtureResult={officialFixtureResult} />
