@@ -95,7 +95,7 @@ const fixturesArray = [
   ['G2', 'G3'],
 ]
 
-export default function HomePage() {
+export default function PredictionInput() {
   const [predictions, setPredictions] = useState([])
   const [counter, setCounter] = useState(0)
 

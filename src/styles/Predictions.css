@@ -11,13 +11,6 @@
   position: absolute;
 }
 
-.predictions__content {
-  z-index: 10;
-  padding-top: 5px;
-  padding-bottom: 5px;
-
-  color: #fff;
-}
 .predictions .content {
   z-index: 10;
   padding-top: 5px;
@@ -31,6 +24,6 @@
   font-weight: 500;
 }
 
-.prediction .card {
-  background-color: red;
+.predictions .paper {
+  margin-top: 2.5rem;
 }

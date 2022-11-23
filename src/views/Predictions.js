@@ -3,12 +3,14 @@ import '../styles/Predictions.css'
 import Paper from '@mui/material/Paper'
 import Grid from '@mui/material/Grid'
 import PredictionsCard from '../assets/PredictionsCard'
+// import TextField from '@mui/material/TextField'
 
 const serverURL = process.env.REACT_APP_SERVER_URL
 const officialFixtureResult = ['A2', 'B1', 'A4', 'TIE', 'C2', 'TIE', 'TIE', 'D1']
 
 export default function Predictions() {
   const [userData, setUserData] = useState([])
+  // const [searchTerm, setSearchTerm] = useState('')
   const pricePool = userData.length * 50
 
   useEffect(() => {
@@ -58,8 +60,18 @@ export default function Predictions() {
   return (
     <div className='predictions'>
       <div className='content container'>
-        <Paper style={{ marginTop: '2.5rem' }}>
-          <Grid>Search Users</Grid>
+        <Paper className='paper'>
+          {/* <Grid container justifyContent='center'>
+            <TextField
+              id='search-bar'
+              label='Search Users'
+              value={searchTerm}
+              variant='standard'
+              className='predictions_searchBar'
+              style={{ margin: '6px 0 20px 0', fontSize: '1.3rem', width: '20rem' }}
+              onChange={e => setSearchTerm(e.nativeEvent.value)}
+            />
+          </Grid> */}
           <Grid container spacing={2} className='containerGrid' style={{ padding: '5px 10px 5px 13px' }}>
             {userPredictions()}
           </Grid>

@@ -3,20 +3,20 @@ import Navbar from './components/Navbar'
 import Predictions from './views/Predictions'
 import Footer from './components/Footer'
 import Fixtures from './views/Fixtures'
-// import PredictionInput from './helpers/PredictionInput'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import MainPage from './views/MainPage'
+import PredictionInput from './helpers/PredictionInput'
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Link, Routes } from 'react-router-dom'
 
-function App() {
+export default function App() {
+  // <Route exact path='/' component={Home} />
   return (
     <Router>
-      {/* <PredictionInput /> */}
-      <Navbar />
-      <Home />
-      <Predictions />
-      <Fixtures />
+      <Routes>
+        <Route path='/' element={<MainPage />} />
+        <Route path='/tool' element={<PredictionInput />} />
+      </Routes>
       <Footer />
     </Router>
   )
 }
-
-export default App
