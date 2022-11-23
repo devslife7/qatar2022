@@ -1,66 +1,15 @@
 import React, { useEffect, useState } from 'react'
-import './Predictions.css'
+import '../../styles/Predictions.css'
 import Paper from '@mui/material/Paper'
 import Grid from '@mui/material/Grid'
-// import Divider from '@mui/material/Divider'
 import PredictionsCard from './PredictionsCard'
 
 const serverURL = process.env.REACT_APP_SERVER_URL
-
-// const finalResutArray = [
-//   'A2',
-//   'B1',
-//   'A4',
-//   'B3',
-//   'C1',
-//   'D3',
-//   'C4',
-//   'D1',
-//   'F4',
-//   'E3',
-//   'E1',
-//   'F1',
-//   'G4',
-//   'H3',
-//   'H1',
-//   'G1',
-//   'B4',
-//   'A1',
-//   'A4',
-//   'B1',
-//   'D4',
-//   'C4',
-//   'D1',
-//   'C1',
-//   'E2',
-//   'F1',
-//   'F4',
-//   'E3',
-//   'G4',
-//   'H2',
-//   'G1',
-//   'H1',
-//   'A3',
-//   'A4',
-//   'B1',
-//   'B3',
-//   'D3',
-//   'D1',
-//   'C1',
-//   'C3',
-//   'F2',
-//   'TIE',
-//   'E3',
-//   'E1',
-//   'H3',
-//   'H1',
-//   'G1',
-//   'G3',
-// ]
 const officialFixtureResult = ['A2', 'B1', 'A4', 'TIE', 'C2', 'TIE', 'TIE', 'D1']
 
 export default function Predictions() {
   const [userData, setUserData] = useState([])
+  const pricePool = userData.length * 50
 
   useEffect(() => {
     fetch(serverURL + '/users')
@@ -75,16 +24,17 @@ export default function Predictions() {
       return { ...user, rightMatches: rightMatches }
     })
 
-    // sorted alphabetically by first name
+    // Sorted alphabetically by first name
     usersWithCalculatedRightMatches.sort((a, b) => a.first_name.localeCompare(b.first_name))
 
+    // Sort by correct predictions
     const sortedUsers = usersWithCalculatedRightMatches.sort((a, b) => b.rightMatches - a.rightMatches)
 
     let userRanking = 1
     let userArr = []
     for (let i = 0; i < sortedUsers.length; i++) {
-      if (i != 0) {
-        sortedUsers[i].rightMatches != sortedUsers[i - 1].rightMatches && userRanking++
+      if (i !== 0) {
+        sortedUsers[i].rightMatches !== sortedUsers[i - 1].rightMatches && userRanking++
       }
       userArr = [...userArr, { ...sortedUsers[i], userRanking: userRanking }]
     }
@@ -96,6 +46,7 @@ export default function Predictions() {
     ))
   }
 
+  // finds correct predicted matches of user
   const findMatches = (officialResult = [], predictions = []) => {
     let counter = 0
     for (let i = 0; i < officialResult.length; i++) {
@@ -104,14 +55,9 @@ export default function Predictions() {
     return counter
   }
 
-  // const pricePool = 1950
-  const pricePool = userData.length * 50
-
   return (
     <div className='predictions'>
       <div className='predictions__content container'>
-        {/* <h2 className='predictions__title'>Predictions</h2> */}
-
         <Paper style={{ marginTop: '2.5rem' }}>
           <Grid
             container

@@ -130,7 +130,7 @@ export default function HomePage() {
 
     for (let i = 0; i < predictions.length; i++) {
       for (const key in countryCodes) {
-        if (predictions[i] == key) {
+        if (predictions[i] === key) {
           arr = [...arr, countryCodes[key]]
         }
       }
