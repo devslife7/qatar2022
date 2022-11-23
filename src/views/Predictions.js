@@ -57,14 +57,10 @@ export default function Predictions() {
 
   return (
     <div className='predictions'>
-      <div className='predictions__content container'>
+      <div className='content container'>
         <Paper style={{ marginTop: '2.5rem' }}>
-          <Grid
-            container
-            spacing={2}
-            className='predictions_containerGrid'
-            style={{ padding: '5px 17px 5px 17px' }}
-          >
+          <Grid>Search Users</Grid>
+          <Grid container spacing={2} className='containerGrid' style={{ padding: '5px 10px 5px 13px' }}>
             {userPredictions()}
           </Grid>
         </Paper>
