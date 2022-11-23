@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import '../../styles/Predictions.css'
+import '../styles/Predictions.css'
 import Paper from '@mui/material/Paper'
 import Grid from '@mui/material/Grid'
-import PredictionsCard from './PredictionsCard'
+import PredictionsCard from '../assets/PredictionsCard'
 
 const serverURL = process.env.REACT_APP_SERVER_URL
 const officialFixtureResult = ['A2', 'B1', 'A4', 'TIE', 'C2', 'TIE', 'TIE', 'D1']

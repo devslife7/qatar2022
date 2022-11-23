@@ -1,1 +1,1 @@
-export { default } from './Predictions'
+export { default } from '../../views/Predictions'

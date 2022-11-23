@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import './Fixtures.css'
+import '../styles/Fixtures.css'
 import Divider from '@mui/material/Divider'
 import Grid from '@mui/material/Grid'
-import FixtureCard from './FixtureCard'
+import FixtureCard from '../assets/FixtureCard'
 
 const serverURL = process.env.REACT_APP_SERVER_URL
 

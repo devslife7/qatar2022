@@ -9,7 +9,7 @@ export default function FixtureCard({ fixture }) {
         <Grid item xs={5}>
           <Grid container alignItems='center' justifyContent='flex-end'>
             <span style={{ marginRight: '10px' }}>{fixture.teams.home.name}</span>
-            <img src={fixture.teams.home.logo} style={{ width: '30px', height: '20px' }} />
+            <img src={fixture.teams.home.logo} style={{ width: '30px', height: '20px' }} alt='country flag' />
           </Grid>
         </Grid>
         <Grid item xs={2}>
@@ -28,7 +28,7 @@ export default function FixtureCard({ fixture }) {
         </Grid>
         <Grid item xs={5}>
           <Grid container alignItems='center'>
-            <img src={fixture.teams.away.logo} style={{ width: '30px', height: '20px' }} />
+            <img src={fixture.teams.away.logo} style={{ width: '30px', height: '20px' }} alt='country flag' />
             <span style={{ marginLeft: '10px' }}>{fixture.teams.away.name}</span>
           </Grid>
         </Grid>

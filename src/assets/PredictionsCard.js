@@ -3,7 +3,6 @@ import Grid from '@mui/material/Grid'
 
 export default function PredictionsCard({ idx, user, officialFixtureResult }) {
   const totalMatches = officialFixtureResult.length
-  // const totalMatches = 48
 
   return (
     <>
