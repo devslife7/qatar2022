@@ -1,5 +1,5 @@
-import Home from './components/Home'
-import Navbar from './assets/Navbar'
+import Home from './views/Home'
+import Navbar from './components/Navbar'
 import Predictions from './views/Predictions'
 import Footer from './components/Footer'
 import Fixtures from './views/Fixtures'
