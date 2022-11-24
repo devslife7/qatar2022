@@ -77,16 +77,44 @@ export default function Predictions({ fixtures }) {
     const userArray = addUserRanking(userRightMatches)
 
     return userArray.map((user, idx) => (
-      <Grid container key={idx} style={{ margin: '12px 0 12px 0' }}>
-        <PredictionsCard idx={idx} user={user} officialFixtureResult={officialResults} />
+      <Grid container key={idx} style={{ margin: '12px 0 12px 0' }} onClick={() => console.log('hello')}>
+        <PredictionsCard
+          idx={idx}
+          user={user}
+          officialFixtureResult={officialResults}
+          onClick={handleUserPage}
+        />
       </Grid>
     ))
   }
 
+  const handleUserPage = () => {
+    console.log('user click on name')
+  }
+
   // Get official fixture results from api data
+  // const getOfficialResult = () => {
+  //   let officialResults = []
+  //   fixtures.map(fixture => {
+  //     const gameStatus = fixture.fixture.status.short
+  //     const goalsHome = fixture.goals.home
+  //     const goalsAway = fixture.goals.away
+  //     const homeTeamId = fixture.teams.home.id
+  //     const awayTeamId = fixture.teams.away.id
+
+  //     if (gameStatus === 'FT') {
+  //       if (goalsHome === goalsAway) officialResults.push('TIE')
+  //       else if (goalsHome > goalsAway) officialResults.push(resultsIdCodesKey[homeTeamId])
+  //       else officialResults.push(resultsIdCodesKey[awayTeamId])
+  //     }
+  //   })
+  //   console.log(officialResults)
+  //   return officialResults
+  // }
+
   const getOfficialResult = () => {
     let officialResults = []
-    fixtures.map(fixture => {
+    fixtures.forEach(fixture => {
       const gameStatus = fixture.fixture.status.short
       const goalsHome = fixture.goals.home
       const goalsAway = fixture.goals.away
@@ -94,13 +122,9 @@ export default function Predictions({ fixtures }) {
       const awayTeamId = fixture.teams.away.id
 
       if (gameStatus === 'FT') {
-        if (goalsHome === goalsAway) {
-          officialResults.push('TIE')
-        } else if (goalsHome > goalsAway) {
-          officialResults.push(resultsIdCodesKey[homeTeamId])
-        } else {
-          officialResults.push(resultsIdCodesKey[awayTeamId])
-        }
+        if (goalsHome === goalsAway) officialResults.push('TIE')
+        else if (goalsHome > goalsAway) officialResults.push(resultsIdCodesKey[homeTeamId])
+        else officialResults.push(resultsIdCodesKey[awayTeamId])
       }
     })
     return officialResults
@@ -111,9 +135,7 @@ export default function Predictions({ fixtures }) {
     let userRanking = 1
     let userArray = []
     for (let i = 0; i < sortedUsers.length; i++) {
-      if (i !== 0) {
-        sortedUsers[i].rightMatches !== sortedUsers[i - 1].rightMatches && userRanking++
-      }
+      if (i !== 0) sortedUsers[i].rightMatches !== sortedUsers[i - 1].rightMatches && userRanking++
       userArray = [...userArray, { ...sortedUsers[i], userRanking: userRanking }]
     }
     return userArray
@@ -144,7 +166,13 @@ export default function Predictions({ fixtures }) {
               onChange={e => setSearchTerm(e.nativeEvent.value)}
             />
           </Grid> */}
-          <Grid container spacing={2} className='containerGrid' style={{ padding: '5px 10px 5px 13px' }}>
+          <Grid
+            container
+            spacing={2}
+            className='containerGrid'
+            style={{ padding: '5px 10px 5px 13px' }}
+            onClick={() => console.log('world')}
+          >
             {userPredictions()}
           </Grid>
         </Paper>
