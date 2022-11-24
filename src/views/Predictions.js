@@ -55,30 +55,6 @@ export default function Predictions({ fixtures }) {
   const [userData, setUserData] = useState([])
   // const [searchTerm, setSearchTerm] = useState('')
   const pricePool = userData.length * 50
-  // const officialFixtureResult = ['A2', 'B1', 'A4', 'TIE', 'C2', 'TIE', 'TIE', 'D1']
-
-  let resultArr = []
-  let resultArr2 = []
-  fixtures.map(fixture => {
-    if (fixture.fixture.status.short === 'FT') {
-      if (fixture.goals.home === fixture.goals.away) {
-        resultArr.push('TIE')
-      } else if (fixture.goals.home > fixture.goals.away) {
-        resultArr.push(fixture.teams.home.id)
-      } else {
-        resultArr.push(fixture.teams.away.id)
-      }
-    }
-  })
-
-  console.log(resultArr)
-  resultArr.map(winnerId => {
-    resultArr2.push(resultsIdCodesKey[winnerId])
-  })
-  console.log(resultArr2)
-
-  // Get official results Array
-  const officialFixtureResult = resultArr2
 
   useEffect(() => {
     fetch(serverURL + '/users')
@@ -88,41 +64,69 @@ export default function Predictions({ fixtures }) {
   }, [])
 
   const userPredictions = () => {
-    const usersWithCalculatedRightMatches = userData.map(user => {
-      let rightMatches = findMatches(officialFixtureResult, user.predictionsGS)
+    const officialResults = getOfficialResult()
+
+    const userRightMatches = userData.map(user => {
+      let rightMatches = findCorrectPredictions(officialResults, user.predictionsGS)
       return { ...user, rightMatches: rightMatches }
     })
 
-    // Sorted alphabetically by first name
-    usersWithCalculatedRightMatches.sort((a, b) => a.first_name.localeCompare(b.first_name))
+    // Sort alphabetically || Sort by correct predictions || Add right matches
+    userRightMatches.sort((a, b) => a.first_name.localeCompare(b.first_name))
+    userRightMatches.sort((a, b) => b.rightMatches - a.rightMatches)
+    const userArray = addUserRanking(userRightMatches)
 
-    // Sort by correct predictions
-    const sortedUsers = usersWithCalculatedRightMatches.sort((a, b) => b.rightMatches - a.rightMatches)
-
-    let userRanking = 1
-    let userArr = []
-    for (let i = 0; i < sortedUsers.length; i++) {
-      if (i !== 0) {
-        sortedUsers[i].rightMatches !== sortedUsers[i - 1].rightMatches && userRanking++
-      }
-      userArr = [...userArr, { ...sortedUsers[i], userRanking: userRanking }]
-    }
-
-    return userArr.map((user, idx) => (
+    return userArray.map((user, idx) => (
       <Grid container key={idx} style={{ margin: '12px 0 12px 0' }}>
-        <PredictionsCard idx={idx} user={user} officialFixtureResult={officialFixtureResult} />
+        <PredictionsCard idx={idx} user={user} officialFixtureResult={officialResults} />
       </Grid>
     ))
   }
 
-  // finds correct predicted matches of user
-  const findMatches = (officialResult = [], predictions = []) => {
-    if (officialResult.length === 0) return
-    let counter = 0
-    for (let i = 0; i < officialResult.length; i++) {
-      officialResult[i] === predictions[i] && counter++
+  // Get official fixture results from api data
+  const getOfficialResult = () => {
+    let officialResults = []
+    fixtures.map(fixture => {
+      const gameStatus = fixture.fixture.status.short
+      const goalsHome = fixture.goals.home
+      const goalsAway = fixture.goals.away
+      const homeTeamId = fixture.teams.home.id
+      const awayTeamId = fixture.teams.away.id
+
+      if (gameStatus === 'FT') {
+        if (goalsHome === goalsAway) {
+          officialResults.push('TIE')
+        } else if (goalsHome > goalsAway) {
+          officialResults.push(resultsIdCodesKey[homeTeamId])
+        } else {
+          officialResults.push(resultsIdCodesKey[awayTeamId])
+        }
+      }
+    })
+    return officialResults
+  }
+
+  // Add user ranking to array
+  const addUserRanking = sortedUsers => {
+    let userRanking = 1
+    let userArray = []
+    for (let i = 0; i < sortedUsers.length; i++) {
+      if (i !== 0) {
+        sortedUsers[i].rightMatches !== sortedUsers[i - 1].rightMatches && userRanking++
+      }
+      userArray = [...userArray, { ...sortedUsers[i], userRanking: userRanking }]
     }
-    return counter
+    return userArray
+  }
+
+  // Find correct predicted matches
+  const findCorrectPredictions = (officialResult = [], predictions = []) => {
+    if (officialResult.length === 0) return
+    let correctPredictions = 0
+    for (let i = 0; i < officialResult.length; i++) {
+      officialResult[i] === predictions[i] && correctPredictions++
+    }
+    return correctPredictions
   }
 
   return (
