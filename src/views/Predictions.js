@@ -87,7 +87,7 @@ export default function Predictions({ fixtures }) {
         container
         key={idx}
         style={{ padding: '12px 0 12px 0', cursor: 'pointer' }}
-        onClick={() => handleUserPage(user)}
+        onClick={() => handleUserPage(user, officialResults)}
       >
         <PredictionsCard idx={idx} user={user} officialFixtureResult={officialResults} />
       </Grid>
@@ -133,9 +133,9 @@ export default function Predictions({ fixtures }) {
     return correctPredictions
   }
 
-  const handleUserPage = user => {
+  const handleUserPage = (user, officialResults) => {
     console.log(fixtures)
-    navigate('/profile', { state: { user: user, fixtures: fixtures } })
+    navigate('/profile', { state: { user: user, fixtures: fixtures, officialResults: officialResults } })
   }
 
   return (

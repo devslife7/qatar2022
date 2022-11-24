@@ -52,45 +52,37 @@ export default function Profile() {
   const user = location.state.user
   const userPredictions = user.predictionsGS
   const fixtures = location.state.fixtures
+  const officialResults = location.state.officialResults
 
+  // const renderPredictions = () => {
+  //   const officialResults = getOfficialResult()
+
+  //   return fixtures.map((fixture, idx) => (
+  //     <div key={idx}>
+  //       {/* <FixtureCard fixture={fixture} /> */}
+  //     </div>
+  //   ))
+  // }
   const renderPredictions = () => {
-    const officialResults = getOfficialResult()
-
-    return fixtures.map((fixture, idx) => (
-      <div key={idx}>
-        <FixtureCard fixture={fixture} />
+    const asignCheck = (prediction, idx) => {
+      if (officialResults.length < idx) return
+      return prediction === officialResults[idx] ? ' ---- ✓' : ' ----- X'
+    }
+    return userPredictions.map((prediction, idx) => (
+      <div key={idx} style={{ marginLeft: '25vw', fontSize: '1.5rem' }}>
+        {countryCodes[prediction]}
+        {asignCheck(prediction, idx)}
       </div>
     ))
-  }
-  // return
-
-  const getOfficialResult = () => {
-    let officialResults = []
-    fixtures.forEach(fixture => {
-      const gameStatus = fixture.fixture.status.short
-      const goalsHome = fixture.goals.home
-      const goalsAway = fixture.goals.away
-      const homeTeamId = fixture.teams.home.id
-      const awayTeamId = fixture.teams.away.id
-
-      if (gameStatus === 'FT') {
-        // if (goalsHome === goalsAway) officialResults.push('TIE')
-        // else if (goalsHome > goalsAway) officialResults.push(resultsIdCodesKey[homeTeamId])
-        // else officialResults.push(resultsIdCodesKey[awayTeamId])
-      }
-    })
-    return officialResults
   }
 
   return (
     <>
       <div className='profile'>
         <div className='container'>
-          <div>Profile</div>
-
-          {user.first_name + '_'}
-          {userPredictions.length + '_'}
-          {fixtures.length}
+          <div style={{ fontSize: '2rem', textAlign: 'center', padding: '40px 0 40px 0' }}>
+            {user.first_name + ' ' + user.last_name}
+          </div>
           {renderPredictions()}
         </div>
       </div>
