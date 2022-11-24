@@ -92,26 +92,6 @@ export default function Predictions({ fixtures }) {
     console.log('user click on name')
   }
 
-  // Get official fixture results from api data
-  // const getOfficialResult = () => {
-  //   let officialResults = []
-  //   fixtures.map(fixture => {
-  //     const gameStatus = fixture.fixture.status.short
-  //     const goalsHome = fixture.goals.home
-  //     const goalsAway = fixture.goals.away
-  //     const homeTeamId = fixture.teams.home.id
-  //     const awayTeamId = fixture.teams.away.id
-
-  //     if (gameStatus === 'FT') {
-  //       if (goalsHome === goalsAway) officialResults.push('TIE')
-  //       else if (goalsHome > goalsAway) officialResults.push(resultsIdCodesKey[homeTeamId])
-  //       else officialResults.push(resultsIdCodesKey[awayTeamId])
-  //     }
-  //   })
-  //   console.log(officialResults)
-  //   return officialResults
-  // }
-
   const getOfficialResult = () => {
     let officialResults = []
     fixtures.forEach(fixture => {
