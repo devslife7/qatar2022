@@ -3,6 +3,8 @@ import '../styles/Predictions.css'
 import Paper from '@mui/material/Paper'
 import Grid from '@mui/material/Grid'
 import PredictionsCard from '../assets/PredictionsCard'
+// import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 // import TextField from '@mui/material/TextField'
 
 const serverURL = process.env.REACT_APP_SERVER_URL
@@ -55,6 +57,7 @@ export default function Predictions({ fixtures }) {
   const [userData, setUserData] = useState([])
   // const [searchTerm, setSearchTerm] = useState('')
   const pricePool = userData.length * 50
+  const navigate = useNavigate()
 
   useEffect(() => {
     fetch(serverURL + '/users')
@@ -64,8 +67,11 @@ export default function Predictions({ fixtures }) {
   }, [])
 
   const userPredictions = () => {
+    if (userData.length === 0) return
+
     const officialResults = getOfficialResult()
 
+    // Add user right matches
     const userRightMatches = userData.map(user => {
       let rightMatches = findCorrectPredictions(officialResults, user.predictionsGS)
       return { ...user, rightMatches: rightMatches }
@@ -77,19 +83,15 @@ export default function Predictions({ fixtures }) {
     const userArray = addUserRanking(userRightMatches)
 
     return userArray.map((user, idx) => (
-      <Grid container key={idx} style={{ margin: '12px 0 12px 0' }} onClick={() => console.log('hello')}>
-        <PredictionsCard
-          idx={idx}
-          user={user}
-          officialFixtureResult={officialResults}
-          onClick={handleUserPage}
-        />
+      <Grid
+        container
+        key={idx}
+        style={{ padding: '12px 0 12px 0', cursor: 'pointer' }}
+        onClick={() => handleUserPage(user)}
+      >
+        <PredictionsCard idx={idx} user={user} officialFixtureResult={officialResults} />
       </Grid>
     ))
-  }
-
-  const handleUserPage = () => {
-    console.log('user click on name')
   }
 
   const getOfficialResult = () => {
@@ -131,6 +133,11 @@ export default function Predictions({ fixtures }) {
     return correctPredictions
   }
 
+  const handleUserPage = user => {
+    console.log(fixtures)
+    navigate('/profile', { state: { user: user, fixtures: fixtures } })
+  }
+
   return (
     <div className='predictions'>
       <div className='content container'>
@@ -146,13 +153,7 @@ export default function Predictions({ fixtures }) {
               onChange={e => setSearchTerm(e.nativeEvent.value)}
             />
           </Grid> */}
-          <Grid
-            container
-            spacing={2}
-            className='containerGrid'
-            style={{ padding: '5px 10px 5px 13px' }}
-            onClick={() => console.log('world')}
-          >
+          <Grid container spacing={2} className='containerGrid' style={{ padding: '5px 10px 5px 13px' }}>
             {userPredictions()}
           </Grid>
         </Paper>
