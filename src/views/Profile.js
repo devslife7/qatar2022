@@ -65,7 +65,7 @@ export default function Profile() {
   // }
   const renderPredictions = () => {
     const asignCheck = (prediction, idx) => {
-      if (officialResults.length <= idx) return // Only run funciton if official prediction exists
+      if (officialResults.length <= idx) return // Only run funciton if official prediction exists ss
       return prediction === officialResults[idx] ? ' ---- ✓' : ' ----- X'
     }
 
