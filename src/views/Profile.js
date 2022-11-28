@@ -65,9 +65,10 @@ export default function Profile() {
   // }
   const renderPredictions = () => {
     const asignCheck = (prediction, idx) => {
-      if (officialResults.length < idx) return
+      if (officialResults.length <= idx) return // Only run funciton if official prediction exists
       return prediction === officialResults[idx] ? ' ---- ✓' : ' ----- X'
     }
+
     return userPredictions.map((prediction, idx) => (
       <div key={idx} style={{ marginLeft: '25vw', fontSize: '1.5rem' }}>
         {countryCodes[prediction]}
