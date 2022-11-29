@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/Profile.css'
 import { useLocation } from 'react-router-dom'
-import FixtureCard from '../assets/FixtureCard'
+import PredictionCardProfile from '../assets/PredictionCardProfile'
 
 const countryCodes = {
   A1: 'Qatar',
@@ -54,28 +54,29 @@ export default function Profile() {
   const fixtures = location.state.fixtures
   const officialResults = location.state.officialResults
 
-  // const renderPredictions = () => {
-  //   const officialResults = getOfficialResult()
+  const renderPredictions2 = () => {
+    // const officialResults = getOfficialResult()
 
-  //   return fixtures.map((fixture, idx) => (
-  //     <div key={idx}>
-  //       {/* <FixtureCard fixture={fixture} /> */}
-  //     </div>
-  //   ))
-  // }
-  const renderPredictions = () => {
-    const asignCheck = (prediction, idx) => {
-      if (officialResults.length <= idx) return // Only run funciton if official prediction exists ss
-      return prediction === officialResults[idx] ? ' ---- ✓' : ' ----- X'
-    }
-
-    return userPredictions.map((prediction, idx) => (
-      <div key={idx} style={{ marginLeft: '25vw', fontSize: '1.5rem' }}>
-        {countryCodes[prediction]}
-        {asignCheck(prediction, idx)}
+    return fixtures.map((fixture, idx) => (
+      <div key={idx}>
+        <PredictionCardProfile userPrediction={userPredictions[idx]} fixture={fixture} />
       </div>
     ))
   }
+
+  // const renderPredictions = () => {
+  //   const asignCheck = (prediction, idx) => {
+  //     if (officialResults.length <= idx) return // Only run funciton if official prediction exists
+  //     return prediction === officialResults[idx] ? ' ---- ✓' : ' ----- X'
+  //   }
+
+  //   return userPredictions.map((prediction, idx) => (
+  //     <div key={idx} style={{ marginLeft: '25vw', fontSize: '1.5rem' }}>
+  //       {countryCodes[prediction]}
+  //       {asignCheck(prediction, idx)}
+  //     </div>
+  //   ))
+  // }
 
   return (
     <>
@@ -84,7 +85,7 @@ export default function Profile() {
           <div style={{ fontSize: '2rem', textAlign: 'center', padding: '40px 0 40px 0' }}>
             {user.first_name + ' ' + user.last_name}
           </div>
-          {renderPredictions()}
+          {renderPredictions2()}
         </div>
       </div>
     </>
