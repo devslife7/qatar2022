@@ -10,9 +10,9 @@ export default function PredictionCardProfile({
   officialResult,
   officialResultsLength,
 }) {
-  console.log('idx: ', idx)
+  // console.log('idx: ', idx)
   // console.log('officialResults: ', officialResults)
-  // console.log('Fixture: ', fixture)
+  console.log('Fixture: ', fixture)
   // console.log('userPrediction: ', userPrediction)
   // console.log('key: ', key)
   // console.log('Fixture: ', resultsIdCodesKeyReverse[userPrediction])
@@ -27,7 +27,7 @@ export default function PredictionCardProfile({
   const prediction = officialResult === userPrediction
 
   const correctPrediction = () => {
-    if (idx >= officialResultsLength) return 'N/A'
+    if (idx >= officialResultsLength) return
     if (officialResult === userPrediction) return 'correct'
     if (officialResult !== userPrediction) return 'incorrect'
   }

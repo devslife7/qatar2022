@@ -3,7 +3,6 @@ import { Container } from '../styles/Components.style'
 import { Component, UserTitle } from '../styles/Profile.style'
 import { useLocation } from 'react-router-dom'
 import PredictionCardProfile from '../assets/PredictionCardProfile'
-// import { countryCodes } from '../helpers/Data'
 
 export default function Profile() {
   const location = useLocation()
@@ -13,8 +12,6 @@ export default function Profile() {
   const officialResults = location.state.officialResults
 
   const renderPredictions2 = () => {
-    // const officialResults = getOfficialResult()
-
     return fixtures.map((fixture, idx) => (
       <PredictionCardProfile
         key={idx}
@@ -26,20 +23,6 @@ export default function Profile() {
       />
     ))
   }
-
-  // const renderPredictions = () => {
-  //   const asignCheck = (prediction, idx) => {
-  //     if (officialResults.length <= idx) return // Only run funciton if official prediction exists
-  //     return prediction === officialResults[idx] ? ' ---- ✓' : ' ----- X'
-  //   }
-
-  //   return userPredictions.map((prediction, idx) => (
-  //     <div key={idx} style={{ marginLeft: '25vw', fontSize: '1.5rem' }}>
-  //       {countryCodes[prediction]}
-  //       {asignCheck(prediction, idx)}
-  //     </div>
-  //   ))
-  // }
 
   return (
     <Component>

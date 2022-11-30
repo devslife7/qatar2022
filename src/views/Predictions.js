@@ -4,7 +4,7 @@ import Paper from '@mui/material/Paper'
 import Grid from '@mui/material/Grid'
 import PredictionsCard from '../assets/PredictionsCard'
 import { useNavigate } from 'react-router-dom'
-import { resultsIdCodesKey } from '../helpers/Data'
+import { resultsIdCodesKey, resultsIdCodesKeyReverse } from '../helpers/Data'
 // import TextField from '@mui/material/TextField'
 
 const serverURL = process.env.REACT_APP_SERVER_URL
@@ -21,6 +21,110 @@ export default function Predictions({ fixtures }) {
       .then(data => setUserData(data.users))
       .catch(err => console.log(err))
   }, [])
+
+  // Fixing same match issue
+
+  let fixturesSorted = []
+
+  const testPredictionsArray = [
+    'A2',
+    'B1',
+    'A4',
+    'B3',
+    'C1',
+    'D3',
+    'C3',
+    'D1',
+    'F4',
+    'E3',
+    'E1',
+    'F1',
+    'G4',
+    'H3',
+    'H1',
+    'G1',
+    'B4',
+    'A3',
+    'A4',
+    'B1',
+    'D4',
+    'C4',
+    'D1',
+    'C1',
+    'E4',
+    'F1',
+    'F4',
+    'E1',
+    'G2',
+    'H2',
+    'G1',
+    'H1',
+    'A2',
+    'A4',
+    'B1',
+    'B3',
+    'D3',
+    'D1',
+    'C1',
+    'C3',
+    'F2',
+    'F4',
+    'E3',
+    'E1',
+    'H3',
+    'H1',
+    'G1',
+    'G2',
+  ]
+
+  if (fixtures.length > 0) {
+    for (let i = 0; i < 48; i++) {
+      if (fixtures[i].fixture.timestamp === fixtures[i + 1].fixture.timestamp) {
+        console.log('matches stargin at the saem time')
+        // console.log(userGuesses)
+        if (
+          resultsIdCodesKeyReverse[testPredictionsArray[i]] == fixtures[i].teams.home.id ||
+          resultsIdCodesKeyReverse[testPredictionsArray[i]] == fixtures[i].teams.away.id
+        ) {
+          console.log('guess is in match')
+          fixturesSorted.push(fixtures[i])
+          fixturesSorted.push(fixtures[i + 1])
+          i++
+        } else {
+          // TODO: return -1
+          fixturesSorted.push(fixtures[i + 1])
+          fixturesSorted.push(fixtures[i])
+          i++
+        }
+      } else {
+        fixturesSorted.push(fixtures[i])
+      }
+
+      // if (fixtures[i].fixture.timestamp < fixtures[i + 1].fixture.timestamp) {
+      //   fixturesSorted.push(fixtures[i])
+      // }
+      // console.log('Fixtures: ', fixtures[i].fixture.timestamp)
+
+      // console.log('Fixtures: ', fixtures[i + 1].fixture.timestamp)
+      // fixturesSorted.push(fixtures[i])
+    }
+  }
+
+  console.log(fixturesSorted)
+
+  // fixtures.sort((a, b, idx) => {
+  //   console.log('idx', idx)
+  //   if (a.fixture.timestamp === b.fixture.timestamp) {
+  //     console.log('Two matches in same timestamp here')
+  //     // if (
+  //   } else {
+  //     return a.fixture.timestamp - b.fixture.timestamp
+  //   }
+  // })
+
+  // a.fixture.timestamp - b.fixture.timestamp
+
+  // officialResults, user.predictionsGS
 
   const userPredictions = () => {
     if (userData.length === 0) return
@@ -52,7 +156,7 @@ export default function Predictions({ fixtures }) {
 
   const getOfficialResult = () => {
     let officialResults = []
-    fixtures.forEach(fixture => {
+    fixturesSorted.forEach(fixture => {
       const gameStatus = fixture.fixture.status.short
       const goalsHome = fixture.goals.home
       const goalsAway = fixture.goals.away
@@ -90,8 +194,10 @@ export default function Predictions({ fixtures }) {
   }
 
   const handleUserPage = (user, officialResults) => {
-    console.log(fixtures)
-    navigate('/profile', { state: { user: user, fixtures: fixtures, officialResults: officialResults } })
+    console.log(fixturesSorted)
+    navigate('/profile', {
+      state: { user: user, fixtures: fixturesSorted, officialResults: officialResults },
+    })
   }
 
   return (

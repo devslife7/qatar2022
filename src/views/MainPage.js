@@ -7,7 +7,9 @@ const serverURL = process.env.REACT_APP_SERVER_URL
 const fixturesURL = serverURL + '/fixtures'
 
 export default function MainPage({ fixtures }) {
-  const sortedFixtures = fixtures.sort((a, b) => a.fixture.timestamp - b.fixture.timestamp)
+  const sortedFixtures = fixtures.sort((a, b) => {
+    return a.fixture.timestamp - b.fixture.timestamp
+  })
   return (
     <>
       <Navbar />

@@ -25,7 +25,6 @@ export const Predictions = styled.div`
   border-radius: 5px;
   background-color: ${props => props.correctPrediction == 'correct' && 'green'};
   background-color: ${props => props.correctPrediction == 'incorrect' && 'red'};
-  background-color: ${props => props.correctPrediction == 'N/A' && 'none'};
 
   justify-content: center;
 `
