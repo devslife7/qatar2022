@@ -77,7 +77,7 @@ export const resultsIdCodesKeyReverse = {
   G3: 15,
   G4: 1530,
 
-  H1: 21,
+  H1: 27,
   H2: 1504,
   H3: 7,
   H4: 17,

@@ -23,9 +23,7 @@ export default function Predictions({ fixtures }) {
   }, [])
 
   // Fixing same match issue
-
   let fixturesSorted = []
-
   const testPredictionsArray = [
     'A2',
     'B1',
@@ -76,7 +74,6 @@ export default function Predictions({ fixtures }) {
     'G1',
     'G2',
   ]
-
   if (fixtures.length > 0) {
     for (let i = 0; i < 48; i++) {
       if (fixtures[i].fixture.timestamp === fixtures[i + 1].fixture.timestamp) {
@@ -99,32 +96,8 @@ export default function Predictions({ fixtures }) {
       } else {
         fixturesSorted.push(fixtures[i])
       }
-
-      // if (fixtures[i].fixture.timestamp < fixtures[i + 1].fixture.timestamp) {
-      //   fixturesSorted.push(fixtures[i])
-      // }
-      // console.log('Fixtures: ', fixtures[i].fixture.timestamp)
-
-      // console.log('Fixtures: ', fixtures[i + 1].fixture.timestamp)
-      // fixturesSorted.push(fixtures[i])
     }
   }
-
-  console.log(fixturesSorted)
-
-  // fixtures.sort((a, b, idx) => {
-  //   console.log('idx', idx)
-  //   if (a.fixture.timestamp === b.fixture.timestamp) {
-  //     console.log('Two matches in same timestamp here')
-  //     // if (
-  //   } else {
-  //     return a.fixture.timestamp - b.fixture.timestamp
-  //   }
-  // })
-
-  // a.fixture.timestamp - b.fixture.timestamp
-
-  // officialResults, user.predictionsGS
 
   const userPredictions = () => {
     if (userData.length === 0) return
