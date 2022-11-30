@@ -1,9 +1,3 @@
-.profile {
-  background-color: black;
-  color: white;
-  height: '100vh';
-}
-
 .predictionCardProfile {
   display: flex;
   height: 50px;
