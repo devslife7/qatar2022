@@ -3,55 +3,11 @@ import '../styles/Predictions.css'
 import Paper from '@mui/material/Paper'
 import Grid from '@mui/material/Grid'
 import PredictionsCard from '../assets/PredictionsCard'
-// import { useHistory } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
+import { resultsIdCodesKey } from '../helpers/Data'
 // import TextField from '@mui/material/TextField'
 
 const serverURL = process.env.REACT_APP_SERVER_URL
-
-const resultsIdCodesKey = {
-  1569: 'A1',
-  2382: 'A2',
-  13: 'A3',
-  1118: 'A4',
-
-  10: 'B1',
-  22: 'B2',
-  2384: 'B3',
-  767: 'B4',
-
-  26: 'C1',
-  23: 'C2',
-  16: 'C3',
-  24: 'C4',
-
-  2: 'D1',
-  20: 'D2',
-  21: 'D3',
-  28: 'D4',
-
-  9: 'E1',
-  29: 'E2',
-  25: 'E3',
-  12: 'E4',
-
-  1: 'F1',
-  5529: 'F2',
-  31: 'F3',
-  3: 'F4',
-
-  6: 'G1',
-  14: 'G2',
-  15: 'G3',
-  1530: 'G4',
-
-  27: 'H1',
-  1504: 'H2',
-  7: 'H3',
-  17: 'H4',
-
-  TIE: 'TIE',
-}
 
 export default function Predictions({ fixtures }) {
   const [userData, setUserData] = useState([])
