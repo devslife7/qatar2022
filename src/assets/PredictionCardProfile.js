@@ -1,19 +1,20 @@
 import React from 'react'
-import '../styles/Profile.css'
-import { countryCodesShort } from '../helpers/Data'
+import { countryCodesShort, resultsIdCodesKeyReverse } from '../helpers/Data'
 import { Card, Fixtures, Flag, Predictions } from '../styles/Profile.style'
 
 export default function PredictionCardProfile({ fixture, userPrediction }) {
   // console.log('Fixture: ', fixture)
   // console.log('Fixture: ', countryCodes[userPrediction])
-  const countryFlag = countryCodesShort[`${userPrediction + 'Flag'}`]
+  const userPredictionId = resultsIdCodesKeyReverse[userPrediction]
+  const userPredictionName = countryCodesShort[userPrediction]
+  const countryFlagSrc = `https://media.api-sports.io/football/teams/${userPredictionId}.png`
   const homeFlag = fixture.teams.home.logo
   const awayFlag = fixture.teams.away.logo
   return (
     <Card>
       <Predictions>
-        <div>{countryCodesShort[userPrediction]}</div>
-        <Flag src={countryFlag} />
+        <div style={{ marginRight: '20px' }}>{userPredictionName}</div>
+        {userPredictionName !== 'TIE' && <Flag src={countryFlagSrc} />}
       </Predictions>
       <Fixtures>
         <div style={{ backgroundColor: 'green', opacity: '0.7' }}>{fixture.teams.home.name}</div>

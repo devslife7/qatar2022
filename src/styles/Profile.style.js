@@ -22,6 +22,9 @@ export const Predictions = styled.div`
   width: 30%;
   display: flex;
   border-right: 1px solid;
+
+  background-color: red;
+  justify-content: center;
 `
 export const Fixtures = styled.div`
   width: 70%;
@@ -31,5 +34,5 @@ export const Fixtures = styled.div`
 export const Flag = styled.img`
   height: 20px;
   width: 30px;
-  margin: 0 20px 0 20px;
+  /* margin: 0 20px 0 20px; */
 `

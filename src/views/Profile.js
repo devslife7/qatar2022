@@ -3,7 +3,7 @@ import { Container } from '../styles/Components.style'
 import { Component, UserTitle } from '../styles/Profile.style'
 import { useLocation } from 'react-router-dom'
 import PredictionCardProfile from '../assets/PredictionCardProfile'
-import { countryCodes } from '../helpers/Data'
+// import { countryCodes } from '../helpers/Data'
 
 export default function Profile() {
   const location = useLocation()
