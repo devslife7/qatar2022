@@ -16,7 +16,14 @@ export default function Profile() {
     // const officialResults = getOfficialResult()
 
     return fixtures.map((fixture, idx) => (
-      <PredictionCardProfile key={idx} userPrediction={userPredictions[idx]} fixture={fixture} />
+      <PredictionCardProfile
+        key={idx}
+        idx={idx}
+        userPrediction={userPredictions[idx]}
+        fixture={fixture}
+        officialResult={officialResults[idx]}
+        officialResultsLength={officialResults.length}
+      />
     ))
   }
 

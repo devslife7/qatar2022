@@ -172,6 +172,50 @@ export const countryCodesShort = {
   TIE: 'TIE',
 }
 
+export const countryCodesShortFromName = {
+  Qatar: 'QAT',
+  Ecuador: 'ECU',
+  Senegal: 'SEN',
+  Netherlands: 'NED',
+
+  England: 'ENG',
+  Iran: 'IRN',
+  USA: 'USA',
+  Wales: 'WAL',
+
+  Argentina: 'ARG',
+  'Saudi Arabia': 'KSA',
+  Mexico: 'MEX',
+  Poland: 'POL',
+
+  France: 'FRA',
+  Australia: 'AUS',
+  Denmark: 'DEN',
+  Tunisia: 'TUN',
+
+  Spain: 'ESP',
+  'Costa Rica': 'CRC',
+  Germany: 'GER',
+  Japan: 'JPN',
+
+  Belgium: 'BEL',
+  Canada: 'CAN',
+  Morocco: 'MAR',
+  Croatia: 'CRO',
+
+  Brazil: 'BRA',
+  Serbia: 'SER',
+  Switzerland: 'SUI',
+  Cameroon: 'CMR',
+
+  Portugal: 'POR',
+  Ghana: 'GHA',
+  Uruguay: 'URU',
+  'South Korea': 'KOR',
+
+  TIE: 'TIE',
+}
+
 export const apiData = {
   get: 'fixtures',
   parameters: {
