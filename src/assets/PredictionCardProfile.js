@@ -12,7 +12,7 @@ export default function PredictionCardProfile({
 }) {
   // console.log('idx: ', idx)
   // console.log('officialResults: ', officialResults)
-  console.log('Fixture: ', fixture)
+  // console.log('Fixture: ', fixture)
   // console.log('userPrediction: ', userPrediction)
   // console.log('key: ', key)
   // console.log('Fixture: ', resultsIdCodesKeyReverse[userPrediction])
