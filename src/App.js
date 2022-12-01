@@ -8,17 +8,17 @@ import { apiData } from './helpers/Data'
 const serverURL = process.env.REACT_APP_SERVER_URL
 const fixturesURL = serverURL + '/fixtures'
 
-// const fixtures = apiData.response
+const fixtures = apiData.response
 
 export default function App() {
-  const [fixtures, setFixtures] = useState([])
+  // const [fixtures, setFixtures] = useState([])
 
-  useEffect(() => {
-    console.log('Fetches Fixtures')
-    fetch(fixturesURL)
-      .then(resp => resp.json())
-      .then(fixtures => setFixtures(fixtures))
-  }, [])
+  // useEffect(() => {
+  //   console.log('Fetches Fixtures')
+  //   fetch(fixturesURL)
+  //     .then(resp => resp.json())
+  //     .then(fixtures => setFixtures(fixtures))
+  // }, [])
 
   return (
     <Router>
