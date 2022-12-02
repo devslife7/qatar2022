@@ -242,7 +242,7 @@ export default function Predictions({ fixtures }) {
           </p>
         </Paper>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Button disabled onClick={handleRoundOf16}>Round of 16 Predictions</Button>
+          <Button onClick={handleRoundOf16}>Round of 16 Predictions</Button>
         </div>
       </div>
     </Section>
