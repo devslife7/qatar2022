@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Home from './Home'
-import Navbar from '../../components/Navbar'
+import Navbar from '../../components/Navbar/Navbar'
 import Fixtures from './Fixtures'
 import Predictions from './Predictions'
 const serverURL = process.env.REACT_APP_SERVER_URL

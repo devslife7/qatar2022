@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import '../styles/Navbar.css'
+import '../../styles/Navbar.css'
 import { animateScroll as scroll } from 'react-scroll'
 import { Link } from 'react-scroll'
-import qatarLogo from '../assets/img/qatarLogoNoBackground.png'
+import qatarLogo from '../../assets/img/qatarLogoNoBackground.png'
 
 export default function Navbar({ toggle }) {
   const [scrollNav, setScrollNav] = useState(false)
