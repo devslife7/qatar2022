@@ -23,8 +23,8 @@ export const Predictions = styled.div`
   border-right: 0.5px solid gray;
   /* background-color: green; */
   border-radius: 5px;
-  background-color: ${props => props.correctPrediction == 'correct' && 'green'};
-  background-color: ${props => props.correctPrediction == 'incorrect' && 'red'};
+  background-color: ${props => props.correctPrediction === 'correct' && 'green'};
+  background-color: ${props => props.correctPrediction === 'incorrect' && 'red'};
 
   justify-content: center;
 `

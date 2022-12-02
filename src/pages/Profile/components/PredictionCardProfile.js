@@ -14,12 +14,6 @@ export default function PredictionCardProfile({
   officialResult,
   officialResultsLength,
 }) {
-  // console.log('idx: ', idx)
-  // console.log('officialResults: ', officialResults)
-  // console.log('Fixture: ', fixture)
-  // console.log('userPrediction: ', userPrediction)
-  // console.log('key: ', key)
-  // console.log('Fixture: ', resultsIdCodesKeyReverse[userPrediction])
   const userPredictionId = resultsIdCodesKeyReverse[userPrediction]
   const userPredictionName = countryCodesShort[userPrediction]
   const countryFlagSrc = `https://media.api-sports.io/football/teams/${userPredictionId}.png`

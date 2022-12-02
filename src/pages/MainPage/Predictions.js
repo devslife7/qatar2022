@@ -5,7 +5,6 @@ import PredictionsCard from './components/PredictionsCard'
 import { useNavigate } from 'react-router-dom'
 import { resultsIdCodesKey, resultsIdCodesKeyReverse } from '../../Data/CountryCodes'
 import { Section } from './styles/Predictions.style'
-import { Container } from '../../assets/styles/Global.style'
 // import TextField from '@mui/material/TextField'
 
 const serverURL = process.env.REACT_APP_SERVER_URL
@@ -81,8 +80,8 @@ export default function Predictions({ fixtures }) {
         // console.log('matches stargin at the saem time')
         // console.log(userGuesses)
         if (
-          resultsIdCodesKeyReverse[testPredictionsArray[i]] == fixtures[i].teams.home.id ||
-          resultsIdCodesKeyReverse[testPredictionsArray[i]] == fixtures[i].teams.away.id
+          resultsIdCodesKeyReverse[testPredictionsArray[i]] === fixtures[i].teams.home.id ||
+          resultsIdCodesKeyReverse[testPredictionsArray[i]] === fixtures[i].teams.away.id
         ) {
           // console.log('guess is in match')
           fixturesSorted.push(fixtures[i])
@@ -175,7 +174,7 @@ export default function Predictions({ fixtures }) {
   }
 
   return (
-    <Section>
+    <Section className='predictions'>
       <div style={{ zIndex: '10', paddingTop: '5px', paddingBottom: '5px' }} className='container'>
         <Paper style={{ marginTop: '2.5rem' }}>
           <Grid
