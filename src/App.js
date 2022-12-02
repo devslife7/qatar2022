@@ -4,11 +4,11 @@ import MainPage from './pages/MainPage/MainPage'
 import PredictionInput from './helpers/PredictionInput'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Profile from './pages/Profile/Profile'
-import { apiData } from './helpers/Data'
+import { fixtures } from './helpers/Data'
 const serverURL = process.env.REACT_APP_SERVER_URL
 const fixturesURL = serverURL + '/fixtures'
 
-const fixtures = apiData.response
+// const fixtures = apiData.response
 
 export default function App() {
   // const [fixtures, setFixtures] = useState([])
