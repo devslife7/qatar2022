@@ -50,4 +50,30 @@ export const NameInputs = styled.div`
   background-color: white;
   min-height: 20vh;
   color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
+
+export const Button = styled.button`
+  /* width: 20px; */
+  background: white;
+  /* color: white; */
+  font-size: 1rem;
+  padding: 10px 32px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 2px solid black;
+  transition: all 0.3s ease;
+`
+
+// background: var(--color-primary);
+//   font-size: 24px;
+//   padding: 10px 32px;
+//   margin-top: 10px;
+//   font-weight: 500;
+//   border-radius: 6px;
+//   border: 2px solid var(--color-primary);
+//   transition: all 0.3s ease;
+// }

@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid'
 import PredictionsCard from './components/PredictionsCard'
 import { useNavigate } from 'react-router-dom'
 import { resultsIdCodesKey, resultsIdCodesKeyReverse } from '../../Data/CountryCodes'
-import { Section } from './styles/Predictions.style'
+import { Section, Button } from './styles/Predictions.style'
 // import TextField from '@mui/material/TextField'
 
 const serverURL = process.env.REACT_APP_SERVER_URL
@@ -172,6 +172,10 @@ export default function Predictions({ fixtures }) {
       state: { user: user, fixtures: fixturesSorted, officialResults: officialResults },
     })
   }
+  const handleRoundOf16 = () => {
+    // console.log(fixturesSorted)
+    navigate('/octavos')
+  }
 
   return (
     <Section className='predictions'>
@@ -237,6 +241,9 @@ export default function Predictions({ fixtures }) {
             3rd {`$${pricePool * 0.1}`}
           </p>
         </Paper>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Button onClick={handleRoundOf16}>Round of 16 Predictions</Button>
+        </div>
       </div>
     </Section>
   )
