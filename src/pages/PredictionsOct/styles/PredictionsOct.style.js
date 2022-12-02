@@ -68,6 +68,12 @@ export const Button = styled.button`
   border: 2px solid black;
   transition: all 0.3s ease;
 `
+export const PredictionsForm = styled.section`
+  /* margin: 100px 0; */
+`
+export const PredictionsTable = styled.section`
+  background-color: gray;
+`
 
 // background: var(--color-primary);
 //   font-size: 24px;

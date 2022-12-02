@@ -1,7 +1,15 @@
 import React, { useState } from 'react'
 import MatchCard from './components/MatchCard'
 import { Container } from '../../assets/styles/Global.style'
-import { Button, Matches, NameInputs, Section, Title } from './styles/PredictionsOct.style'
+import {
+  Button,
+  Matches,
+  NameInputs,
+  PredictionsForm,
+  PredictionsTable,
+  Section,
+  Title,
+} from './styles/PredictionsOct.style'
 
 export default function PredictionsOct({ fixtures }) {
   const [userPredictions, setUserPredictions] = useState([])
@@ -67,27 +75,32 @@ export default function PredictionsOct({ fixtures }) {
     <Section>
       {console.log('firstName: ', lastName)}
       <Container>
-        <Title>Predictions Octavos</Title>
-        <Matches>{renderMatches()}</Matches>
-        <NameInputs>
-          <div style={{ margin: '30px 0 10px 0', fontSize: '1.3rem' }}>First Name</div>
-          <input
-            style={{ width: '200px', height: '30px' }}
-            label='first_name'
-            value={firstName}
-            onChange={e => setFirstName(e.target.value)}
-          />
-          <div style={{ margin: '30px 0 10px 0', fontSize: '1.3rem' }}>Last Name</div>
-          <input
-            style={{ width: '200px', height: '30px' }}
-            label='last_name'
-            value={lastName}
-            onChange={e => setLastName(e.target.value)}
-          />
-          <Button style={{ margin: '50px 0 50px 0', fontSize: '1.3rem' }} onClick={handlePredictionSubmit}>
-            Submit Predictions
-          </Button>
-        </NameInputs>
+        <Title>Predictions Round of 16</Title>
+        {/* <PredictionsTable>
+          <h1> table title</h1>
+        </PredictionsTable> */}
+        <PredictionsForm>
+          <Matches>{renderMatches()}</Matches>
+          <NameInputs>
+            <div style={{ margin: '30px 0 10px 0', fontSize: '1.3rem' }}>First Name</div>
+            <input
+              style={{ width: '200px', height: '30px' }}
+              label='first_name'
+              value={firstName}
+              onChange={e => setFirstName(e.target.value)}
+            />
+            <div style={{ margin: '30px 0 10px 0', fontSize: '1.3rem' }}>Last Name</div>
+            <input
+              style={{ width: '200px', height: '30px' }}
+              label='last_name'
+              value={lastName}
+              onChange={e => setLastName(e.target.value)}
+            />
+            <Button style={{ margin: '50px 0 50px 0', fontSize: '1.3rem' }} onClick={handlePredictionSubmit}>
+              Submit Predictions
+            </Button>
+          </NameInputs>
+        </PredictionsForm>
       </Container>
     </Section>
   )
