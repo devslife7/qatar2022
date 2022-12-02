@@ -1,8 +1,8 @@
 import React from 'react'
-import { Container } from '../styles/Components.style'
-import { Section, UserTitle } from '../styles/Profile.style'
+import { Container } from '../../styles/Components.style'
+import { Section, UserTitle } from '../../styles/Profile.style'
 import { useLocation } from 'react-router-dom'
-import PredictionCardProfile from '../assets/PredictionCardProfile'
+import PredictionCardProfile from './PredictionCardProfile'
 
 export default function Profile() {
   const location = useLocation()

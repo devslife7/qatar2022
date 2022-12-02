@@ -10,7 +10,7 @@ import {
   SocialMedia,
   SocialMediaWrap,
   WebsiteRights,
-} from '../assets/FooterElements'
+} from './assets/Footer.style'
 
 export default function Footer() {
   const toggleHome = () => {

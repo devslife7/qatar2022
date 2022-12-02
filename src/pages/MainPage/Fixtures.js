@@ -2,7 +2,7 @@ import React from 'react'
 import '../../styles/Fixtures.css'
 import Divider from '@mui/material/Divider'
 import Grid from '@mui/material/Grid'
-import FixtureCard from '../../assets/FixtureCard'
+import FixtureCard from './components/FixtureCard'
 
 export default function Fixtures({ fixtures }) {
   const renderFixtures = () => {
