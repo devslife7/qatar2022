@@ -4,7 +4,7 @@ import MainPage from './pages/MainPage'
 import PredictionInputTool from './pages/PredictionInputTool'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Profile from './pages/Profile'
-import { fixtures } from './helpers/Data'
+import { fixtures } from './Data/Fixtures'
 const serverURL = process.env.REACT_APP_SERVER_URL
 const fixturesURL = serverURL + '/fixtures'
 

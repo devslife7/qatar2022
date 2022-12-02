@@ -1,6 +1,10 @@
 import React from 'react'
-import { countryCodesShort, resultsIdCodesKeyReverse, countryCodesShortFromName } from '../../../helpers/Data'
-import { AwayTeam, Card, Fixtures, Flag, GameScore, HomeTeam, Predictions } from './Profile.style'
+import {
+  countryCodesShort,
+  resultsIdCodesKeyReverse,
+  countryCodesShortFromName,
+} from '../../../Data/CountryCodes'
+import { AwayTeam, Card, Fixtures, Flag, GameScore, HomeTeam, Predictions } from '../styles/Profile.style'
 import { fromUnixTime, format } from 'date-fns'
 
 export default function PredictionCardProfile({

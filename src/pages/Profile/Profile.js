@@ -1,6 +1,6 @@
 import React from 'react'
-import { Container } from '../../assets/Global.style'
-import { Section, UserTitle } from './components/Profile.style'
+import { Container } from '../../assets/styles/Global.style'
+import { Section, UserTitle } from './styles/Profile.style'
 import { useLocation } from 'react-router-dom'
 import PredictionCardProfile from './components/PredictionCardProfile'
 

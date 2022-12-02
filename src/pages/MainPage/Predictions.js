@@ -4,7 +4,7 @@ import Paper from '@mui/material/Paper'
 import Grid from '@mui/material/Grid'
 import PredictionsCard from './components/PredictionsCard'
 import { useNavigate } from 'react-router-dom'
-import { resultsIdCodesKey, resultsIdCodesKeyReverse } from '../../helpers/Data'
+import { resultsIdCodesKey, resultsIdCodesKeyReverse } from '../../Data/CountryCodes'
 // import TextField from '@mui/material/TextField'
 
 const serverURL = process.env.REACT_APP_SERVER_URL

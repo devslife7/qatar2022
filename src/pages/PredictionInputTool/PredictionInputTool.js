@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { countryCodes, fixturesArray } from '../../helpers/Data'
+import { countryCodes } from '../../Data/CountryCodes'
+import { fixturesArray } from '../../Data/Fixtures'
 
 export default function PredictionInput() {
   const [predictions, setPredictions] = useState([])
