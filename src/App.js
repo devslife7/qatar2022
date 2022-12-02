@@ -4,6 +4,7 @@ import MainPage from './pages/MainPage'
 import Profile from './pages/Profile'
 import PredictionsOct from './pages/PredictionsOct'
 import PredictionInputTool from './pages/PredictionInputTool'
+import Users from './pages/Users'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { fixtures } from './Data/Fixtures'
 const serverURL = process.env.REACT_APP_SERVER_URL
@@ -26,6 +27,7 @@ export default function App() {
         <Route path='/tools' element={<PredictionInputTool />} />
         <Route path='/profile' element={<Profile />} />
         <Route path='/octavos' element={<PredictionsOct fixtures={fixtures} />} />
+        <Route path='/users' element={<Users />} />
       </Routes>
       <Footer />
     </Router>

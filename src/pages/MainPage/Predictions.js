@@ -21,7 +21,6 @@ export default function Predictions({ fixtures }) {
       .then(data => setUserData(data.users))
       .catch(err => console.log(err))
   }, [])
-  console.log(userData)
 
   // Fixing same match issue
   let fixturesSorted = []
