@@ -1,4 +1,4 @@
-import { Section } from './styles/Home.style'
+import { Section } from './components/styles/Home.style'
 import { Container } from '../../assets/styles/Global.style'
 
 export default function Home() {

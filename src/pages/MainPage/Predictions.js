@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid'
 import PredictionsCard from './components/PredictionsCard'
 import { useNavigate } from 'react-router-dom'
 import { resultsIdCodesKey, resultsIdCodesKeyReverse } from '../../Data/CountryCodes'
-import { Section, Button } from './styles/Predictions.style'
+import { Section, Button } from './components/styles/Predictions.style'
 // import TextField from '@mui/material/TextField'
 
 const serverURL = process.env.REACT_APP_SERVER_URL
