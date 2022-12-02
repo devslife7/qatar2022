@@ -1,5 +1,4 @@
 import { Section } from './styles/Home.style'
-import './styles/Home.css'
 import { Container } from '../../assets/styles/Global.style'
 
 export default function Home() {

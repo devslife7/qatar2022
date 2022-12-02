@@ -1,9 +1,0 @@
-.home {
-  background: url('../../../assets/img/qatarhomepage.png') no-repeat center;
-  /* covers the whole screen */
-  background-size: cover;
-
-  display: flex;
-  height: 60vh;
-  z-index: 1;
-}

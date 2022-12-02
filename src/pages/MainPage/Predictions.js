@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import './styles/Predictions.css'
 import Paper from '@mui/material/Paper'
 import Grid from '@mui/material/Grid'
 import PredictionsCard from './components/PredictionsCard'
 import { useNavigate } from 'react-router-dom'
 import { resultsIdCodesKey, resultsIdCodesKeyReverse } from '../../Data/CountryCodes'
+import { Section } from './styles/Predictions.style'
+import { Container } from '../../assets/styles/Global.style'
 // import TextField from '@mui/material/TextField'
 
 const serverURL = process.env.REACT_APP_SERVER_URL
@@ -174,21 +175,14 @@ export default function Predictions({ fixtures }) {
   }
 
   return (
-    <div className='predictions'>
-      <div className='content container'>
-        <Paper className='paper'>
-          {/* <Grid container justifyContent='center'>
-            <TextField
-              id='search-bar'
-              label='Search Users'
-              value={searchTerm}
-              variant='standard'
-              className='predictions_searchBar'
-              style={{ margin: '6px 0 20px 0', fontSize: '1.3rem', width: '20rem' }}
-              onChange={e => setSearchTerm(e.nativeEvent.value)}
-            />
-          </Grid> */}
-          <Grid container spacing={2} className='containerGrid' style={{ padding: '5px 10px 5px 13px' }}>
+    <Section>
+      <div style={{ zIndex: '10', paddingTop: '5px', paddingBottom: '5px' }} className='container'>
+        <Paper style={{ marginTop: '2.5rem' }}>
+          <Grid
+            container
+            spacing={2}
+            style={{ padding: '5px 10px 5px 13px', fontSize: '1.3rem', fontWeight: '500' }}
+          >
             {userPredictions()}
           </Grid>
         </Paper>
@@ -245,6 +239,6 @@ export default function Predictions({ fixtures }) {
           </p>
         </Paper>
       </div>
-    </div>
+    </Section>
   )
 }
