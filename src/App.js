@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Footer from './components/Footer'
-import MainPage from './views/MainPage'
+import MainPage from './pages/MainPage/MainPage'
 import PredictionInput from './helpers/PredictionInput'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Profile from './views/Profile'
+import Profile from './pages/Profile'
 import { apiData } from './helpers/Data'
 const serverURL = process.env.REACT_APP_SERVER_URL
 const fixturesURL = serverURL + '/fixtures'

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Component = styled.div`
+export const Section = styled.section`
   background-color: black;
   color: white;
 `

@@ -113,7 +113,7 @@ export default function PredictionInput() {
     // left
     if (keyDown === 37) {
       setPredictions([...predictions, fixturesArray[counter][1]])
-      console.log(fixturesArray[counter][1])
+      // console.log(fixturesArray[counter][1])
       // right
     } else if (keyDown === 39) {
       setPredictions([...predictions, fixturesArray[counter][0]])

@@ -77,13 +77,13 @@ export default function Predictions({ fixtures }) {
   if (fixtures.length > 0) {
     for (let i = 0; i < 48; i++) {
       if (fixtures[i].fixture.timestamp === fixtures[i + 1].fixture.timestamp) {
-        console.log('matches stargin at the saem time')
+        // console.log('matches stargin at the saem time')
         // console.log(userGuesses)
         if (
           resultsIdCodesKeyReverse[testPredictionsArray[i]] == fixtures[i].teams.home.id ||
           resultsIdCodesKeyReverse[testPredictionsArray[i]] == fixtures[i].teams.away.id
         ) {
-          console.log('guess is in match')
+          // console.log('guess is in match')
           fixturesSorted.push(fixtures[i])
           fixturesSorted.push(fixtures[i + 1])
           i++
@@ -167,7 +167,7 @@ export default function Predictions({ fixtures }) {
   }
 
   const handleUserPage = (user, officialResults) => {
-    console.log(fixturesSorted)
+    // console.log(fixturesSorted)
     navigate('/profile', {
       state: { user: user, fixtures: fixturesSorted, officialResults: officialResults },
     })

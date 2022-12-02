@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from '../styles/Components.style'
-import { Component, UserTitle } from '../styles/Profile.style'
+import { Section, UserTitle } from '../styles/Profile.style'
 import { useLocation } from 'react-router-dom'
 import PredictionCardProfile from '../assets/PredictionCardProfile'
 
@@ -25,11 +25,11 @@ export default function Profile() {
   }
 
   return (
-    <Component>
+    <Section>
       <Container>
         <UserTitle>{user.first_name + ' ' + user.last_name}</UserTitle>
         {renderPredictions2()}
       </Container>
-    </Component>
+    </Section>
   )
 }
