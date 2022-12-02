@@ -39,8 +39,17 @@ export default function PredictionsOct({ fixtures }) {
 
     fetch(serverURL + '/users', postRequest)
       .then(resp => resp.json())
-      .then(data => console.log('data from fetch: ', data))
+      .then(data => {
+        console.log('data from fetch: ', data)
+        clearInputs()
+      })
       .catch(err => console.log(err))
+  }
+
+  const clearInputs = () => {
+    setUserPredictions([])
+    setFirstName('')
+    setLastName('')
   }
 
   const RoundOf16Fixtures = fixtures.filter(fixture => fixture.league.round === 'Round of 16')
