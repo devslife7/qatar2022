@@ -70,11 +70,21 @@ export default function PredictionsOct({ fixtures }) {
         <Title>Predictions Octavos</Title>
         <Matches>{renderMatches()}</Matches>
         <NameInputs>
-          <div style={{ margin: '30px 0 10px 0' }}>First Name</div>
-          <input label='first_name' value={firstName} onChange={e => setFirstName(e.target.value)} />
-          <div style={{ margin: '30px 0 10px 0' }}>Last name</div>
-          <input label='last_name' value={lastName} onChange={e => setLastName(e.target.value)} />
-          <Button style={{ margin: '20px 0' }} onClick={handlePredictionSubmit}>
+          <div style={{ margin: '30px 0 10px 0', fontSize: '1.3rem' }}>First Name</div>
+          <input
+            style={{ width: '200px', height: '30px' }}
+            label='first_name'
+            value={firstName}
+            onChange={e => setFirstName(e.target.value)}
+          />
+          <div style={{ margin: '30px 0 10px 0', fontSize: '1.3rem' }}>Last Name</div>
+          <input
+            style={{ width: '200px', height: '30px' }}
+            label='last_name'
+            value={lastName}
+            onChange={e => setLastName(e.target.value)}
+          />
+          <Button style={{ margin: '50px 0 50px 0', fontSize: '1.3rem' }} onClick={handlePredictionSubmit}>
             Submit Predictions
           </Button>
         </NameInputs>

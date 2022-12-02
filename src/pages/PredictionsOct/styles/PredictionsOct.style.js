@@ -54,6 +54,7 @@ export const NameInputs = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px 0;
 `
 
 export const Button = styled.button`
