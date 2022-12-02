@@ -4,7 +4,7 @@ import { fromUnixTime, format } from 'date-fns'
 
 export default function FixtureCard({ fixture }) {
   return (
-    <>
+    <div style={{ marginBottom: '2rem' }}>
       <Grid container justify='center' style={{ margin: '20px 0 20px 0', padding: '0px', fontSize: '18px' }}>
         <Grid item xs={5}>
           <Grid container alignItems='center' justifyContent='flex-end'>
@@ -33,6 +33,6 @@ export default function FixtureCard({ fixture }) {
           </Grid>
         </Grid>
       </Grid>
-    </>
+    </div>
   )
 }

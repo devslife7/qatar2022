@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import '../../styles/Predictions.css'
+import './styles/Predictions.css'
 import Paper from '@mui/material/Paper'
 import Grid from '@mui/material/Grid'
 import PredictionsCard from './components/PredictionsCard'

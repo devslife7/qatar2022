@@ -1,11 +1,15 @@
-import '../../styles/Home.css'
+import { Section } from './styles/Home.style'
+import './styles/Home.css'
+import { Container } from '../../assets/styles/Global.style'
 
 export default function Home() {
   return (
-    <div className='home'>
-      <div className='home__content container'>
-        <div className='home__text-1'>testing</div>
-      </div>
-    </div>
+    <Section>
+      <Container>
+        {/* <div className='home__content'>
+          <div className='home__text-1'>testing</div>
+        </div> */}
+      </Container>
+    </Section>
   )
 }
