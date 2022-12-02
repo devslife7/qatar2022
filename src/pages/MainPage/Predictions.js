@@ -241,9 +241,9 @@ export default function Predictions({ fixtures }) {
             3rd {`$${pricePool * 0.1}`}
           </p>
         </Paper>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Button onClick={handleRoundOf16}>Round of 16 Predictions</Button>
-        </div>
+        // <div style={{ display: 'flex', justifyContent: 'center' }}>
+          // <Button onClick={handleRoundOf16}>Round of 16 Predictions</Button>
+        //</div>
       </div>
     </Section>
   )
