@@ -3,15 +3,14 @@ import Paper from '@mui/material/Paper'
 import Grid from '@mui/material/Grid'
 import PredictionsCard from './components/PredictionsCard'
 import { useNavigate } from 'react-router-dom'
-import { resultsIdCodesKey, resultsIdCodesKeyReverse } from '../../Data/CountryCodes'
-import { PredictionsWrapper, Button } from './Main.styles'
-// import TextField from '@mui/material/TextField'
+import { resultsIdCodesKey } from '../../Data/CountryCodes'
+import { PredictionsWrapper } from './Main.styles'
+import Button from '../../components/Button'
 
 const serverURL = process.env.REACT_APP_SERVER_URL
 
 export default function Predictions({ fixtures }) {
   const [userData, setUserData] = useState([])
-  // const [searchTerm, setSearchTerm] = useState('')
   const pricePool = userData.length * 50
   const navigate = useNavigate()
 
@@ -22,84 +21,7 @@ export default function Predictions({ fixtures }) {
       .catch(err => console.log(err))
   }, [])
 
-  // Fixing same match issue
-  let fixturesSorted = []
-  const testPredictionsArray = [
-    'A2',
-    'B1',
-    'A4',
-    'B3',
-    'C1',
-    'D3',
-    'C3',
-    'D1',
-    'F4',
-    'E3',
-    'E1',
-    'F1',
-    'G4',
-    'H3',
-    'H1',
-    'G1',
-    'B4',
-    'A3',
-    'A4',
-    'B1',
-    'D4',
-    'C4',
-    'D1',
-    'C1',
-    'E4',
-    'F1',
-    'F4',
-    'E1',
-    'G2',
-    'H2',
-    'G1',
-    'H1',
-    'A2',
-    'A4',
-    'B1',
-    'B3',
-    'D3',
-    'D1',
-    'C1',
-    'C3',
-    'F2',
-    'F4',
-    'E3',
-    'E1',
-    'H3',
-    'H1',
-    'G1',
-    'G2',
-  ]
-  if (fixtures.length > 0) {
-    for (let i = 0; i < 48; i++) {
-      if (fixtures[i].fixture.timestamp === fixtures[i + 1].fixture.timestamp) {
-        // console.log('matches stargin at the saem time')
-        // console.log(userGuesses)
-        if (
-          resultsIdCodesKeyReverse[testPredictionsArray[i]] === fixtures[i].teams.home.id ||
-          resultsIdCodesKeyReverse[testPredictionsArray[i]] === fixtures[i].teams.away.id
-        ) {
-          // console.log('guess is in match')
-          fixturesSorted.push(fixtures[i])
-          fixturesSorted.push(fixtures[i + 1])
-          i++
-        } else {
-          // TODO: return -1
-          fixturesSorted.push(fixtures[i + 1])
-          fixturesSorted.push(fixtures[i])
-          i++
-        }
-      } else {
-        fixturesSorted.push(fixtures[i])
-      }
-    }
-  }
-
-  const userPredictions = () => {
+  const renderUserPredictions = () => {
     if (userData.length === 0) return
 
     const officialResults = getOfficialResult()
@@ -110,7 +32,7 @@ export default function Predictions({ fixtures }) {
       return { ...user, rightMatches: rightMatches }
     })
 
-    // Sort alphabetically || Sort by correct predictions || Add right matches
+    // Sort users alphabetically || Sort by correct predictions || Add right matches
     userRightMatches.sort((a, b) => a.first_name.localeCompare(b.first_name))
     userRightMatches.sort((a, b) => b.rightMatches - a.rightMatches)
     const userArray = addUserRanking(userRightMatches)
@@ -129,7 +51,8 @@ export default function Predictions({ fixtures }) {
 
   const getOfficialResult = () => {
     let officialResults = []
-    fixturesSorted.forEach(fixture => {
+
+    fixtures.forEach(fixture => {
       const gameStatus = fixture.fixture.status.short
       const goalsHome = fixture.goals.home
       const goalsAway = fixture.goals.away
@@ -165,11 +88,10 @@ export default function Predictions({ fixtures }) {
     }
     return correctPredictions
   }
-
   const handleUserPage = (user, officialResults) => {
     // console.log(fixturesSorted)
     navigate('/profile', {
-      state: { user: user, fixtures: fixturesSorted, officialResults: officialResults },
+      state: { user: user, fixtures: fixtures, officialResults: officialResults },
     })
   }
   const handleRoundOf16 = () => {
@@ -186,7 +108,7 @@ export default function Predictions({ fixtures }) {
             spacing={2}
             style={{ padding: '5px 10px 5px 13px', fontSize: '1.3rem', fontWeight: '500' }}
           >
-            {userPredictions()}
+            {renderUserPredictions()}
           </Grid>
         </Paper>
 
@@ -242,10 +164,9 @@ export default function Predictions({ fixtures }) {
           </p>
         </Paper>
 
-        {/* // update prod
-        // <div style={{ display: 'flex', justifyContent: 'center' }}>
-          // <Button onClick={handleRoundOf16}>Round of 16 Predictions</Button>
-        //</div> */}
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Button onClick={handleRoundOf16}>Round of 16 Predictions</Button>
+        </div>
       </div>
     </PredictionsWrapper>
   )
