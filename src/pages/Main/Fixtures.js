@@ -5,7 +5,7 @@ import FixtureCard from './components/FixtureCard'
 export default function Fixtures({ fixtures }) {
   const renderFixtures = () => {
     if (fixtures.length === 0) return
-    return fixtures.map((fixture, idx) => <FixtureCard key={idx} fixture={fixture} />)
+    return fixtures.map((fixture, idx) => <FixtureCard key={idx} fixture={fixture} />).reverse()
   }
 
   return (

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Footer from './layouts/Footer'
-import MainPage from './pages/MainPage'
+import Main from './pages/Main'
 import Profile from './pages/Profile'
 import PredictionsOct from './pages/PredictionsOct'
 import PredictionInputTool from './pages/PredictionInputTool'
@@ -23,7 +23,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<MainPage fixtures={fixtures} />} />
+        <Route path='/' element={<Main fixtures={fixtures} />} />
         <Route path='/tools' element={<PredictionInputTool />} />
         <Route path='/profile' element={<Profile />} />
         <Route path='/octavos' element={<PredictionsOct fixtures={fixtures} />} />

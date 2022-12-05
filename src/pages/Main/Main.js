@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Home from './Home'
 import Navbar from '../../layouts/Navbar/Navbar'
 import Fixtures from './Fixtures'
 import Predictions from './Predictions'
-const serverURL = process.env.REACT_APP_SERVER_URL
-const fixturesURL = serverURL + '/fixtures'
 
-export default function MainPage({ fixtures }) {
+export default function Main({ fixtures }) {
   const sortedFixtures = fixtures.sort((a, b) => {
     return a.fixture.timestamp - b.fixture.timestamp
   })
