@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid'
 import PredictionsCard from './components/PredictionsCard'
 import { useNavigate } from 'react-router-dom'
 import { resultsIdCodesKey, resultsIdCodesKeyReverse } from '../../Data/CountryCodes'
-import { Section, Button } from './styles/Predictions.style'
+import { PredictionsWrapper, Button } from './Main.styles'
 // import TextField from '@mui/material/TextField'
 
 const serverURL = process.env.REACT_APP_SERVER_URL
@@ -178,7 +178,7 @@ export default function Predictions({ fixtures }) {
   }
 
   return (
-    <Section className='predictions'>
+    <PredictionsWrapper className='predictions'>
       <div style={{ zIndex: '10', paddingTop: '5px', paddingBottom: '5px' }} className='container'>
         <Paper style={{ marginTop: '2.5rem' }}>
           <Grid
@@ -247,6 +247,6 @@ export default function Predictions({ fixtures }) {
           // <Button onClick={handleRoundOf16}>Round of 16 Predictions</Button>
         //</div> */}
       </div>
-    </Section>
+    </PredictionsWrapper>
   )
 }
