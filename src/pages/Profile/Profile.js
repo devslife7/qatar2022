@@ -27,7 +27,16 @@ export default function Profile() {
   return (
     <Section>
       <Container>
-        <UserTitle>{user.first_name + ' ' + user.last_name}</UserTitle>
+        <UserTitle>
+          {user.first_name +
+            ' ' +
+            user.last_name +
+            ' ______ ' +
+            user.rightMatches +
+            '/48 ______ ' +
+            Math.trunc((user.rightMatches / 48) * 100) +
+            '%'}
+        </UserTitle>
         {renderPredictions2()}
       </Container>
     </Section>
