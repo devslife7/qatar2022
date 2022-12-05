@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Footer from './components/Footer'
+import Footer from './layouts/Footer'
 import MainPage from './pages/MainPage'
 import Profile from './pages/Profile'
 import PredictionsOct from './pages/PredictionsOct'
