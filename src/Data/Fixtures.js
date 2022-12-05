@@ -56,7 +56,7 @@ export const fixtures = {
     season: '2022',
   },
   errors: [],
-  results: 54,
+  results: 59,
   paging: {
     current: 1,
     total: 1,
@@ -2241,7 +2241,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855766,
-        referee: 'Anthony Taylor, England',
+        referee: 'A. Taylor',
         timezone: 'UTC',
         date: '2022-12-01T15:00:00+00:00',
         timestamp: 1669906800,
@@ -2251,8 +2251,8 @@ export const fixtures = {
         },
         venue: {
           id: null,
-          name: 'Ahmed bin Ali Stadium',
-          city: 'Al Rayyan',
+          name: 'Ahmad bin Ali Stadium',
+          city: 'Al-Rayyan',
         },
         status: {
           long: 'Match Finished',
@@ -2309,7 +2309,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855767,
-        referee: 'Raphael Claus, Brazil',
+        referee: 'Raphael Claus',
         timezone: 'UTC',
         date: '2022-12-01T15:00:00+00:00',
         timestamp: 1669906800,
@@ -2319,8 +2319,8 @@ export const fixtures = {
         },
         venue: {
           id: null,
-          name: 'Al-Thumama Stadium',
-          city: 'Al-Thumama',
+          name: 'Al Thumama Stadium',
+          city: 'Doha',
         },
         status: {
           long: 'Match Finished',
@@ -2377,7 +2377,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855768,
-        referee: 'Victor Gomes, South Africa',
+        referee: 'V. Gomes',
         timezone: 'UTC',
         date: '2022-12-01T19:00:00+00:00',
         timestamp: 1669921200,
@@ -2388,7 +2388,7 @@ export const fixtures = {
         venue: {
           id: null,
           name: 'Khalifa International Stadium',
-          city: 'Doha',
+          city: 'Ar-Rayyan',
         },
         status: {
           long: 'Match Finished',
@@ -2450,8 +2450,8 @@ export const fixtures = {
         date: '2022-12-02T15:00:00+00:00',
         timestamp: 1669993200,
         periods: {
-          first: null,
-          second: null,
+          first: 1669993200,
+          second: 1669996800,
         },
         venue: {
           id: null,
@@ -2459,9 +2459,9 @@ export const fixtures = {
           city: 'Ar-Rayyan',
         },
         status: {
-          long: 'Not Started',
-          short: 'NS',
-          elapsed: null,
+          long: 'Match Finished',
+          short: 'FT',
+          elapsed: 90,
         },
       },
       league: {
@@ -2478,27 +2478,27 @@ export const fixtures = {
           id: 17,
           name: 'South Korea',
           logo: 'https://media.api-sports.io/football/teams/17.png',
-          winner: null,
+          winner: true,
         },
         away: {
           id: 27,
           name: 'Portugal',
           logo: 'https://media.api-sports.io/football/teams/27.png',
-          winner: null,
+          winner: false,
         },
       },
       goals: {
-        home: null,
-        away: null,
+        home: 2,
+        away: 1,
       },
       score: {
         halftime: {
-          home: null,
-          away: null,
+          home: 1,
+          away: 1,
         },
         fulltime: {
-          home: null,
-          away: null,
+          home: 2,
+          away: 1,
         },
         extratime: {
           home: null,
@@ -2518,8 +2518,8 @@ export const fixtures = {
         date: '2022-12-02T15:00:00+00:00',
         timestamp: 1669993200,
         periods: {
-          first: null,
-          second: null,
+          first: 1669993200,
+          second: 1669996800,
         },
         venue: {
           id: null,
@@ -2527,9 +2527,9 @@ export const fixtures = {
           city: 'Al Wakrah',
         },
         status: {
-          long: 'Not Started',
-          short: 'NS',
-          elapsed: null,
+          long: 'Match Finished',
+          short: 'FT',
+          elapsed: 90,
         },
       },
       league: {
@@ -2546,27 +2546,27 @@ export const fixtures = {
           id: 1504,
           name: 'Ghana',
           logo: 'https://media.api-sports.io/football/teams/1504.png',
-          winner: null,
+          winner: false,
         },
         away: {
           id: 7,
           name: 'Uruguay',
           logo: 'https://media.api-sports.io/football/teams/7.png',
-          winner: null,
+          winner: true,
         },
       },
       goals: {
-        home: null,
-        away: null,
+        home: 0,
+        away: 2,
       },
       score: {
         halftime: {
-          home: null,
-          away: null,
+          home: 0,
+          away: 2,
         },
         fulltime: {
-          home: null,
-          away: null,
+          home: 0,
+          away: 2,
         },
         extratime: {
           home: null,
@@ -2586,8 +2586,8 @@ export const fixtures = {
         date: '2022-12-02T19:00:00+00:00',
         timestamp: 1670007600,
         periods: {
-          first: null,
-          second: null,
+          first: 1670007600,
+          second: 1670011200,
         },
         venue: {
           id: null,
@@ -2595,9 +2595,9 @@ export const fixtures = {
           city: 'Lusail',
         },
         status: {
-          long: 'Not Started',
-          short: 'NS',
-          elapsed: null,
+          long: 'Match Finished',
+          short: 'FT',
+          elapsed: 90,
         },
       },
       league: {
@@ -2614,27 +2614,27 @@ export const fixtures = {
           id: 1530,
           name: 'Cameroon',
           logo: 'https://media.api-sports.io/football/teams/1530.png',
-          winner: null,
+          winner: true,
         },
         away: {
           id: 6,
           name: 'Brazil',
           logo: 'https://media.api-sports.io/football/teams/6.png',
-          winner: null,
+          winner: false,
         },
       },
       goals: {
-        home: null,
-        away: null,
+        home: 1,
+        away: 0,
       },
       score: {
         halftime: {
-          home: null,
-          away: null,
+          home: 0,
+          away: 0,
         },
         fulltime: {
-          home: null,
-          away: null,
+          home: 1,
+          away: 0,
         },
         extratime: {
           home: null,
@@ -2654,8 +2654,8 @@ export const fixtures = {
         date: '2022-12-02T19:00:00+00:00',
         timestamp: 1670007600,
         periods: {
-          first: null,
-          second: null,
+          first: 1670007600,
+          second: 1670011200,
         },
         venue: {
           id: null,
@@ -2663,9 +2663,9 @@ export const fixtures = {
           city: 'Doha',
         },
         status: {
-          long: 'Not Started',
-          short: 'NS',
-          elapsed: null,
+          long: 'Match Finished',
+          short: 'FT',
+          elapsed: 90,
         },
       },
       league: {
@@ -2682,27 +2682,27 @@ export const fixtures = {
           id: 14,
           name: 'Serbia',
           logo: 'https://media.api-sports.io/football/teams/14.png',
-          winner: null,
+          winner: false,
         },
         away: {
           id: 15,
           name: 'Switzerland',
           logo: 'https://media.api-sports.io/football/teams/15.png',
-          winner: null,
+          winner: true,
         },
       },
       goals: {
-        home: null,
-        away: null,
+        home: 2,
+        away: 3,
       },
       score: {
         halftime: {
-          home: null,
-          away: null,
+          home: 2,
+          away: 2,
         },
         fulltime: {
-          home: null,
-          away: null,
+          home: 2,
+          away: 3,
         },
         extratime: {
           home: null,
@@ -3261,7 +3261,7 @@ export const fixtures = {
     {
       fixture: {
         id: 871855,
-        referee: 'Stephanie Frappart, France',
+        referee: 'S. Frappart',
         timezone: 'UTC',
         date: '2022-12-01T19:00:00+00:00',
         timestamp: 1669921200,
@@ -3334,8 +3334,8 @@ export const fixtures = {
         date: '2022-12-03T15:00:00+00:00',
         timestamp: 1670079600,
         periods: {
-          first: null,
-          second: null,
+          first: 1670079600,
+          second: 1670083200,
         },
         venue: {
           id: null,
@@ -3343,9 +3343,9 @@ export const fixtures = {
           city: 'Ar-Rayyan',
         },
         status: {
-          long: 'Not Started',
-          short: 'NS',
-          elapsed: null,
+          long: 'Match Finished',
+          short: 'FT',
+          elapsed: 90,
         },
       },
       league: {
@@ -3362,27 +3362,27 @@ export const fixtures = {
           id: 1118,
           name: 'Netherlands',
           logo: 'https://media.api-sports.io/football/teams/1118.png',
-          winner: null,
+          winner: true,
         },
         away: {
           id: 2384,
           name: 'USA',
           logo: 'https://media.api-sports.io/football/teams/2384.png',
-          winner: null,
+          winner: false,
         },
       },
       goals: {
-        home: null,
-        away: null,
+        home: 3,
+        away: 1,
       },
       score: {
         halftime: {
-          home: null,
-          away: null,
+          home: 2,
+          away: 0,
         },
         fulltime: {
-          home: null,
-          away: null,
+          home: 3,
+          away: 1,
         },
         extratime: {
           home: null,
@@ -3397,13 +3397,13 @@ export const fixtures = {
     {
       fixture: {
         id: 976534,
-        referee: null,
+        referee: 'Ivan Cisneros',
         timezone: 'UTC',
         date: '2022-12-04T19:00:00+00:00',
         timestamp: 1670180400,
         periods: {
-          first: null,
-          second: null,
+          first: 1670180400,
+          second: 1670184000,
         },
         venue: {
           id: null,
@@ -3411,9 +3411,9 @@ export const fixtures = {
           city: 'Al Khor',
         },
         status: {
-          long: 'Not Started',
-          short: 'NS',
-          elapsed: null,
+          long: 'Match Finished',
+          short: 'FT',
+          elapsed: 90,
         },
       },
       league: {
@@ -3430,27 +3430,27 @@ export const fixtures = {
           id: 10,
           name: 'England',
           logo: 'https://media.api-sports.io/football/teams/10.png',
-          winner: null,
+          winner: true,
         },
         away: {
           id: 13,
           name: 'Senegal',
           logo: 'https://media.api-sports.io/football/teams/13.png',
-          winner: null,
+          winner: false,
         },
       },
       goals: {
-        home: null,
-        away: null,
+        home: 3,
+        away: 0,
       },
       score: {
         halftime: {
-          home: null,
-          away: null,
+          home: 2,
+          away: 0,
         },
         fulltime: {
-          home: null,
-          away: null,
+          home: 3,
+          away: 0,
         },
         extratime: {
           home: null,
@@ -3465,13 +3465,13 @@ export const fixtures = {
     {
       fixture: {
         id: 976642,
-        referee: null,
+        referee: 'S. Marciniak',
         timezone: 'UTC',
         date: '2022-12-03T19:00:00+00:00',
         timestamp: 1670094000,
         periods: {
-          first: null,
-          second: null,
+          first: 1670094000,
+          second: 1670097600,
         },
         venue: {
           id: null,
@@ -3479,9 +3479,9 @@ export const fixtures = {
           city: 'Al-Rayyan',
         },
         status: {
-          long: 'Not Started',
-          short: 'NS',
-          elapsed: null,
+          long: 'Match Finished',
+          short: 'FT',
+          elapsed: 90,
         },
       },
       league: {
@@ -3498,27 +3498,27 @@ export const fixtures = {
           id: 26,
           name: 'Argentina',
           logo: 'https://media.api-sports.io/football/teams/26.png',
-          winner: null,
+          winner: true,
         },
         away: {
           id: 20,
           name: 'Australia',
           logo: 'https://media.api-sports.io/football/teams/20.png',
-          winner: null,
+          winner: false,
         },
       },
       goals: {
-        home: null,
-        away: null,
+        home: 2,
+        away: 1,
       },
       score: {
         halftime: {
-          home: null,
-          away: null,
+          home: 1,
+          away: 0,
         },
         fulltime: {
-          home: null,
-          away: null,
+          home: 2,
+          away: 1,
         },
         extratime: {
           home: null,
@@ -3533,13 +3533,13 @@ export const fixtures = {
     {
       fixture: {
         id: 976643,
-        referee: null,
+        referee: 'J. Valenzuela',
         timezone: 'UTC',
         date: '2022-12-04T15:00:00+00:00',
         timestamp: 1670166000,
         periods: {
-          first: null,
-          second: null,
+          first: 1670166000,
+          second: 1670169600,
         },
         venue: {
           id: null,
@@ -3547,9 +3547,9 @@ export const fixtures = {
           city: 'Doha',
         },
         status: {
-          long: 'Not Started',
-          short: 'NS',
-          elapsed: null,
+          long: 'Match Finished',
+          short: 'FT',
+          elapsed: 90,
         },
       },
       league: {
@@ -3566,27 +3566,27 @@ export const fixtures = {
           id: 2,
           name: 'France',
           logo: 'https://media.api-sports.io/football/teams/2.png',
-          winner: null,
+          winner: true,
         },
         away: {
           id: 24,
           name: 'Poland',
           logo: 'https://media.api-sports.io/football/teams/24.png',
-          winner: null,
+          winner: false,
         },
       },
       goals: {
-        home: null,
-        away: null,
+        home: 3,
+        away: 1,
       },
       score: {
         halftime: {
-          home: null,
-          away: null,
+          home: 1,
+          away: 0,
         },
         fulltime: {
-          home: null,
-          away: null,
+          home: 3,
+          away: 1,
         },
         extratime: {
           home: null,
@@ -3601,13 +3601,13 @@ export const fixtures = {
     {
       fixture: {
         id: 977344,
-        referee: null,
+        referee: 'Ismail Elfath, USA',
         timezone: 'UTC',
         date: '2022-12-05T15:00:00+00:00',
         timestamp: 1670252400,
         periods: {
-          first: null,
-          second: null,
+          first: 1670252400,
+          second: 1670256000,
         },
         venue: {
           id: null,
@@ -3615,9 +3615,9 @@ export const fixtures = {
           city: 'Al Wakrah',
         },
         status: {
-          long: 'Not Started',
-          short: 'NS',
-          elapsed: null,
+          long: 'Match Finished',
+          short: 'PEN',
+          elapsed: 120,
         },
       },
       league: {
@@ -3634,42 +3634,42 @@ export const fixtures = {
           id: 12,
           name: 'Japan',
           logo: 'https://media.api-sports.io/football/teams/12.png',
-          winner: null,
+          winner: false,
         },
         away: {
           id: 3,
           name: 'Croatia',
           logo: 'https://media.api-sports.io/football/teams/3.png',
-          winner: null,
+          winner: true,
         },
       },
       goals: {
-        home: null,
-        away: null,
+        home: 1,
+        away: 1,
       },
       score: {
         halftime: {
-          home: null,
-          away: null,
+          home: 1,
+          away: 0,
         },
         fulltime: {
-          home: null,
-          away: null,
+          home: 1,
+          away: 1,
         },
         extratime: {
-          home: null,
-          away: null,
+          home: 0,
+          away: 0,
         },
         penalty: {
-          home: null,
-          away: null,
+          home: 1,
+          away: 3,
         },
       },
     },
     {
       fixture: {
         id: 977345,
-        referee: null,
+        referee: 'F. Rapallini',
         timezone: 'UTC',
         date: '2022-12-06T15:00:00+00:00',
         timestamp: 1670338800,
@@ -3708,6 +3708,346 @@ export const fixtures = {
           id: 9,
           name: 'Spain',
           logo: 'https://media.api-sports.io/football/teams/9.png',
+          winner: null,
+        },
+      },
+      goals: {
+        home: null,
+        away: null,
+      },
+      score: {
+        halftime: {
+          home: null,
+          away: null,
+        },
+        fulltime: {
+          home: null,
+          away: null,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 977705,
+        referee: 'Clement Turpin, France',
+        timezone: 'UTC',
+        date: '2022-12-05T19:00:00+00:00',
+        timestamp: 1670266800,
+        periods: {
+          first: 1670266800,
+          second: 1670270400,
+        },
+        venue: {
+          id: null,
+          name: 'Stadium 974',
+          city: 'Ras Abu Aboud',
+        },
+        status: {
+          long: 'Match Finished',
+          short: 'FT',
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 1,
+        name: 'World Cup',
+        country: 'World',
+        logo: 'https://media.api-sports.io/football/leagues/1.png',
+        flag: null,
+        season: 2022,
+        round: 'Round of 16',
+      },
+      teams: {
+        home: {
+          id: 6,
+          name: 'Brazil',
+          logo: 'https://media.api-sports.io/football/teams/6.png',
+          winner: true,
+        },
+        away: {
+          id: 17,
+          name: 'South Korea',
+          logo: 'https://media.api-sports.io/football/teams/17.png',
+          winner: false,
+        },
+      },
+      goals: {
+        home: 4,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 4,
+          away: 0,
+        },
+        fulltime: {
+          home: 4,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 977706,
+        referee: 'C. Ramos',
+        timezone: 'UTC',
+        date: '2022-12-06T19:00:00+00:00',
+        timestamp: 1670353200,
+        periods: {
+          first: null,
+          second: null,
+        },
+        venue: {
+          id: null,
+          name: 'Lusail Iconic Stadium',
+          city: 'Lusail',
+        },
+        status: {
+          long: 'Not Started',
+          short: 'NS',
+          elapsed: null,
+        },
+      },
+      league: {
+        id: 1,
+        name: 'World Cup',
+        country: 'World',
+        logo: 'https://media.api-sports.io/football/leagues/1.png',
+        flag: null,
+        season: 2022,
+        round: 'Round of 16',
+      },
+      teams: {
+        home: {
+          id: 27,
+          name: 'Portugal',
+          logo: 'https://media.api-sports.io/football/teams/27.png',
+          winner: null,
+        },
+        away: {
+          id: 15,
+          name: 'Switzerland',
+          logo: 'https://media.api-sports.io/football/teams/15.png',
+          winner: null,
+        },
+      },
+      goals: {
+        home: null,
+        away: null,
+      },
+      score: {
+        halftime: {
+          home: null,
+          away: null,
+        },
+        fulltime: {
+          home: null,
+          away: null,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 977794,
+        referee: null,
+        timezone: 'UTC',
+        date: '2022-12-09T19:00:00+00:00',
+        timestamp: 1670612400,
+        periods: {
+          first: null,
+          second: null,
+        },
+        venue: {
+          id: null,
+          name: 'Lusail Iconic Stadium',
+          city: 'Lusail',
+        },
+        status: {
+          long: 'Not Started',
+          short: 'NS',
+          elapsed: null,
+        },
+      },
+      league: {
+        id: 1,
+        name: 'World Cup',
+        country: 'World',
+        logo: 'https://media.api-sports.io/football/leagues/1.png',
+        flag: null,
+        season: 2022,
+        round: 'Quarter-finals',
+      },
+      teams: {
+        home: {
+          id: 1118,
+          name: 'Netherlands',
+          logo: 'https://media.api-sports.io/football/teams/1118.png',
+          winner: null,
+        },
+        away: {
+          id: 26,
+          name: 'Argentina',
+          logo: 'https://media.api-sports.io/football/teams/26.png',
+          winner: null,
+        },
+      },
+      goals: {
+        home: null,
+        away: null,
+      },
+      score: {
+        halftime: {
+          home: null,
+          away: null,
+        },
+        fulltime: {
+          home: null,
+          away: null,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 978036,
+        referee: null,
+        timezone: 'UTC',
+        date: '2022-12-10T19:00:00+00:00',
+        timestamp: 1670698800,
+        periods: {
+          first: null,
+          second: null,
+        },
+        venue: {
+          id: null,
+          name: 'Al Bayt Stadium',
+          city: 'Al Khor',
+        },
+        status: {
+          long: 'Not Started',
+          short: 'NS',
+          elapsed: null,
+        },
+      },
+      league: {
+        id: 1,
+        name: 'World Cup',
+        country: 'World',
+        logo: 'https://media.api-sports.io/football/leagues/1.png',
+        flag: null,
+        season: 2022,
+        round: 'Quarter-finals',
+      },
+      teams: {
+        home: {
+          id: 10,
+          name: 'England',
+          logo: 'https://media.api-sports.io/football/teams/10.png',
+          winner: null,
+        },
+        away: {
+          id: 2,
+          name: 'France',
+          logo: 'https://media.api-sports.io/football/teams/2.png',
+          winner: null,
+        },
+      },
+      goals: {
+        home: null,
+        away: null,
+      },
+      score: {
+        halftime: {
+          home: null,
+          away: null,
+        },
+        fulltime: {
+          home: null,
+          away: null,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 978072,
+        referee: null,
+        timezone: 'UTC',
+        date: '2022-12-09T15:00:00+00:00',
+        timestamp: 1670598000,
+        periods: {
+          first: null,
+          second: null,
+        },
+        venue: {
+          id: null,
+          name: 'Education City Stadium',
+          city: 'Ar-Rayyan',
+        },
+        status: {
+          long: 'Not Started',
+          short: 'NS',
+          elapsed: null,
+        },
+      },
+      league: {
+        id: 1,
+        name: 'World Cup',
+        country: 'World',
+        logo: 'https://media.api-sports.io/football/leagues/1.png',
+        flag: null,
+        season: 2022,
+        round: 'Quarter-finals',
+      },
+      teams: {
+        home: {
+          id: 3,
+          name: 'Croatia',
+          logo: 'https://media.api-sports.io/football/teams/3.png',
+          winner: null,
+        },
+        away: {
+          id: 6,
+          name: 'Brazil',
+          logo: 'https://media.api-sports.io/football/teams/6.png',
           winner: null,
         },
       },
