@@ -4,8 +4,9 @@ import Grid from '@mui/material/Grid'
 import PredictionsCard from './components/PredictionsCard'
 import { useNavigate } from 'react-router-dom'
 import { resultsIdCodesKey } from '../../Data/CountryCodes'
-import { PredictionsWrapper, Text1st, Text2nd, Text3rd, TextPricePool } from './Main.styles'
+import { Buttonwrapper, PredictionsWrapper, Text1st, Text2nd, Text3rd, TextPricePool } from './Main.styles'
 import Button from '../../components/Button'
+import { Container } from '../../assets/styles/Global.style'
 
 const serverURL = process.env.REACT_APP_SERVER_URL
 
@@ -99,13 +100,9 @@ export default function Predictions({ fixtures }) {
 
   return (
     <PredictionsWrapper className='predictions'>
-      <div style={{ zIndex: '10', paddingTop: '5px', paddingBottom: '5px' }} className='container'>
+      <Container>
         <Paper style={{ marginTop: '2.5rem' }}>
-          <Grid
-            container
-            spacing={2}
-            style={{ padding: '5px 10px 5px 13px', fontSize: '1.3rem', fontWeight: '500' }}
-          >
+          <Grid container spacing={2} style={{ padding: '5px 10px 5px 13px', fontSize: '1.3rem' }}>
             {renderUserPredictions()}
           </Grid>
         </Paper>
@@ -117,10 +114,12 @@ export default function Predictions({ fixtures }) {
           <Text3rd>3rd {` $${pricePool * 0.1}`}</Text3rd>
         </Paper>
 
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <Button onClick={handleRoundOf16}>Round of 16 Predictions</Button>
-        </div>
-      </div>
+        <Buttonwrapper>
+          <Button onClick={handleRoundOf16} disabled>
+            Round of 16 Predictions
+          </Button>
+        </Buttonwrapper>
+      </Container>
     </PredictionsWrapper>
   )
 }

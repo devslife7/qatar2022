@@ -15,6 +15,8 @@ export const PredictionsWrapper = styled.section`
   background: url(${background}) no-repeat center;
   /* covers the whole screen */
   background-size: cover;
+
+  padding: 5px 0;
 `
 export const TextPricePool = styled.p`
   font-size: 2.3rem;
@@ -47,4 +49,8 @@ export const Text3rd = styled.p`
   text-align: center;
   margin-top: 1rem;
   padding-bottom: 1rem;
+`
+export const Buttonwrapper = styled.div`
+  display: flex;
+  justify-content: center;
 `
