@@ -114,11 +114,11 @@ export default function Predictions({ fixtures }) {
           <Text3rd>3rd {` $${pricePool * 0.1}`}</Text3rd>
         </Paper>
 
-        <Buttonwrapper>
+        {/* <Buttonwrapper>
           <Button onClick={handleRoundOf16} disabled>
             Round of 16 Predictions
           </Button>
-        </Buttonwrapper>
+        </Buttonwrapper> */}
       </Container>
     </PredictionsWrapper>
   )
