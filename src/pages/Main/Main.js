@@ -41,7 +41,7 @@ export default function Main({ fixtures }) {
       <Navbar />
       <Home />
       <Predictions fixtures={fixturesSorted} />
-      <Fixtures fixtures={fixturesSorted} />
+      <Fixtures fixtures={fixtures} />
     </>
   )
 }
