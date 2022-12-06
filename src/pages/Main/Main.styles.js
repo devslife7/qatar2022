@@ -16,3 +16,35 @@ export const PredictionsWrapper = styled.section`
   /* covers the whole screen */
   background-size: cover;
 `
+export const TextPricePool = styled.p`
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: #ab0e3c;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+`
+export const Text1st = styled.p`
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ab0e3c;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+`
+export const Text2nd = styled.p`
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #ab0e3c;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+`
+export const Text3rd = styled.p`
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ab0e3c;
+  text-align: center;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+`

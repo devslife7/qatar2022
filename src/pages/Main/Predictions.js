@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid'
 import PredictionsCard from './components/PredictionsCard'
 import { useNavigate } from 'react-router-dom'
 import { resultsIdCodesKey } from '../../Data/CountryCodes'
-import { PredictionsWrapper } from './Main.styles'
+import { PredictionsWrapper, Text1st, Text2nd, Text3rd, TextPricePool } from './Main.styles'
 import Button from '../../components/Button'
 
 const serverURL = process.env.REACT_APP_SERVER_URL
@@ -94,7 +94,7 @@ export default function Predictions({ fixtures }) {
   }
   const handleRoundOf16 = () => {
     // console.log(fixturesSorted)
-    navigate('/octavos')
+    // navigate('/octavos')
   }
 
   return (
@@ -111,55 +111,10 @@ export default function Predictions({ fixtures }) {
         </Paper>
 
         <Paper>
-          <p
-            style={{
-              fontSize: '2.3rem',
-              fontWeight: 900,
-              color: '#AB0E3C',
-              textAlign: 'center',
-              marginBottom: '1rem',
-              paddingTop: '1rem',
-            }}
-          >
-            Price Pool {`  $${pricePool}`}
-          </p>
-          <p
-            style={{
-              fontSize: '2rem',
-              fontWeight: 800,
-              color: '#AB0E3C',
-              textAlign: 'center',
-              marginTop: '1rem',
-              marginBottom: '1rem',
-            }}
-          >
-            1st {` $${pricePool * 0.6}`}
-          </p>
-          <p
-            style={{
-              fontSize: '1.7rem',
-              fontWeight: 700,
-              color: '#AB0E3C',
-              textAlign: 'center',
-              marginTop: 0,
-              marginBottom: '1rem',
-            }}
-          >
-            2nd {` $${pricePool * 0.3}`}
-          </p>
-          <p
-            style={{
-              fontSize: '1.6rem',
-              fontWeight: 600,
-              marginBottom: '4rem',
-              color: '#AB0E3C',
-              textAlign: 'center',
-              marginTop: '1rem',
-              paddingBottom: '1.5rem',
-            }}
-          >
-            3rd {`$${pricePool * 0.1}`}
-          </p>
+          <TextPricePool>Price Pool {`  $${pricePool}`}</TextPricePool>
+          <Text1st>1st {` $${pricePool * 0.6}`}</Text1st>
+          <Text2nd>2nd {` $${pricePool * 0.3}`}</Text2nd>
+          <Text3rd>3rd {` $${pricePool * 0.1}`}</Text3rd>
         </Paper>
 
         <div style={{ display: 'flex', justifyContent: 'center' }}>
