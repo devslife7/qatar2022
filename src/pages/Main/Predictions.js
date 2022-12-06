@@ -48,7 +48,7 @@ export default function Predictions({ fixtures }) {
       </Grid>
     ))
   }
-
+  // Get official results array from fixtures
   const getOfficialResult = () => {
     let officialResults = []
 
@@ -67,7 +67,6 @@ export default function Predictions({ fixtures }) {
     })
     return officialResults
   }
-
   // Add user ranking to array
   const addUserRanking = sortedUsers => {
     let userRanking = 1
@@ -78,7 +77,6 @@ export default function Predictions({ fixtures }) {
     }
     return userArray
   }
-
   // Find correct predicted matches
   const findCorrectPredictions = (officialResult = [], predictions = []) => {
     if (officialResult.length === 0) return
