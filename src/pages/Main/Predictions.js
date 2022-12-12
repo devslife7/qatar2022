@@ -5,6 +5,7 @@ import PredictionsCard from './components/PredictionsCard'
 import { useNavigate } from 'react-router-dom'
 import { resultsIdCodesKey } from '../../Data/CountryCodes'
 import {
+  PredictionListWrapper,
   // ButtonWrapper,
   PredictionsWrapper,
   Text1st,
@@ -99,13 +100,14 @@ export default function Predictions({ fixtures }) {
   return (
     <PredictionsWrapper className='predictions'>
       <Container>
-        <Paper style={{ marginTop: '2.5rem' }}>
-          <Grid container spacing={2} style={{ padding: '5px 10px 5px 13px', fontSize: '1.3rem' }}>
+        <Paper elevation={24} style={{ marginTop: '2.5rem', maxWidth: '700px' }}>
+          {/* <PredictionListWrapper>{renderUserPredictions()}</PredictionListWrapper> */}
+          <Grid container style={{ padding: '5px 10px 5px 0px', fontSize: '1.3rem' }}>
             {renderUserPredictions()}
           </Grid>
         </Paper>
 
-        <Paper>
+        <Paper elevation={24}>
           <TextPricePool>Price Pool {`  $${pricePool}`}</TextPricePool>
           <Text1st>1st {` $${pricePool * 0.6}`}</Text1st>
           <Text2nd>2nd {` $${pricePool * 0.3}`}</Text2nd>
