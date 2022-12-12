@@ -107,7 +107,7 @@ export const fixtures = {
     season: '2022',
   },
   errors: [],
-  results: 59,
+  results: 62,
   paging: {
     current: 1,
     total: 1,
@@ -116,7 +116,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855734,
-        referee: 'Wilton Pereira Sampaio',
+        referee: 'Wilton Pereira Sampaio, Brazil',
         timezone: 'UTC',
         date: '2022-11-21T16:00:00+00:00',
         timestamp: 1669046400,
@@ -126,8 +126,8 @@ export const fixtures = {
         },
         venue: {
           id: null,
-          name: 'Al Thumama Stadium',
-          city: 'Doha',
+          name: 'Al-Thumama Stadium',
+          city: 'Al-Thumama',
         },
         status: {
           long: 'Match Finished',
@@ -148,13 +148,13 @@ export const fixtures = {
         home: {
           id: 13,
           name: 'Senegal',
-          logo: 'https://media.api-sports.io/football/teams/13.png',
+          logo: 'https://media-2.api-sports.io/football/teams/13.png',
           winner: false,
         },
         away: {
           id: 1118,
           name: 'Netherlands',
-          logo: 'https://media.api-sports.io/football/teams/1118.png',
+          logo: 'https://media-2.api-sports.io/football/teams/1118.png',
           winner: true,
         },
       },
@@ -184,7 +184,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855735,
-        referee: 'Raphael Claus',
+        referee: 'Raphael Claus, Brazil',
         timezone: 'UTC',
         date: '2022-11-21T13:00:00+00:00',
         timestamp: 1669035600,
@@ -195,7 +195,7 @@ export const fixtures = {
         venue: {
           id: null,
           name: 'Khalifa International Stadium',
-          city: 'Ar-Rayyan',
+          city: 'Doha',
         },
         status: {
           long: 'Match Finished',
@@ -216,13 +216,13 @@ export const fixtures = {
         home: {
           id: 10,
           name: 'England',
-          logo: 'https://media.api-sports.io/football/teams/10.png',
+          logo: 'https://media-2.api-sports.io/football/teams/10.png',
           winner: true,
         },
         away: {
           id: 22,
           name: 'Iran',
-          logo: 'https://media.api-sports.io/football/teams/22.png',
+          logo: 'https://media-2.api-sports.io/football/teams/22.png',
           winner: false,
         },
       },
@@ -252,7 +252,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855736,
-        referee: 'D. Orsato',
+        referee: 'Daniele Orsato, Italy',
         timezone: 'UTC',
         date: '2022-11-20T16:00:00+00:00',
         timestamp: 1668960000,
@@ -284,13 +284,13 @@ export const fixtures = {
         home: {
           id: 1569,
           name: 'Qatar',
-          logo: 'https://media.api-sports.io/football/teams/1569.png',
+          logo: 'https://media-2.api-sports.io/football/teams/1569.png',
           winner: false,
         },
         away: {
           id: 2382,
           name: 'Ecuador',
-          logo: 'https://media.api-sports.io/football/teams/2382.png',
+          logo: 'https://media-2.api-sports.io/football/teams/2382.png',
           winner: true,
         },
       },
@@ -320,7 +320,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855737,
-        referee: 'S. Vinčić',
+        referee: 'Slavko Vincic, Slovenia',
         timezone: 'UTC',
         date: '2022-11-22T10:00:00+00:00',
         timestamp: 1669111200,
@@ -352,13 +352,13 @@ export const fixtures = {
         home: {
           id: 26,
           name: 'Argentina',
-          logo: 'https://media.api-sports.io/football/teams/26.png',
+          logo: 'https://media-2.api-sports.io/football/teams/26.png',
           winner: false,
         },
         away: {
           id: 23,
           name: 'Saudi Arabia',
-          logo: 'https://media.api-sports.io/football/teams/23.png',
+          logo: 'https://media-2.api-sports.io/football/teams/23.png',
           winner: true,
         },
       },
@@ -388,7 +388,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855738,
-        referee: 'C. Ramos',
+        referee: 'Cesar Arturo Ramos Palazuelos, Mexico',
         timezone: 'UTC',
         date: '2022-11-22T13:00:00+00:00',
         timestamp: 1669122000,
@@ -399,7 +399,7 @@ export const fixtures = {
         venue: {
           id: null,
           name: 'Education City Stadium',
-          city: 'Ar-Rayyan',
+          city: 'Al Rayyan',
         },
         status: {
           long: 'Match Finished',
@@ -420,13 +420,13 @@ export const fixtures = {
         home: {
           id: 21,
           name: 'Denmark',
-          logo: 'https://media.api-sports.io/football/teams/21.png',
+          logo: 'https://media-2.api-sports.io/football/teams/21.png',
           winner: null,
         },
         away: {
           id: 28,
           name: 'Tunisia',
-          logo: 'https://media.api-sports.io/football/teams/28.png',
+          logo: 'https://media-2.api-sports.io/football/teams/28.png',
           winner: null,
         },
       },
@@ -456,7 +456,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855739,
-        referee: 'C. Beath',
+        referee: 'Chris Beath, Australia',
         timezone: 'UTC',
         date: '2022-11-22T16:00:00+00:00',
         timestamp: 1669132800,
@@ -467,7 +467,7 @@ export const fixtures = {
         venue: {
           id: null,
           name: 'Stadium 974',
-          city: 'Doha',
+          city: 'Ras Abu Aboud',
         },
         status: {
           long: 'Match Finished',
@@ -488,13 +488,13 @@ export const fixtures = {
         home: {
           id: 16,
           name: 'Mexico',
-          logo: 'https://media.api-sports.io/football/teams/16.png',
+          logo: 'https://media-2.api-sports.io/football/teams/16.png',
           winner: null,
         },
         away: {
           id: 24,
           name: 'Poland',
-          logo: 'https://media.api-sports.io/football/teams/24.png',
+          logo: 'https://media-2.api-sports.io/football/teams/24.png',
           winner: null,
         },
       },
@@ -524,7 +524,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855740,
-        referee: 'F. Rapallini',
+        referee: 'Fernando Rapallini, Argentina',
         timezone: 'UTC',
         date: '2022-11-23T10:00:00+00:00',
         timestamp: 1669197600,
@@ -556,13 +556,13 @@ export const fixtures = {
         home: {
           id: 31,
           name: 'Morocco',
-          logo: 'https://media.api-sports.io/football/teams/31.png',
+          logo: 'https://media-2.api-sports.io/football/teams/31.png',
           winner: null,
         },
         away: {
           id: 3,
           name: 'Croatia',
-          logo: 'https://media.api-sports.io/football/teams/3.png',
+          logo: 'https://media-2.api-sports.io/football/teams/3.png',
           winner: null,
         },
       },
@@ -592,7 +592,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855741,
-        referee: 'Ivan Cisneros',
+        referee: 'Ivan Arcides Barton Cisneros, El Salvador',
         timezone: 'UTC',
         date: '2022-11-23T13:00:00+00:00',
         timestamp: 1669208400,
@@ -603,7 +603,7 @@ export const fixtures = {
         venue: {
           id: null,
           name: 'Khalifa International Stadium',
-          city: 'Ar-Rayyan',
+          city: 'Doha',
         },
         status: {
           long: 'Match Finished',
@@ -624,13 +624,13 @@ export const fixtures = {
         home: {
           id: 25,
           name: 'Germany',
-          logo: 'https://media.api-sports.io/football/teams/25.png',
+          logo: 'https://media-2.api-sports.io/football/teams/25.png',
           winner: false,
         },
         away: {
           id: 12,
           name: 'Japan',
-          logo: 'https://media.api-sports.io/football/teams/12.png',
+          logo: 'https://media-2.api-sports.io/football/teams/12.png',
           winner: true,
         },
       },
@@ -660,7 +660,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855742,
-        referee: 'J. Sikazwe',
+        referee: 'Janny Sikazwe, Zambia',
         timezone: 'UTC',
         date: '2022-11-23T19:00:00+00:00',
         timestamp: 1669230000,
@@ -670,8 +670,8 @@ export const fixtures = {
         },
         venue: {
           id: null,
-          name: 'Ahmad bin Ali Stadium',
-          city: 'Al-Rayyan',
+          name: 'Ahmed bin Ali Stadium',
+          city: 'Al Rayyan',
         },
         status: {
           long: 'Match Finished',
@@ -692,13 +692,13 @@ export const fixtures = {
         home: {
           id: 1,
           name: 'Belgium',
-          logo: 'https://media.api-sports.io/football/teams/1.png',
+          logo: 'https://media-2.api-sports.io/football/teams/1.png',
           winner: true,
         },
         away: {
           id: 5529,
           name: 'Canada',
-          logo: 'https://media.api-sports.io/football/teams/5529.png',
+          logo: 'https://media-2.api-sports.io/football/teams/5529.png',
           winner: false,
         },
       },
@@ -728,7 +728,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855743,
-        referee: 'F. Tello',
+        referee: 'Facundo Tello, Argentina',
         timezone: 'UTC',
         date: '2022-11-24T10:00:00+00:00',
         timestamp: 1669284000,
@@ -760,13 +760,13 @@ export const fixtures = {
         home: {
           id: 15,
           name: 'Switzerland',
-          logo: 'https://media.api-sports.io/football/teams/15.png',
+          logo: 'https://media-2.api-sports.io/football/teams/15.png',
           winner: true,
         },
         away: {
           id: 1530,
           name: 'Cameroon',
-          logo: 'https://media.api-sports.io/football/teams/1530.png',
+          logo: 'https://media-2.api-sports.io/football/teams/1530.png',
           winner: false,
         },
       },
@@ -796,7 +796,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855744,
-        referee: 'C. Turpin',
+        referee: 'Clement Turpin, France',
         timezone: 'UTC',
         date: '2022-11-24T13:00:00+00:00',
         timestamp: 1669294800,
@@ -807,7 +807,7 @@ export const fixtures = {
         venue: {
           id: null,
           name: 'Education City Stadium',
-          city: 'Ar-Rayyan',
+          city: 'Al Rayyan',
         },
         status: {
           long: 'Match Finished',
@@ -828,13 +828,13 @@ export const fixtures = {
         home: {
           id: 7,
           name: 'Uruguay',
-          logo: 'https://media.api-sports.io/football/teams/7.png',
+          logo: 'https://media-2.api-sports.io/football/teams/7.png',
           winner: null,
         },
         away: {
           id: 17,
           name: 'South Korea',
-          logo: 'https://media.api-sports.io/football/teams/17.png',
+          logo: 'https://media-2.api-sports.io/football/teams/17.png',
           winner: null,
         },
       },
@@ -864,7 +864,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855745,
-        referee: 'I. Elfath',
+        referee: 'Ismail Elfath, USA',
         timezone: 'UTC',
         date: '2022-11-24T16:00:00+00:00',
         timestamp: 1669305600,
@@ -875,7 +875,7 @@ export const fixtures = {
         venue: {
           id: null,
           name: 'Stadium 974',
-          city: 'Doha',
+          city: 'Ras Abu Aboud',
         },
         status: {
           long: 'Match Finished',
@@ -896,13 +896,13 @@ export const fixtures = {
         home: {
           id: 27,
           name: 'Portugal',
-          logo: 'https://media.api-sports.io/football/teams/27.png',
+          logo: 'https://media-2.api-sports.io/football/teams/27.png',
           winner: true,
         },
         away: {
           id: 1504,
           name: 'Ghana',
-          logo: 'https://media.api-sports.io/football/teams/1504.png',
+          logo: 'https://media-2.api-sports.io/football/teams/1504.png',
           winner: false,
         },
       },
@@ -932,7 +932,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855746,
-        referee: 'A. Faghani',
+        referee: 'Alireza Faghani, Iran',
         timezone: 'UTC',
         date: '2022-11-24T19:00:00+00:00',
         timestamp: 1669316400,
@@ -964,13 +964,13 @@ export const fixtures = {
         home: {
           id: 6,
           name: 'Brazil',
-          logo: 'https://media.api-sports.io/football/teams/6.png',
+          logo: 'https://media-2.api-sports.io/football/teams/6.png',
           winner: true,
         },
         away: {
           id: 14,
           name: 'Serbia',
-          logo: 'https://media.api-sports.io/football/teams/14.png',
+          logo: 'https://media-2.api-sports.io/football/teams/14.png',
           winner: false,
         },
       },
@@ -1000,7 +1000,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855747,
-        referee: 'Antonio Mateu',
+        referee: 'Antonio Mateu, Spain',
         timezone: 'UTC',
         date: '2022-11-25T13:00:00+00:00',
         timestamp: 1669381200,
@@ -1010,8 +1010,8 @@ export const fixtures = {
         },
         venue: {
           id: null,
-          name: 'Al Thumama Stadium',
-          city: 'Doha',
+          name: 'Al-Thumama Stadium',
+          city: 'Al-Thumama',
         },
         status: {
           long: 'Match Finished',
@@ -1032,13 +1032,13 @@ export const fixtures = {
         home: {
           id: 1569,
           name: 'Qatar',
-          logo: 'https://media.api-sports.io/football/teams/1569.png',
+          logo: 'https://media-2.api-sports.io/football/teams/1569.png',
           winner: false,
         },
         away: {
           id: 13,
           name: 'Senegal',
-          logo: 'https://media.api-sports.io/football/teams/13.png',
+          logo: 'https://media-2.api-sports.io/football/teams/13.png',
           winner: true,
         },
       },
@@ -1068,7 +1068,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855748,
-        referee: 'M. Ghorbal',
+        referee: 'Mustapha Ghorbal, Algeria',
         timezone: 'UTC',
         date: '2022-11-25T16:00:00+00:00',
         timestamp: 1669392000,
@@ -1079,7 +1079,7 @@ export const fixtures = {
         venue: {
           id: null,
           name: 'Khalifa International Stadium',
-          city: 'Ar-Rayyan',
+          city: 'Doha',
         },
         status: {
           long: 'Match Finished',
@@ -1100,13 +1100,13 @@ export const fixtures = {
         home: {
           id: 1118,
           name: 'Netherlands',
-          logo: 'https://media.api-sports.io/football/teams/1118.png',
+          logo: 'https://media-2.api-sports.io/football/teams/1118.png',
           winner: null,
         },
         away: {
           id: 2382,
           name: 'Ecuador',
-          logo: 'https://media.api-sports.io/football/teams/2382.png',
+          logo: 'https://media-2.api-sports.io/football/teams/2382.png',
           winner: null,
         },
       },
@@ -1136,7 +1136,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855749,
-        referee: 'J. Valenzuela',
+        referee: 'Jesus Valenzuela, Venezuela',
         timezone: 'UTC',
         date: '2022-11-25T19:00:00+00:00',
         timestamp: 1669402800,
@@ -1168,13 +1168,13 @@ export const fixtures = {
         home: {
           id: 10,
           name: 'England',
-          logo: 'https://media.api-sports.io/football/teams/10.png',
+          logo: 'https://media-2.api-sports.io/football/teams/10.png',
           winner: null,
         },
         away: {
           id: 2384,
           name: 'USA',
-          logo: 'https://media.api-sports.io/football/teams/2384.png',
+          logo: 'https://media-2.api-sports.io/football/teams/2384.png',
           winner: null,
         },
       },
@@ -1204,7 +1204,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855750,
-        referee: 'Wilton Pereira Sampaio',
+        referee: 'Wilton Pereira Sampaio, Brazil',
         timezone: 'UTC',
         date: '2022-11-26T13:00:00+00:00',
         timestamp: 1669467600,
@@ -1215,7 +1215,7 @@ export const fixtures = {
         venue: {
           id: null,
           name: 'Education City Stadium',
-          city: 'Ar-Rayyan',
+          city: 'Al Rayyan',
         },
         status: {
           long: 'Match Finished',
@@ -1236,13 +1236,13 @@ export const fixtures = {
         home: {
           id: 24,
           name: 'Poland',
-          logo: 'https://media.api-sports.io/football/teams/24.png',
+          logo: 'https://media-2.api-sports.io/football/teams/24.png',
           winner: true,
         },
         away: {
           id: 23,
           name: 'Saudi Arabia',
-          logo: 'https://media.api-sports.io/football/teams/23.png',
+          logo: 'https://media-2.api-sports.io/football/teams/23.png',
           winner: false,
         },
       },
@@ -1272,7 +1272,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855751,
-        referee: 'S. Marciniak',
+        referee: 'Szymon Marciniak, Poland',
         timezone: 'UTC',
         date: '2022-11-26T16:00:00+00:00',
         timestamp: 1669478400,
@@ -1283,7 +1283,7 @@ export const fixtures = {
         venue: {
           id: null,
           name: 'Stadium 974',
-          city: 'Doha',
+          city: 'Ras Abu Aboud',
         },
         status: {
           long: 'Match Finished',
@@ -1304,13 +1304,13 @@ export const fixtures = {
         home: {
           id: 2,
           name: 'France',
-          logo: 'https://media.api-sports.io/football/teams/2.png',
+          logo: 'https://media-2.api-sports.io/football/teams/2.png',
           winner: true,
         },
         away: {
           id: 21,
           name: 'Denmark',
-          logo: 'https://media.api-sports.io/football/teams/21.png',
+          logo: 'https://media-2.api-sports.io/football/teams/21.png',
           winner: false,
         },
       },
@@ -1340,7 +1340,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855752,
-        referee: 'D. Orsato',
+        referee: 'Daniele Orsato, Italy',
         timezone: 'UTC',
         date: '2022-11-26T19:00:00+00:00',
         timestamp: 1669489200,
@@ -1372,13 +1372,13 @@ export const fixtures = {
         home: {
           id: 26,
           name: 'Argentina',
-          logo: 'https://media.api-sports.io/football/teams/26.png',
+          logo: 'https://media-2.api-sports.io/football/teams/26.png',
           winner: true,
         },
         away: {
           id: 16,
           name: 'Mexico',
-          logo: 'https://media.api-sports.io/football/teams/16.png',
+          logo: 'https://media-2.api-sports.io/football/teams/16.png',
           winner: false,
         },
       },
@@ -1408,7 +1408,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855753,
-        referee: 'C. Ramos',
+        referee: 'Cesar Arturo Ramos Palazuelos, Mexico',
         timezone: 'UTC',
         date: '2022-11-27T13:00:00+00:00',
         timestamp: 1669554000,
@@ -1418,8 +1418,8 @@ export const fixtures = {
         },
         venue: {
           id: null,
-          name: 'Al Thumama Stadium',
-          city: 'Doha',
+          name: 'Al-Thumama Stadium',
+          city: 'Al-Thumama',
         },
         status: {
           long: 'Match Finished',
@@ -1440,13 +1440,13 @@ export const fixtures = {
         home: {
           id: 1,
           name: 'Belgium',
-          logo: 'https://media.api-sports.io/football/teams/1.png',
+          logo: 'https://media-2.api-sports.io/football/teams/1.png',
           winner: false,
         },
         away: {
           id: 31,
           name: 'Morocco',
-          logo: 'https://media.api-sports.io/football/teams/31.png',
+          logo: 'https://media-2.api-sports.io/football/teams/31.png',
           winner: true,
         },
       },
@@ -1476,7 +1476,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855754,
-        referee: 'A. Matonte',
+        referee: 'Andres Matonte, Uruguay',
         timezone: 'UTC',
         date: '2022-11-27T16:00:00+00:00',
         timestamp: 1669564800,
@@ -1487,7 +1487,7 @@ export const fixtures = {
         venue: {
           id: null,
           name: 'Khalifa International Stadium',
-          city: 'Ar-Rayyan',
+          city: 'Doha',
         },
         status: {
           long: 'Match Finished',
@@ -1508,13 +1508,13 @@ export const fixtures = {
         home: {
           id: 3,
           name: 'Croatia',
-          logo: 'https://media.api-sports.io/football/teams/3.png',
+          logo: 'https://media-2.api-sports.io/football/teams/3.png',
           winner: true,
         },
         away: {
           id: 5529,
           name: 'Canada',
-          logo: 'https://media.api-sports.io/football/teams/5529.png',
+          logo: 'https://media-2.api-sports.io/football/teams/5529.png',
           winner: false,
         },
       },
@@ -1544,7 +1544,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855755,
-        referee: 'D. Makkelie',
+        referee: 'Danny Desmond Makkelie, Netherlands',
         timezone: 'UTC',
         date: '2022-11-27T19:00:00+00:00',
         timestamp: 1669575600,
@@ -1576,13 +1576,13 @@ export const fixtures = {
         home: {
           id: 9,
           name: 'Spain',
-          logo: 'https://media.api-sports.io/football/teams/9.png',
+          logo: 'https://media-2.api-sports.io/football/teams/9.png',
           winner: null,
         },
         away: {
           id: 25,
           name: 'Germany',
-          logo: 'https://media.api-sports.io/football/teams/25.png',
+          logo: 'https://media-2.api-sports.io/football/teams/25.png',
           winner: null,
         },
       },
@@ -1612,7 +1612,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855756,
-        referee: 'Mohamed Abdulla Hassan Mohd',
+        referee: 'Mohammed Abdulla Hassan Mohamed, United Arab Emirates',
         timezone: 'UTC',
         date: '2022-11-28T10:00:00+00:00',
         timestamp: 1669629600,
@@ -1644,13 +1644,13 @@ export const fixtures = {
         home: {
           id: 1530,
           name: 'Cameroon',
-          logo: 'https://media.api-sports.io/football/teams/1530.png',
+          logo: 'https://media-2.api-sports.io/football/teams/1530.png',
           winner: null,
         },
         away: {
           id: 14,
           name: 'Serbia',
-          logo: 'https://media.api-sports.io/football/teams/14.png',
+          logo: 'https://media-2.api-sports.io/football/teams/14.png',
           winner: null,
         },
       },
@@ -1680,7 +1680,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855757,
-        referee: 'A. Taylor',
+        referee: 'Anthony Taylor, England',
         timezone: 'UTC',
         date: '2022-11-28T13:00:00+00:00',
         timestamp: 1669640400,
@@ -1691,7 +1691,7 @@ export const fixtures = {
         venue: {
           id: null,
           name: 'Education City Stadium',
-          city: 'Ar-Rayyan',
+          city: 'Al Rayyan',
         },
         status: {
           long: 'Match Finished',
@@ -1712,13 +1712,13 @@ export const fixtures = {
         home: {
           id: 17,
           name: 'South Korea',
-          logo: 'https://media.api-sports.io/football/teams/17.png',
+          logo: 'https://media-2.api-sports.io/football/teams/17.png',
           winner: false,
         },
         away: {
           id: 1504,
           name: 'Ghana',
-          logo: 'https://media.api-sports.io/football/teams/1504.png',
+          logo: 'https://media-2.api-sports.io/football/teams/1504.png',
           winner: true,
         },
       },
@@ -1748,7 +1748,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855758,
-        referee: 'Ivan Cisneros',
+        referee: 'Ivan Arcides Barton Cisneros, El Salvador',
         timezone: 'UTC',
         date: '2022-11-28T16:00:00+00:00',
         timestamp: 1669651200,
@@ -1759,7 +1759,7 @@ export const fixtures = {
         venue: {
           id: null,
           name: 'Stadium 974',
-          city: 'Doha',
+          city: 'Ras Abu Aboud',
         },
         status: {
           long: 'Match Finished',
@@ -1780,13 +1780,13 @@ export const fixtures = {
         home: {
           id: 6,
           name: 'Brazil',
-          logo: 'https://media.api-sports.io/football/teams/6.png',
+          logo: 'https://media-2.api-sports.io/football/teams/6.png',
           winner: true,
         },
         away: {
           id: 15,
           name: 'Switzerland',
-          logo: 'https://media.api-sports.io/football/teams/15.png',
+          logo: 'https://media-2.api-sports.io/football/teams/15.png',
           winner: false,
         },
       },
@@ -1816,7 +1816,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855759,
-        referee: 'A. Faghani',
+        referee: 'Alireza Faghani, Iran',
         timezone: 'UTC',
         date: '2022-11-28T19:00:00+00:00',
         timestamp: 1669662000,
@@ -1848,13 +1848,13 @@ export const fixtures = {
         home: {
           id: 27,
           name: 'Portugal',
-          logo: 'https://media.api-sports.io/football/teams/27.png',
+          logo: 'https://media-2.api-sports.io/football/teams/27.png',
           winner: true,
         },
         away: {
           id: 7,
           name: 'Uruguay',
-          logo: 'https://media.api-sports.io/football/teams/7.png',
+          logo: 'https://media-2.api-sports.io/football/teams/7.png',
           winner: false,
         },
       },
@@ -1884,7 +1884,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855760,
-        referee: 'B. Gassama',
+        referee: 'Bakary Papa Gassama, Gambia',
         timezone: 'UTC',
         date: '2022-11-29T15:00:00+00:00',
         timestamp: 1669734000,
@@ -1916,13 +1916,13 @@ export const fixtures = {
         home: {
           id: 1118,
           name: 'Netherlands',
-          logo: 'https://media.api-sports.io/football/teams/1118.png',
+          logo: 'https://media-2.api-sports.io/football/teams/1118.png',
           winner: true,
         },
         away: {
           id: 1569,
           name: 'Qatar',
-          logo: 'https://media.api-sports.io/football/teams/1569.png',
+          logo: 'https://media-2.api-sports.io/football/teams/1569.png',
           winner: false,
         },
       },
@@ -1952,7 +1952,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855761,
-        referee: 'C. Turpin',
+        referee: 'Clement Turpin, France',
         timezone: 'UTC',
         date: '2022-11-29T15:00:00+00:00',
         timestamp: 1669734000,
@@ -1963,7 +1963,7 @@ export const fixtures = {
         venue: {
           id: null,
           name: 'Khalifa International Stadium',
-          city: 'Ar-Rayyan',
+          city: 'Doha',
         },
         status: {
           long: 'Match Finished',
@@ -1984,13 +1984,13 @@ export const fixtures = {
         home: {
           id: 2382,
           name: 'Ecuador',
-          logo: 'https://media.api-sports.io/football/teams/2382.png',
+          logo: 'https://media-2.api-sports.io/football/teams/2382.png',
           winner: false,
         },
         away: {
           id: 13,
           name: 'Senegal',
-          logo: 'https://media.api-sports.io/football/teams/13.png',
+          logo: 'https://media-2.api-sports.io/football/teams/13.png',
           winner: true,
         },
       },
@@ -2020,7 +2020,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855762,
-        referee: 'Antonio Mateu',
+        referee: 'Antonio Mateu, Spain',
         timezone: 'UTC',
         date: '2022-11-29T19:00:00+00:00',
         timestamp: 1669748400,
@@ -2030,8 +2030,8 @@ export const fixtures = {
         },
         venue: {
           id: null,
-          name: 'Al Thumama Stadium',
-          city: 'Doha',
+          name: 'Al-Thumama Stadium',
+          city: 'Al-Thumama',
         },
         status: {
           long: 'Match Finished',
@@ -2052,13 +2052,13 @@ export const fixtures = {
         home: {
           id: 22,
           name: 'Iran',
-          logo: 'https://media.api-sports.io/football/teams/22.png',
+          logo: 'https://media-2.api-sports.io/football/teams/22.png',
           winner: false,
         },
         away: {
           id: 2384,
           name: 'USA',
-          logo: 'https://media.api-sports.io/football/teams/2384.png',
+          logo: 'https://media-2.api-sports.io/football/teams/2384.png',
           winner: true,
         },
       },
@@ -2088,7 +2088,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855763,
-        referee: 'M. Conger',
+        referee: 'Matt Conger, New Zealand',
         timezone: 'UTC',
         date: '2022-11-30T15:00:00+00:00',
         timestamp: 1669820400,
@@ -2099,7 +2099,7 @@ export const fixtures = {
         venue: {
           id: null,
           name: 'Education City Stadium',
-          city: 'Ar-Rayyan',
+          city: 'Al Rayyan',
         },
         status: {
           long: 'Match Finished',
@@ -2120,13 +2120,13 @@ export const fixtures = {
         home: {
           id: 28,
           name: 'Tunisia',
-          logo: 'https://media.api-sports.io/football/teams/28.png',
+          logo: 'https://media-2.api-sports.io/football/teams/28.png',
           winner: true,
         },
         away: {
           id: 2,
           name: 'France',
-          logo: 'https://media.api-sports.io/football/teams/2.png',
+          logo: 'https://media-2.api-sports.io/football/teams/2.png',
           winner: false,
         },
       },
@@ -2156,7 +2156,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855764,
-        referee: 'D. Makkelie',
+        referee: 'Danny Desmond Makkelie, Netherlands',
         timezone: 'UTC',
         date: '2022-11-30T19:00:00+00:00',
         timestamp: 1669834800,
@@ -2167,7 +2167,7 @@ export const fixtures = {
         venue: {
           id: null,
           name: 'Stadium 974',
-          city: 'Doha',
+          city: 'Ras Abu Aboud',
         },
         status: {
           long: 'Match Finished',
@@ -2188,13 +2188,13 @@ export const fixtures = {
         home: {
           id: 24,
           name: 'Poland',
-          logo: 'https://media.api-sports.io/football/teams/24.png',
+          logo: 'https://media-2.api-sports.io/football/teams/24.png',
           winner: false,
         },
         away: {
           id: 26,
           name: 'Argentina',
-          logo: 'https://media.api-sports.io/football/teams/26.png',
+          logo: 'https://media-2.api-sports.io/football/teams/26.png',
           winner: true,
         },
       },
@@ -2224,7 +2224,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855765,
-        referee: 'M. Oliver',
+        referee: 'Michael Oliver, England',
         timezone: 'UTC',
         date: '2022-11-30T19:00:00+00:00',
         timestamp: 1669834800,
@@ -2256,13 +2256,13 @@ export const fixtures = {
         home: {
           id: 23,
           name: 'Saudi Arabia',
-          logo: 'https://media.api-sports.io/football/teams/23.png',
+          logo: 'https://media-2.api-sports.io/football/teams/23.png',
           winner: false,
         },
         away: {
           id: 16,
           name: 'Mexico',
-          logo: 'https://media.api-sports.io/football/teams/16.png',
+          logo: 'https://media-2.api-sports.io/football/teams/16.png',
           winner: true,
         },
       },
@@ -2292,7 +2292,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855766,
-        referee: 'A. Taylor',
+        referee: 'Anthony Taylor, England',
         timezone: 'UTC',
         date: '2022-12-01T15:00:00+00:00',
         timestamp: 1669906800,
@@ -2302,8 +2302,8 @@ export const fixtures = {
         },
         venue: {
           id: null,
-          name: 'Ahmad bin Ali Stadium',
-          city: 'Al-Rayyan',
+          name: 'Ahmed bin Ali Stadium',
+          city: 'Al Rayyan',
         },
         status: {
           long: 'Match Finished',
@@ -2324,13 +2324,13 @@ export const fixtures = {
         home: {
           id: 3,
           name: 'Croatia',
-          logo: 'https://media.api-sports.io/football/teams/3.png',
+          logo: 'https://media-2.api-sports.io/football/teams/3.png',
           winner: null,
         },
         away: {
           id: 1,
           name: 'Belgium',
-          logo: 'https://media.api-sports.io/football/teams/1.png',
+          logo: 'https://media-2.api-sports.io/football/teams/1.png',
           winner: null,
         },
       },
@@ -2360,7 +2360,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855767,
-        referee: 'Raphael Claus',
+        referee: 'Raphael Claus, Brazil',
         timezone: 'UTC',
         date: '2022-12-01T15:00:00+00:00',
         timestamp: 1669906800,
@@ -2370,8 +2370,8 @@ export const fixtures = {
         },
         venue: {
           id: null,
-          name: 'Al Thumama Stadium',
-          city: 'Doha',
+          name: 'Al-Thumama Stadium',
+          city: 'Al-Thumama',
         },
         status: {
           long: 'Match Finished',
@@ -2392,13 +2392,13 @@ export const fixtures = {
         home: {
           id: 5529,
           name: 'Canada',
-          logo: 'https://media.api-sports.io/football/teams/5529.png',
+          logo: 'https://media-2.api-sports.io/football/teams/5529.png',
           winner: false,
         },
         away: {
           id: 31,
           name: 'Morocco',
-          logo: 'https://media.api-sports.io/football/teams/31.png',
+          logo: 'https://media-2.api-sports.io/football/teams/31.png',
           winner: true,
         },
       },
@@ -2428,7 +2428,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855768,
-        referee: 'V. Gomes',
+        referee: 'Victor Gomes, South Africa',
         timezone: 'UTC',
         date: '2022-12-01T19:00:00+00:00',
         timestamp: 1669921200,
@@ -2439,7 +2439,7 @@ export const fixtures = {
         venue: {
           id: null,
           name: 'Khalifa International Stadium',
-          city: 'Ar-Rayyan',
+          city: 'Doha',
         },
         status: {
           long: 'Match Finished',
@@ -2460,13 +2460,13 @@ export const fixtures = {
         home: {
           id: 12,
           name: 'Japan',
-          logo: 'https://media.api-sports.io/football/teams/12.png',
+          logo: 'https://media-2.api-sports.io/football/teams/12.png',
           winner: true,
         },
         away: {
           id: 9,
           name: 'Spain',
-          logo: 'https://media.api-sports.io/football/teams/9.png',
+          logo: 'https://media-2.api-sports.io/football/teams/9.png',
           winner: false,
         },
       },
@@ -2496,7 +2496,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855769,
-        referee: 'F. Tello',
+        referee: 'Facundo Tello, Argentina',
         timezone: 'UTC',
         date: '2022-12-02T15:00:00+00:00',
         timestamp: 1669993200,
@@ -2507,7 +2507,7 @@ export const fixtures = {
         venue: {
           id: null,
           name: 'Education City Stadium',
-          city: 'Ar-Rayyan',
+          city: 'Al Rayyan',
         },
         status: {
           long: 'Match Finished',
@@ -2528,13 +2528,13 @@ export const fixtures = {
         home: {
           id: 17,
           name: 'South Korea',
-          logo: 'https://media.api-sports.io/football/teams/17.png',
+          logo: 'https://media-2.api-sports.io/football/teams/17.png',
           winner: true,
         },
         away: {
           id: 27,
           name: 'Portugal',
-          logo: 'https://media.api-sports.io/football/teams/27.png',
+          logo: 'https://media-2.api-sports.io/football/teams/27.png',
           winner: false,
         },
       },
@@ -2564,7 +2564,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855770,
-        referee: 'D. Siebert',
+        referee: 'Daniel Siebert, Germany',
         timezone: 'UTC',
         date: '2022-12-02T15:00:00+00:00',
         timestamp: 1669993200,
@@ -2596,13 +2596,13 @@ export const fixtures = {
         home: {
           id: 1504,
           name: 'Ghana',
-          logo: 'https://media.api-sports.io/football/teams/1504.png',
+          logo: 'https://media-2.api-sports.io/football/teams/1504.png',
           winner: false,
         },
         away: {
           id: 7,
           name: 'Uruguay',
-          logo: 'https://media.api-sports.io/football/teams/7.png',
+          logo: 'https://media-2.api-sports.io/football/teams/7.png',
           winner: true,
         },
       },
@@ -2632,7 +2632,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855771,
-        referee: 'I. Elfath',
+        referee: 'Ismail Elfath, USA',
         timezone: 'UTC',
         date: '2022-12-02T19:00:00+00:00',
         timestamp: 1670007600,
@@ -2664,13 +2664,13 @@ export const fixtures = {
         home: {
           id: 1530,
           name: 'Cameroon',
-          logo: 'https://media.api-sports.io/football/teams/1530.png',
+          logo: 'https://media-2.api-sports.io/football/teams/1530.png',
           winner: true,
         },
         away: {
           id: 6,
           name: 'Brazil',
-          logo: 'https://media.api-sports.io/football/teams/6.png',
+          logo: 'https://media-2.api-sports.io/football/teams/6.png',
           winner: false,
         },
       },
@@ -2700,7 +2700,7 @@ export const fixtures = {
     {
       fixture: {
         id: 855772,
-        referee: 'F. Rapallini',
+        referee: 'Fernando Rapallini, Argentina',
         timezone: 'UTC',
         date: '2022-12-02T19:00:00+00:00',
         timestamp: 1670007600,
@@ -2711,7 +2711,7 @@ export const fixtures = {
         venue: {
           id: null,
           name: 'Stadium 974',
-          city: 'Doha',
+          city: 'Ras Abu Aboud',
         },
         status: {
           long: 'Match Finished',
@@ -2732,13 +2732,13 @@ export const fixtures = {
         home: {
           id: 14,
           name: 'Serbia',
-          logo: 'https://media.api-sports.io/football/teams/14.png',
+          logo: 'https://media-2.api-sports.io/football/teams/14.png',
           winner: false,
         },
         away: {
           id: 15,
           name: 'Switzerland',
-          logo: 'https://media.api-sports.io/football/teams/15.png',
+          logo: 'https://media-2.api-sports.io/football/teams/15.png',
           winner: true,
         },
       },
@@ -2768,7 +2768,7 @@ export const fixtures = {
     {
       fixture: {
         id: 866681,
-        referee: 'Abdulrahman Al Jassim',
+        referee: 'Ibrahim Al-Jassim Abdulrahman, Qatar',
         timezone: 'UTC',
         date: '2022-11-21T19:00:00+00:00',
         timestamp: 1669057200,
@@ -2778,8 +2778,8 @@ export const fixtures = {
         },
         venue: {
           id: null,
-          name: 'Ahmad bin Ali Stadium',
-          city: 'Al-Rayyan',
+          name: 'Ahmed bin Ali Stadium',
+          city: 'Al Rayyan',
         },
         status: {
           long: 'Match Finished',
@@ -2800,13 +2800,13 @@ export const fixtures = {
         home: {
           id: 2384,
           name: 'USA',
-          logo: 'https://media.api-sports.io/football/teams/2384.png',
+          logo: 'https://media-2.api-sports.io/football/teams/2384.png',
           winner: null,
         },
         away: {
           id: 767,
           name: 'Wales',
-          logo: 'https://media.api-sports.io/football/teams/767.png',
+          logo: 'https://media-2.api-sports.io/football/teams/767.png',
           winner: null,
         },
       },
@@ -2836,7 +2836,7 @@ export const fixtures = {
     {
       fixture: {
         id: 866682,
-        referee: 'M. Escobar',
+        referee: 'Mario Escobar, Guatemala',
         timezone: 'UTC',
         date: '2022-11-25T10:00:00+00:00',
         timestamp: 1669370400,
@@ -2846,8 +2846,8 @@ export const fixtures = {
         },
         venue: {
           id: null,
-          name: 'Ahmad bin Ali Stadium',
-          city: 'Al-Rayyan',
+          name: 'Ahmed bin Ali Stadium',
+          city: 'Al Rayyan',
         },
         status: {
           long: 'Match Finished',
@@ -2868,13 +2868,13 @@ export const fixtures = {
         home: {
           id: 767,
           name: 'Wales',
-          logo: 'https://media.api-sports.io/football/teams/767.png',
+          logo: 'https://media-2.api-sports.io/football/teams/767.png',
           winner: false,
         },
         away: {
           id: 22,
           name: 'Iran',
-          logo: 'https://media.api-sports.io/football/teams/22.png',
+          logo: 'https://media-2.api-sports.io/football/teams/22.png',
           winner: true,
         },
       },
@@ -2904,7 +2904,7 @@ export const fixtures = {
     {
       fixture: {
         id: 866683,
-        referee: 'S. Vinčić',
+        referee: 'Slavko Vincic, Slovenia',
         timezone: 'UTC',
         date: '2022-11-29T19:00:00+00:00',
         timestamp: 1669748400,
@@ -2914,8 +2914,8 @@ export const fixtures = {
         },
         venue: {
           id: null,
-          name: 'Ahmad bin Ali Stadium',
-          city: 'Al-Rayyan',
+          name: 'Ahmed bin Ali Stadium',
+          city: 'Al Rayyan',
         },
         status: {
           long: 'Match Finished',
@@ -2936,13 +2936,13 @@ export const fixtures = {
         home: {
           id: 767,
           name: 'Wales',
-          logo: 'https://media.api-sports.io/football/teams/767.png',
+          logo: 'https://media-2.api-sports.io/football/teams/767.png',
           winner: false,
         },
         away: {
           id: 10,
           name: 'England',
-          logo: 'https://media.api-sports.io/football/teams/10.png',
+          logo: 'https://media-2.api-sports.io/football/teams/10.png',
           winner: true,
         },
       },
@@ -2972,7 +2972,7 @@ export const fixtures = {
     {
       fixture: {
         id: 871850,
-        referee: 'V. Gomes',
+        referee: 'Victor Gomes, South Africa',
         timezone: 'UTC',
         date: '2022-11-22T19:00:00+00:00',
         timestamp: 1669143600,
@@ -3004,13 +3004,13 @@ export const fixtures = {
         home: {
           id: 2,
           name: 'France',
-          logo: 'https://media.api-sports.io/football/teams/2.png',
+          logo: 'https://media-2.api-sports.io/football/teams/2.png',
           winner: true,
         },
         away: {
           id: 20,
           name: 'Australia',
-          logo: 'https://media.api-sports.io/football/teams/20.png',
+          logo: 'https://media-2.api-sports.io/football/teams/20.png',
           winner: false,
         },
       },
@@ -3040,7 +3040,7 @@ export const fixtures = {
     {
       fixture: {
         id: 871851,
-        referee: 'Mohamed Abdulla Hassan Mohd',
+        referee: 'Mohammed Abdulla Hassan Mohamed, United Arab Emirates',
         timezone: 'UTC',
         date: '2022-11-23T16:00:00+00:00',
         timestamp: 1669219200,
@@ -3050,8 +3050,8 @@ export const fixtures = {
         },
         venue: {
           id: null,
-          name: 'Al Thumama Stadium',
-          city: 'Doha',
+          name: 'Al-Thumama Stadium',
+          city: 'Al-Thumama',
         },
         status: {
           long: 'Match Finished',
@@ -3072,13 +3072,13 @@ export const fixtures = {
         home: {
           id: 9,
           name: 'Spain',
-          logo: 'https://media.api-sports.io/football/teams/9.png',
+          logo: 'https://media-2.api-sports.io/football/teams/9.png',
           winner: true,
         },
         away: {
           id: 29,
           name: 'Costa Rica',
-          logo: 'https://media.api-sports.io/football/teams/29.png',
+          logo: 'https://media-2.api-sports.io/football/teams/29.png',
           winner: false,
         },
       },
@@ -3108,7 +3108,7 @@ export const fixtures = {
     {
       fixture: {
         id: 871852,
-        referee: 'D. Siebert',
+        referee: 'Daniel Siebert, Germany',
         timezone: 'UTC',
         date: '2022-11-26T10:00:00+00:00',
         timestamp: 1669456800,
@@ -3140,13 +3140,13 @@ export const fixtures = {
         home: {
           id: 28,
           name: 'Tunisia',
-          logo: 'https://media.api-sports.io/football/teams/28.png',
+          logo: 'https://media-2.api-sports.io/football/teams/28.png',
           winner: false,
         },
         away: {
           id: 20,
           name: 'Australia',
-          logo: 'https://media.api-sports.io/football/teams/20.png',
+          logo: 'https://media-2.api-sports.io/football/teams/20.png',
           winner: true,
         },
       },
@@ -3176,7 +3176,7 @@ export const fixtures = {
     {
       fixture: {
         id: 871853,
-        referee: 'M. Oliver',
+        referee: 'Michael Oliver, England',
         timezone: 'UTC',
         date: '2022-11-27T10:00:00+00:00',
         timestamp: 1669543200,
@@ -3186,8 +3186,8 @@ export const fixtures = {
         },
         venue: {
           id: null,
-          name: 'Ahmad bin Ali Stadium',
-          city: 'Al-Rayyan',
+          name: 'Ahmed bin Ali Stadium',
+          city: 'Al Rayyan',
         },
         status: {
           long: 'Match Finished',
@@ -3208,13 +3208,13 @@ export const fixtures = {
         home: {
           id: 12,
           name: 'Japan',
-          logo: 'https://media.api-sports.io/football/teams/12.png',
+          logo: 'https://media-2.api-sports.io/football/teams/12.png',
           winner: false,
         },
         away: {
           id: 29,
           name: 'Costa Rica',
-          logo: 'https://media.api-sports.io/football/teams/29.png',
+          logo: 'https://media-2.api-sports.io/football/teams/29.png',
           winner: true,
         },
       },
@@ -3244,7 +3244,7 @@ export const fixtures = {
     {
       fixture: {
         id: 871854,
-        referee: 'M. Ghorbal',
+        referee: 'Mustapha Ghorbal, Algeria',
         timezone: 'UTC',
         date: '2022-11-30T15:00:00+00:00',
         timestamp: 1669820400,
@@ -3276,13 +3276,13 @@ export const fixtures = {
         home: {
           id: 20,
           name: 'Australia',
-          logo: 'https://media.api-sports.io/football/teams/20.png',
+          logo: 'https://media-2.api-sports.io/football/teams/20.png',
           winner: true,
         },
         away: {
           id: 21,
           name: 'Denmark',
-          logo: 'https://media.api-sports.io/football/teams/21.png',
+          logo: 'https://media-2.api-sports.io/football/teams/21.png',
           winner: false,
         },
       },
@@ -3312,7 +3312,7 @@ export const fixtures = {
     {
       fixture: {
         id: 871855,
-        referee: 'S. Frappart',
+        referee: 'Stephanie Frappart, France',
         timezone: 'UTC',
         date: '2022-12-01T19:00:00+00:00',
         timestamp: 1669921200,
@@ -3344,13 +3344,13 @@ export const fixtures = {
         home: {
           id: 29,
           name: 'Costa Rica',
-          logo: 'https://media.api-sports.io/football/teams/29.png',
+          logo: 'https://media-2.api-sports.io/football/teams/29.png',
           winner: false,
         },
         away: {
           id: 25,
           name: 'Germany',
-          logo: 'https://media.api-sports.io/football/teams/25.png',
+          logo: 'https://media-2.api-sports.io/football/teams/25.png',
           winner: true,
         },
       },
@@ -3380,7 +3380,7 @@ export const fixtures = {
     {
       fixture: {
         id: 976533,
-        referee: 'Wilton Pereira Sampaio',
+        referee: 'Wilton Pereira Sampaio, Brazil',
         timezone: 'UTC',
         date: '2022-12-03T15:00:00+00:00',
         timestamp: 1670079600,
@@ -3391,7 +3391,7 @@ export const fixtures = {
         venue: {
           id: null,
           name: 'Khalifa International Stadium',
-          city: 'Ar-Rayyan',
+          city: 'Doha',
         },
         status: {
           long: 'Match Finished',
@@ -3412,13 +3412,13 @@ export const fixtures = {
         home: {
           id: 1118,
           name: 'Netherlands',
-          logo: 'https://media.api-sports.io/football/teams/1118.png',
+          logo: 'https://media-2.api-sports.io/football/teams/1118.png',
           winner: true,
         },
         away: {
           id: 2384,
           name: 'USA',
-          logo: 'https://media.api-sports.io/football/teams/2384.png',
+          logo: 'https://media-2.api-sports.io/football/teams/2384.png',
           winner: false,
         },
       },
@@ -3448,7 +3448,7 @@ export const fixtures = {
     {
       fixture: {
         id: 976534,
-        referee: 'Ivan Cisneros',
+        referee: 'Ivan Arcides Barton Cisneros, El Salvador',
         timezone: 'UTC',
         date: '2022-12-04T19:00:00+00:00',
         timestamp: 1670180400,
@@ -3480,13 +3480,13 @@ export const fixtures = {
         home: {
           id: 10,
           name: 'England',
-          logo: 'https://media.api-sports.io/football/teams/10.png',
+          logo: 'https://media-2.api-sports.io/football/teams/10.png',
           winner: true,
         },
         away: {
           id: 13,
           name: 'Senegal',
-          logo: 'https://media.api-sports.io/football/teams/13.png',
+          logo: 'https://media-2.api-sports.io/football/teams/13.png',
           winner: false,
         },
       },
@@ -3516,7 +3516,7 @@ export const fixtures = {
     {
       fixture: {
         id: 976642,
-        referee: 'S. Marciniak',
+        referee: 'Szymon Marciniak, Poland',
         timezone: 'UTC',
         date: '2022-12-03T19:00:00+00:00',
         timestamp: 1670094000,
@@ -3526,8 +3526,8 @@ export const fixtures = {
         },
         venue: {
           id: null,
-          name: 'Ahmad bin Ali Stadium',
-          city: 'Al-Rayyan',
+          name: 'Ahmed bin Ali Stadium',
+          city: 'Al Rayyan',
         },
         status: {
           long: 'Match Finished',
@@ -3548,13 +3548,13 @@ export const fixtures = {
         home: {
           id: 26,
           name: 'Argentina',
-          logo: 'https://media.api-sports.io/football/teams/26.png',
+          logo: 'https://media-2.api-sports.io/football/teams/26.png',
           winner: true,
         },
         away: {
           id: 20,
           name: 'Australia',
-          logo: 'https://media.api-sports.io/football/teams/20.png',
+          logo: 'https://media-2.api-sports.io/football/teams/20.png',
           winner: false,
         },
       },
@@ -3584,7 +3584,7 @@ export const fixtures = {
     {
       fixture: {
         id: 976643,
-        referee: 'J. Valenzuela',
+        referee: 'Jesus Valenzuela, Venezuela',
         timezone: 'UTC',
         date: '2022-12-04T15:00:00+00:00',
         timestamp: 1670166000,
@@ -3594,8 +3594,8 @@ export const fixtures = {
         },
         venue: {
           id: null,
-          name: 'Al Thumama Stadium',
-          city: 'Doha',
+          name: 'Al-Thumama Stadium',
+          city: 'Al-Thumama',
         },
         status: {
           long: 'Match Finished',
@@ -3616,13 +3616,13 @@ export const fixtures = {
         home: {
           id: 2,
           name: 'France',
-          logo: 'https://media.api-sports.io/football/teams/2.png',
+          logo: 'https://media-2.api-sports.io/football/teams/2.png',
           winner: true,
         },
         away: {
           id: 24,
           name: 'Poland',
-          logo: 'https://media.api-sports.io/football/teams/24.png',
+          logo: 'https://media-2.api-sports.io/football/teams/24.png',
           winner: false,
         },
       },
@@ -3684,13 +3684,13 @@ export const fixtures = {
         home: {
           id: 12,
           name: 'Japan',
-          logo: 'https://media.api-sports.io/football/teams/12.png',
+          logo: 'https://media-2.api-sports.io/football/teams/12.png',
           winner: false,
         },
         away: {
           id: 3,
           name: 'Croatia',
-          logo: 'https://media.api-sports.io/football/teams/3.png',
+          logo: 'https://media-2.api-sports.io/football/teams/3.png',
           winner: true,
         },
       },
@@ -3720,23 +3720,23 @@ export const fixtures = {
     {
       fixture: {
         id: 977345,
-        referee: 'F. Rapallini',
+        referee: 'Fernando Rapallini, Argentina',
         timezone: 'UTC',
         date: '2022-12-06T15:00:00+00:00',
         timestamp: 1670338800,
         periods: {
-          first: null,
-          second: null,
+          first: 1670338800,
+          second: 1670342400,
         },
         venue: {
           id: null,
           name: 'Education City Stadium',
-          city: 'Ar-Rayyan',
+          city: 'Al Rayyan',
         },
         status: {
-          long: 'Not Started',
-          short: 'NS',
-          elapsed: null,
+          long: 'Match Finished',
+          short: 'PEN',
+          elapsed: 120,
         },
       },
       league: {
@@ -3752,36 +3752,36 @@ export const fixtures = {
         home: {
           id: 31,
           name: 'Morocco',
-          logo: 'https://media.api-sports.io/football/teams/31.png',
-          winner: null,
+          logo: 'https://media-2.api-sports.io/football/teams/31.png',
+          winner: true,
         },
         away: {
           id: 9,
           name: 'Spain',
-          logo: 'https://media.api-sports.io/football/teams/9.png',
-          winner: null,
+          logo: 'https://media-2.api-sports.io/football/teams/9.png',
+          winner: false,
         },
       },
       goals: {
-        home: null,
-        away: null,
+        home: 0,
+        away: 0,
       },
       score: {
         halftime: {
-          home: null,
-          away: null,
+          home: 0,
+          away: 0,
         },
         fulltime: {
-          home: null,
-          away: null,
+          home: 0,
+          away: 0,
         },
         extratime: {
-          home: null,
-          away: null,
+          home: 0,
+          away: 0,
         },
         penalty: {
-          home: null,
-          away: null,
+          home: 3,
+          away: 0,
         },
       },
     },
@@ -3820,13 +3820,13 @@ export const fixtures = {
         home: {
           id: 6,
           name: 'Brazil',
-          logo: 'https://media.api-sports.io/football/teams/6.png',
+          logo: 'https://media-2.api-sports.io/football/teams/6.png',
           winner: true,
         },
         away: {
           id: 17,
           name: 'South Korea',
-          logo: 'https://media.api-sports.io/football/teams/17.png',
+          logo: 'https://media-2.api-sports.io/football/teams/17.png',
           winner: false,
         },
       },
@@ -3856,13 +3856,13 @@ export const fixtures = {
     {
       fixture: {
         id: 977706,
-        referee: 'C. Ramos',
+        referee: 'Cesar Arturo Ramos Palazuelos, Mexico',
         timezone: 'UTC',
         date: '2022-12-06T19:00:00+00:00',
         timestamp: 1670353200,
         periods: {
-          first: null,
-          second: null,
+          first: 1670353200,
+          second: 1670356800,
         },
         venue: {
           id: null,
@@ -3870,9 +3870,9 @@ export const fixtures = {
           city: 'Lusail',
         },
         status: {
-          long: 'Not Started',
-          short: 'NS',
-          elapsed: null,
+          long: 'Match Finished',
+          short: 'FT',
+          elapsed: 90,
         },
       },
       league: {
@@ -3888,28 +3888,28 @@ export const fixtures = {
         home: {
           id: 27,
           name: 'Portugal',
-          logo: 'https://media.api-sports.io/football/teams/27.png',
-          winner: null,
+          logo: 'https://media-2.api-sports.io/football/teams/27.png',
+          winner: true,
         },
         away: {
           id: 15,
           name: 'Switzerland',
-          logo: 'https://media.api-sports.io/football/teams/15.png',
-          winner: null,
+          logo: 'https://media-2.api-sports.io/football/teams/15.png',
+          winner: false,
         },
       },
       goals: {
-        home: null,
-        away: null,
+        home: 6,
+        away: 1,
       },
       score: {
         halftime: {
-          home: null,
-          away: null,
+          home: 2,
+          away: 0,
         },
         fulltime: {
-          home: null,
-          away: null,
+          home: 6,
+          away: 1,
         },
         extratime: {
           home: null,
@@ -3924,10 +3924,282 @@ export const fixtures = {
     {
       fixture: {
         id: 977794,
-        referee: null,
+        referee: 'Antonio Mateu, Spain',
         timezone: 'UTC',
         date: '2022-12-09T19:00:00+00:00',
         timestamp: 1670612400,
+        periods: {
+          first: 1670612400,
+          second: 1670616000,
+        },
+        venue: {
+          id: null,
+          name: 'Lusail Iconic Stadium',
+          city: 'Lusail',
+        },
+        status: {
+          long: 'Match Finished',
+          short: 'PEN',
+          elapsed: 120,
+        },
+      },
+      league: {
+        id: 1,
+        name: 'World Cup',
+        country: 'World',
+        logo: 'https://media.api-sports.io/football/leagues/1.png',
+        flag: null,
+        season: 2022,
+        round: 'Quarter-finals',
+      },
+      teams: {
+        home: {
+          id: 1118,
+          name: 'Netherlands',
+          logo: 'https://media-2.api-sports.io/football/teams/1118.png',
+          winner: false,
+        },
+        away: {
+          id: 26,
+          name: 'Argentina',
+          logo: 'https://media-2.api-sports.io/football/teams/26.png',
+          winner: true,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 2,
+          away: 2,
+        },
+        extratime: {
+          home: 0,
+          away: 0,
+        },
+        penalty: {
+          home: 3,
+          away: 4,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 978036,
+        referee: 'Wilton Pereira Sampaio, Brazil',
+        timezone: 'UTC',
+        date: '2022-12-10T19:00:00+00:00',
+        timestamp: 1670698800,
+        periods: {
+          first: 1670698800,
+          second: 1670702400,
+        },
+        venue: {
+          id: null,
+          name: 'Al Bayt Stadium',
+          city: 'Al Khor',
+        },
+        status: {
+          long: 'Match Finished',
+          short: 'FT',
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 1,
+        name: 'World Cup',
+        country: 'World',
+        logo: 'https://media.api-sports.io/football/leagues/1.png',
+        flag: null,
+        season: 2022,
+        round: 'Quarter-finals',
+      },
+      teams: {
+        home: {
+          id: 10,
+          name: 'England',
+          logo: 'https://media-2.api-sports.io/football/teams/10.png',
+          winner: false,
+        },
+        away: {
+          id: 2,
+          name: 'France',
+          logo: 'https://media-2.api-sports.io/football/teams/2.png',
+          winner: true,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 1,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 978072,
+        referee: 'Michael Oliver, England',
+        timezone: 'UTC',
+        date: '2022-12-09T15:00:00+00:00',
+        timestamp: 1670598000,
+        periods: {
+          first: 1670598000,
+          second: 1670601600,
+        },
+        venue: {
+          id: null,
+          name: 'Education City Stadium',
+          city: 'Al Rayyan',
+        },
+        status: {
+          long: 'Match Finished',
+          short: 'PEN',
+          elapsed: 120,
+        },
+      },
+      league: {
+        id: 1,
+        name: 'World Cup',
+        country: 'World',
+        logo: 'https://media.api-sports.io/football/leagues/1.png',
+        flag: null,
+        season: 2022,
+        round: 'Quarter-finals',
+      },
+      teams: {
+        home: {
+          id: 3,
+          name: 'Croatia',
+          logo: 'https://media-2.api-sports.io/football/teams/3.png',
+          winner: true,
+        },
+        away: {
+          id: 6,
+          name: 'Brazil',
+          logo: 'https://media-2.api-sports.io/football/teams/6.png',
+          winner: false,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 0,
+        },
+        extratime: {
+          home: 1,
+          away: 1,
+        },
+        penalty: {
+          home: 4,
+          away: 2,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 978088,
+        referee: 'Facundo Tello, Argentina',
+        timezone: 'UTC',
+        date: '2022-12-10T15:00:00+00:00',
+        timestamp: 1670684400,
+        periods: {
+          first: 1670684400,
+          second: 1670688000,
+        },
+        venue: {
+          id: null,
+          name: 'Al-Thumama Stadium',
+          city: 'Al-Thumama',
+        },
+        status: {
+          long: 'Match Finished',
+          short: 'FT',
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 1,
+        name: 'World Cup',
+        country: 'World',
+        logo: 'https://media.api-sports.io/football/leagues/1.png',
+        flag: null,
+        season: 2022,
+        round: 'Quarter-finals',
+      },
+      teams: {
+        home: {
+          id: 31,
+          name: 'Morocco',
+          logo: 'https://media-2.api-sports.io/football/teams/31.png',
+          winner: true,
+        },
+        away: {
+          id: 27,
+          name: 'Portugal',
+          logo: 'https://media-2.api-sports.io/football/teams/27.png',
+          winner: false,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 978279,
+        referee: null,
+        timezone: 'UTC',
+        date: '2022-12-13T19:00:00+00:00',
+        timestamp: 1670958000,
         periods: {
           first: null,
           second: null,
@@ -3950,19 +4222,19 @@ export const fixtures = {
         logo: 'https://media.api-sports.io/football/leagues/1.png',
         flag: null,
         season: 2022,
-        round: 'Quarter-finals',
+        round: 'Semi-finals',
       },
       teams: {
         home: {
-          id: 1118,
-          name: 'Netherlands',
-          logo: 'https://media.api-sports.io/football/teams/1118.png',
+          id: 26,
+          name: 'Argentina',
+          logo: 'https://media-2.api-sports.io/football/teams/26.png',
           winner: null,
         },
         away: {
-          id: 26,
-          name: 'Argentina',
-          logo: 'https://media.api-sports.io/football/teams/26.png',
+          id: 3,
+          name: 'Croatia',
+          logo: 'https://media-2.api-sports.io/football/teams/3.png',
           winner: null,
         },
       },
@@ -3991,11 +4263,11 @@ export const fixtures = {
     },
     {
       fixture: {
-        id: 978036,
+        id: 978488,
         referee: null,
         timezone: 'UTC',
-        date: '2022-12-10T19:00:00+00:00',
-        timestamp: 1670698800,
+        date: '2022-12-14T19:00:00+00:00',
+        timestamp: 1671044400,
         periods: {
           first: null,
           second: null,
@@ -4018,87 +4290,19 @@ export const fixtures = {
         logo: 'https://media.api-sports.io/football/leagues/1.png',
         flag: null,
         season: 2022,
-        round: 'Quarter-finals',
+        round: 'Semi-finals',
       },
       teams: {
         home: {
-          id: 10,
-          name: 'England',
-          logo: 'https://media.api-sports.io/football/teams/10.png',
-          winner: null,
-        },
-        away: {
           id: 2,
           name: 'France',
-          logo: 'https://media.api-sports.io/football/teams/2.png',
-          winner: null,
-        },
-      },
-      goals: {
-        home: null,
-        away: null,
-      },
-      score: {
-        halftime: {
-          home: null,
-          away: null,
-        },
-        fulltime: {
-          home: null,
-          away: null,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 978072,
-        referee: null,
-        timezone: 'UTC',
-        date: '2022-12-09T15:00:00+00:00',
-        timestamp: 1670598000,
-        periods: {
-          first: null,
-          second: null,
-        },
-        venue: {
-          id: null,
-          name: 'Education City Stadium',
-          city: 'Ar-Rayyan',
-        },
-        status: {
-          long: 'Not Started',
-          short: 'NS',
-          elapsed: null,
-        },
-      },
-      league: {
-        id: 1,
-        name: 'World Cup',
-        country: 'World',
-        logo: 'https://media.api-sports.io/football/leagues/1.png',
-        flag: null,
-        season: 2022,
-        round: 'Quarter-finals',
-      },
-      teams: {
-        home: {
-          id: 3,
-          name: 'Croatia',
-          logo: 'https://media.api-sports.io/football/teams/3.png',
+          logo: 'https://media-2.api-sports.io/football/teams/2.png',
           winner: null,
         },
         away: {
-          id: 6,
-          name: 'Brazil',
-          logo: 'https://media.api-sports.io/football/teams/6.png',
+          id: 31,
+          name: 'Morocco',
+          logo: 'https://media-2.api-sports.io/football/teams/31.png',
           winner: null,
         },
       },

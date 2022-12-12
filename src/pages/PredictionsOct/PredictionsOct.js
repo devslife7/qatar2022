@@ -6,7 +6,7 @@ import {
   Matches,
   NameInputs,
   PredictionsForm,
-  PredictionsTable,
+  // PredictionsTable,
   Section,
   Title,
 } from './styles/PredictionsOct.style'
@@ -29,36 +29,34 @@ export default function PredictionsOct({ fixtures }) {
   }
 
   const handlePredictionSubmit = e => {
-    const serverURL = process.env.REACT_APP_SERVER_URL
-
-    const postRequest = {
-      method: 'POST',
-      headers: {
-        'Content-type': 'application/json',
-      },
-      body: JSON.stringify({
-        user: {
-          first_name: firstName,
-          last_name: lastName,
-          predictions16: userPredictions,
-        },
-      }),
-    }
-
-    fetch(serverURL + '/users', postRequest)
-      .then(resp => resp.json())
-      .then(data => {
-        console.log('data from fetch: ', data)
-        clearInputs()
-      })
-      .catch(err => console.log(err))
+    // const serverURL = process.env.REACT_APP_SERVER_URL
+    // const postRequest = {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-type': 'application/json',
+    //   },
+    //   body: JSON.stringify({
+    //     user: {
+    //       first_name: firstName,
+    //       last_name: lastName,
+    //       predictions16: userPredictions,
+    //     },
+    //   }),
+    // }
+    // fetch(serverURL + '/users', postRequest)
+    //   .then(resp => resp.json())
+    //   .then(data => {
+    //     console.log('data from fetch: ', data)
+    //     clearInputs()
+    //   })
+    //   .catch(err => console.log(err))
   }
 
-  const clearInputs = () => {
-    setUserPredictions([])
-    setFirstName('')
-    setLastName('')
-  }
+  // const clearInputs = () => {
+  //   setUserPredictions([])
+  //   setFirstName('')
+  //   setLastName('')
+  // }
 
   const RoundOf16Fixtures = fixtures.filter(fixture => fixture.league.round === 'Round of 16')
   const renderMatches = () => {

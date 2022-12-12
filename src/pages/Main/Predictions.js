@@ -1,26 +1,24 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Paper from '@mui/material/Paper'
 import Grid from '@mui/material/Grid'
 import PredictionsCard from './components/PredictionsCard'
 import { useNavigate } from 'react-router-dom'
 import { resultsIdCodesKey } from '../../Data/CountryCodes'
-import { Buttonwrapper, PredictionsWrapper, Text1st, Text2nd, Text3rd, TextPricePool } from './Main.styles'
-import Button from '../../components/Button'
+import {
+  // ButtonWrapper,
+  PredictionsWrapper,
+  Text1st,
+  Text2nd,
+  Text3rd,
+  TextPricePool,
+} from './Main.styles'
+// import Button from '../../components/Button'
 import { Container } from '../../assets/styles/Global.style'
-
-const serverURL = process.env.REACT_APP_SERVER_URL
+import { users as userData } from '../../Data/Users'
 
 export default function Predictions({ fixtures }) {
-  const [userData, setUserData] = useState([])
   const pricePool = userData.length * 50
   const navigate = useNavigate()
-
-  useEffect(() => {
-    fetch(serverURL + '/users')
-      .then(resp => resp.json())
-      .then(data => setUserData(data.users))
-      .catch(err => console.log(err))
-  }, [])
 
   const renderUserPredictions = () => {
     if (userData.length === 0) return
@@ -93,10 +91,10 @@ export default function Predictions({ fixtures }) {
       state: { user: user, fixtures: fixtures, officialResults: officialResults },
     })
   }
-  const handleRoundOf16 = () => {
-    // console.log(fixturesSorted)
-    // navigate('/octavos')
-  }
+  // const handleRoundOf16 = () => {
+  //   // console.log(fixturesSorted)
+  //   // navigate('/octavos')
+  // }
 
   return (
     <PredictionsWrapper className='predictions'>

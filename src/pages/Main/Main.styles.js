@@ -50,7 +50,7 @@ export const Text3rd = styled.p`
   margin-top: 1rem;
   padding-bottom: 1rem;
 `
-export const Buttonwrapper = styled.div`
+export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
 `
