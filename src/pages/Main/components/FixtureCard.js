@@ -3,6 +3,33 @@ import Grid from '@mui/material/Grid'
 import { fromUnixTime, format } from 'date-fns'
 
 export default function FixtureCard({ fixture }) {
+  const renderFinalScore = () => {
+    return (
+      <>
+        {fixture.fixture.status.short === 'NS' ? (
+          <>{format(fromUnixTime(fixture.fixture.timestamp), 'HH:mm')}</>
+        ) : (
+          <>
+            {fixture.fixture.status.short === 'PEN' ? (
+              <>
+                <span>
+                  {fixture.score.penalty.home} - {fixture.score.penalty.away}
+                </span>
+                <span style={{ fontSize: '0.7em' }}>{fixture.fixture.status.short}</span>
+              </>
+            ) : (
+              <>
+                <span>
+                  {fixture.goals.home} - {fixture.goals.away}
+                </span>
+                <span style={{ fontSize: '0.7em' }}>{fixture.fixture.status.short}</span>
+              </>
+            )}
+          </>
+        )}
+      </>
+    )
+  }
   return (
     <div style={{ marginBottom: '2rem' }}>
       <Grid container justify='center' style={{ margin: '20px 0 20px 0', padding: '0px', fontSize: '18px' }}>
@@ -14,7 +41,8 @@ export default function FixtureCard({ fixture }) {
         </Grid>
         <Grid item xs={2}>
           <Grid container direction='column' alignItems='center'>
-            {fixture.fixture.status.short === 'NS' ? (
+            {renderFinalScore()}
+            {/* {fixture.fixture.status.short === 'NS' ? (
               <div>{format(fromUnixTime(fixture.fixture.timestamp), 'HH:mm')}</div>
             ) : (
               <>
@@ -23,7 +51,7 @@ export default function FixtureCard({ fixture }) {
                 </span>
                 <span style={{ fontSize: '0.7em' }}>{fixture.fixture.status.short}</span>
               </>
-            )}
+            )} */}
           </Grid>
         </Grid>
         <Grid item xs={5}>
