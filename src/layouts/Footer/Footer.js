@@ -25,9 +25,7 @@ export default function Footer() {
             <SocialLogo to='/' onClick={toggleHome}>
               Marcos Velasco
             </SocialLogo>
-            <WebsiteRights>
-              Copyright © {new Date().getFullYear()} Marcos Velasco. All rights reserved.
-            </WebsiteRights>
+            <WebsiteRights>Copyright © 2022 Marcos Velasco. All rights reserved.</WebsiteRights>
             <SocialIcons>
               <SocialIconLink
                 href='https://www.linkedin.com/in/marcos-velasco-1b07a7189/'
