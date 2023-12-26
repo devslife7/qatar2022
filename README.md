@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Qatar 2022 Soccer World Cup Betting Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to our Qatar 2022 Soccer World Cup betting website! This platform was designed exclusively for friends to enjoy the thrill of predicting and betting on the outcomes of the matches during the FIFA World Cup held in Qatar.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Friends-Only Betting:** Exclusive access limited to friends to keep the experience personal and engaging.
+- **Score Tracking:** Real-time score tracking to monitor and display each participant's predictions and points earned.
+- **Winner Announcement:** Reveals the winners and their achievements at the end of the tournament.
 
-### `npm start`
+## How to Use
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Accessing the Website
+This website is accessible only to invited friends. Upon login, participants can access their dashboard to make predictions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Making Predictions
+Users can navigate to the prediction page to enter their anticipated outcomes for each match. Points are awarded based on the accuracy of predictions.
 
-### `npm test`
+### Tracking Scores
+The platform maintains a live scoreboard, constantly updating to reflect each participant's points accumulated throughout the tournament.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Winner Announcement
+At the conclusion of the World Cup, the website will display the winners, highlighting their success and accurate predictions.
 
-### `npm run build`
+## Technologies Used
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Ruby on Rails API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
+To explore or contribute to this project, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository: `git clone [repository URL]`
+2. Navigate to the project directory.
+3. [Add any additional setup or installation steps if needed]
+4. Start the application: `npm start` or [appropriate command]
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contribution Guidelines
+Contributions to enhance the user experience, add new features, or improve existing functionality are welcome. Please follow these steps:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the repository.
+2. Create a new branch for your feature: `git checkout -b feature-name`
+3. Commit changes: `git commit -m 'Add feature-name'`
+4. Push to the branch: `git push origin feature-name`
+5. Submit a pull request.
