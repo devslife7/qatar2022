@@ -23,8 +23,6 @@ export default function PredictionCardProfile({
   const homeTeamName = countryCodesShortFromName[fixture.teams.home.name]
   const awayTeamName = countryCodesShortFromName[fixture.teams.away.name]
 
-  const prediction = officialResult === userPrediction
-
   const correctPrediction = () => {
     if (idx >= officialResultsLength) return
     if (officialResult === userPrediction) return 'correct'

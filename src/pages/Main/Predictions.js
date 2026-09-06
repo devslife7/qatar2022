@@ -5,7 +5,6 @@ import PredictionsCard from './components/PredictionsCard'
 import { useNavigate } from 'react-router-dom'
 import { resultsIdCodesKey } from '../../Data/CountryCodes'
 import {
-  PredictionListWrapper,
   // ButtonWrapper,
   PredictionsWrapper,
   Text1st,
