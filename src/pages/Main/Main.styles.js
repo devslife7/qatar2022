@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import background from '../../assets/img/qatarstatic.png'
-import backgroundLocation from '../../assets/img/qatarhomepage.png'
+import background from '../../assets/img/qatarstatic.webp'
+import backgroundLocation from '../../assets/img/qatarhomepage.webp'
 
 export const HomeWrapper = styled.section`
   background: url(${backgroundLocation}) no-repeat center;

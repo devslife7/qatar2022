@@ -1,3 +1,4 @@
+import { countryFlags } from '../../../Data/CountryFlags'
 import React, { useState } from 'react'
 import { AwayTeam, Flag, HomeTeam, MatchCardWrapper, VsTag } from '../styles/PredictionsOct.style'
 // import { countryCodesShortFromName } from '../../../Data/CountryCodes'
@@ -23,11 +24,11 @@ export default function MatchCard({ fixture, handleUserPredictions, userPredicti
     <MatchCardWrapper>
       <HomeTeam onClick={e => handleSelection(homeTeamId)} selected={isSelectedLogic(homeTeamId)}>
         <div>{fixture.teams.home.name}</div>
-        <Flag src={fixture.teams.home.logo} marginLeft />
+        <Flag src={countryFlags[fixture.teams.home.id]} marginLeft />
       </HomeTeam>
       <VsTag>vs</VsTag>
       <AwayTeam onClick={e => handleSelection(awayTeamId)} selected={isSelectedLogic(awayTeamId)}>
-        <Flag src={fixture.teams.away.logo} marginRight />
+        <Flag src={countryFlags[fixture.teams.away.id]} marginRight />
         <div>{fixture.teams.away.name}</div>
       </AwayTeam>
     </MatchCardWrapper>

@@ -1,3 +1,4 @@
+import { countryFlags } from '../../../Data/CountryFlags'
 import React from 'react'
 import {
   countryCodesShort,
@@ -16,9 +17,9 @@ export default function PredictionCardProfile({
 }) {
   const userPredictionId = resultsIdCodesKeyReverse[userPrediction]
   const userPredictionName = countryCodesShort[userPrediction]
-  const countryFlagSrc = `https://media.api-sports.io/football/teams/${userPredictionId}.png`
-  const homeFlag = fixture.teams.home.logo
-  const awayFlag = fixture.teams.away.logo
+  const countryFlagSrc = countryFlags[userPredictionId]
+  const homeFlag = countryFlags[fixture.teams.home.id]
+  const awayFlag = countryFlags[fixture.teams.away.id]
   const homeTeamName = countryCodesShortFromName[fixture.teams.home.name]
   const awayTeamName = countryCodesShortFromName[fixture.teams.away.name]
 
