@@ -1,15 +1,18 @@
 import React from 'react'
 import { Container } from '../../assets/styles/Global.style'
 import { Section, UserTitle } from './styles/Profile.style'
-import { useLocation } from 'react-router-dom'
+import { Navigate, useLocation } from 'react-router-dom'
 import PredictionCardProfile from './components/PredictionCardProfile'
 
 export default function Profile() {
   const location = useLocation()
-  const user = location.state.user
+  const { user, fixtures, officialResults } = location.state || {}
+
+  if (!user || !Array.isArray(user.predictionsGS) || !Array.isArray(fixtures) || !Array.isArray(officialResults)) {
+    return <Navigate to='/' replace />
+  }
+
   const userPredictions = user.predictionsGS
-  const fixtures = location.state.fixtures
-  const officialResults = location.state.officialResults
 
   const renderPredictions2 = () => {
     return fixtures.map((fixture, idx) => (

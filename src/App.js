@@ -5,7 +5,7 @@ import Profile from './pages/Profile'
 import PredictionsOct from './pages/PredictionsOct'
 import PredictionInputTool from './pages/PredictionInputTool'
 import Users from './pages/Users'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom'
 import { fixtures } from './Data/Fixtures'
 
 export default function App() {
@@ -17,6 +17,7 @@ export default function App() {
         <Route path='/profile' element={<Profile />} />
         <Route path='/octavos' element={<PredictionsOct fixtures={fixtures} />} />
         <Route path='/users' element={<Users />} />
+        <Route path='*' element={<Navigate to='/' replace />} />
       </Routes>
       <Footer />
     </Router>
