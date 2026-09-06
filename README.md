@@ -1,44 +1,77 @@
-# Qatar 2022 Soccer World Cup Betting Website
+# Qatar 2022 — Legacy Showcase
 
-Welcome to our Qatar 2022 Soccer World Cup betting website! This platform was designed exclusively for friends to enjoy the thrill of predicting and betting on the outcomes of the matches during the FIFA World Cup held in Qatar.
+A preserved frontend from a friends' prediction pool for the Qatar 2022 FIFA World Cup. This project showcases the original homepage and historical tournament content.
 
-## Features
+This is a static legacy showcase. Participant data, predictions, and match results are bundled with the app. Login, live score updates, and prediction submissions are not active; any remaining forms are part of the original interface.
 
-- **Friends-Only Betting:** Exclusive access limited to friends to keep the experience personal and engaging.
-- **Score Tracking:** Real-time score tracking to monitor and display each participant's predictions and points earned.
-- **Winner Announcement:** Reveals the winners and their achievements at the end of the tournament.
+## What's included
 
-## How to Use
+- Original World Cup homepage and navigation
+- Historical fixtures and match results
+- Participant rankings and saved predictions
+- Participant profile views accessed from the homepage
+- Local country flag images
 
-### Accessing the Website
-This website is accessible only to invited friends. Upon login, participants can access their dashboard to make predictions.
+## Tech stack
 
-### Making Predictions
-Users can navigate to the prediction page to enter their anticipated outcomes for each match. Points are awarded based on the accuracy of predictions.
+React 18, Create React App, React Router 6, Material UI, styled-components, and date-fns. No backend, database, or environment variables are required.
 
-### Tracking Scores
-The platform maintains a live scoreboard, constantly updating to reflect each participant's points accumulated throughout the tournament.
+## Local development
 
-### Winner Announcement
-At the conclusion of the World Cup, the website will display the winners, highlighting their success and accurate predictions.
+Install Node.js and npm, then run these commands from the repository root:
 
-## Technologies Used
-- **Frontend:** HTML, CSS, JavaScript
-- **Backend:** Ruby on Rails API
+```sh
+npm ci
+npm start
+```
 
-## Getting Started
-To explore or contribute to this project, follow these steps:
+The development server normally opens at `http://localhost:3000`.
 
-1. Clone the repository: `git clone [repository URL]`
-2. Navigate to the project directory.
-3. [Add any additional setup or installation steps if needed]
-4. Start the application: `npm start` or [appropriate command]
+## Production build
 
-## Contribution Guidelines
-Contributions to enhance the user experience, add new features, or improve existing functionality are welcome. Please follow these steps:
+```sh
+CI=true npm run build
+```
 
-1. Fork the repository.
-2. Create a new branch for your feature: `git checkout -b feature-name`
-3. Commit changes: `git commit -m 'Add feature-name'`
-4. Push to the branch: `git push origin feature-name`
-5. Submit a pull request.
+The static website is generated in `build/`.
+
+## Tests
+
+```sh
+CI=true npm test -- --watchAll=false --runInBand
+```
+
+The routing tests cover direct profile visits without navigation data and profile rendering with participant data.
+
+## Deploy to Vercel
+
+1. Push the project to your Git repository, including `vercel.json`, `src/Data/CountryFlags.js`, and `src/assets/img/flags/`.
+2. Import the repository as a new Vercel project.
+3. Use the repository root as the Root Directory and deploy.
+
+The included `vercel.json` configures:
+
+- Framework preset: Create React App
+- Build command: `npm run build`
+- Output directory: `build`
+- A rewrite to `index.html` so direct links reach React Router
+
+Vercel builds the app from source. Keep `node_modules/` and `build/` out of Git.
+
+## Routing
+
+Unknown routes return to the homepage. Opening `/profile` without the navigation data supplied by a homepage participant link also returns to the homepage.
+
+The Vercel rewrite serves `index.html` for application routes so React Router can handle direct links.
+
+## Project structure
+
+```text
+public/             HTML template and public assets
+src/assets/         Images, local flags, and global styles
+src/components/     Shared UI components
+src/Data/           Historical data and country mappings
+src/layouts/        Navigation and footer
+src/pages/          Homepage and legacy screens
+vercel.json         Build and routing configuration
+```
